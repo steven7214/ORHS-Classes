@@ -17,8 +17,10 @@ class ChecklistTableViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        UserDefaults.standard.set(ChecklistTableViewController.current, forKey: "savedList")
-        ChecklistTableViewController.current = UserDefaults.standard.object(forKey: "savedList") as! [Double]
+        
+        if let old = UserDefaults.standard.object(forKey: "savedList") as? [Double] {
+            ChecklistTableViewController.current = old
+        }
         print(ChecklistTableViewController.current)
         tableView.reloadData()
     }
@@ -26,7 +28,7 @@ class ChecklistTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.tableFooterView = UIView(frame: .zero)
-
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -88,6 +90,7 @@ class ChecklistTableViewController: UITableViewController {
         else {
             ChecklistTableViewController.current[index] += Double(course.credits)!  
         }
+        UserDefaults.standard.set(ChecklistTableViewController.current, forKey: "savedList")
         
     }
     
