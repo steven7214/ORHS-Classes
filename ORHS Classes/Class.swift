@@ -26,6 +26,7 @@ class Class {
         }
         self.name = data[0]
         self.subject = data[1]
+        
         self.credits = data[2]
         self.GPA = data[3]
         self.hours = data[4]

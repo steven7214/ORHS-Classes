@@ -9,17 +9,20 @@
 import UIKit
 
 class ChecklistTableViewController: UITableViewController {
-
-   
+    
+    
     //MARK: properties
     static let requirements = [("English", 4.0), ("Math", 4.0), ("Science", 3.0), ("World Language", 2.0), ("Fine Art", 1.0), ("U.S. History", 1.0), ("History/Geography", 1.0), ("Economics", 0.5), ("Government", 0.5), ("Personal Finance", 0.5), ("Lifetime Wellness", 1.5)]
     static var current = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+//        UserDefaults.standard.set(ChecklistTableViewController.current, forKey: "savedList")
+        ChecklistTableViewController.current = UserDefaults.standard.object(forKey: "savedList") as! [Double]
+        print(ChecklistTableViewController.current)
         tableView.reloadData()
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.tableFooterView = UIView(frame: .zero)
@@ -40,6 +43,7 @@ class ChecklistTableViewController: UITableViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
+        
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
