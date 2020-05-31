@@ -15,13 +15,10 @@ class ChecklistTableViewController: UITableViewController {
     static let requirements = [("English", 4.0), ("Math", 4.0), ("Science", 3.0), ("World Language", 2.0), ("Fine Art", 1.0), ("U.S. History", 1.0), ("History/Geography", 1.0), ("Economics", 0.5), ("Government", 0.5), ("Personal Finance", 0.5), ("Lifetime Wellness", 1.5)]
     static var current = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
     
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        if let old = UserDefaults.standard.object(forKey: "savedList") as? [Double] {
-            ChecklistTableViewController.current = old
-        }
-        print(ChecklistTableViewController.current)
+
         tableView.reloadData()
     }
 
@@ -85,12 +82,16 @@ class ChecklistTableViewController: UITableViewController {
         let index = convert(course.subject)
         
         if (add == false){
-            ChecklistTableViewController.current[index] -= Double(course.credits)!
+            ChecklistTableViewController.current[index] -= Double(course.credits)! //don't want to be negative
         }
         else {
             ChecklistTableViewController.current[index] += Double(course.credits)!  
         }
         UserDefaults.standard.set(ChecklistTableViewController.current, forKey: "savedList")
+        let encodedData = NSKeyedArchiver.archivedData(withRootObject: YearTableViewController.schedules)
+         UserDefaults.standard.set(encodedData, forKey: "savedSchedules")
+        print(YearTableViewController.schedules)
+        
         
     }
     

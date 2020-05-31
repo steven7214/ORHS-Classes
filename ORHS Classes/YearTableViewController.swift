@@ -16,6 +16,22 @@ class YearTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.tableFooterView = UIView(frame: .zero)
+        if let old = UserDefaults.standard.object(forKey: "savedList") as? [Double] {
+                   ChecklistTableViewController.current = old
+        }
+        let key = UserDefaults.standard.object(forKey: "savedSchedules")
+        if key != nil {
+            if let old = NSKeyedUnarchiver.unarchiveObject(with: key as! Data) as? [[Class]] {
+            YearTableViewController.schedules = old
+            }
+        }
+        else {
+            print("no schedule saved")
+        }
+       
+        
+        
+        
         //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "school logo")!)
 
 

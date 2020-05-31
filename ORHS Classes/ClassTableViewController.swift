@@ -127,7 +127,7 @@ class ClassTableViewController: UITableViewController {
         print(classesArray)
         for files: URL in classesArray {
             let data = reader.findData(fileURL: files)
-            guard let newClass = Class(data: data) else {
+            guard let newClass = Class(data: data, added: false) else {
                 fatalError("Unable to create class")
             }
             classes.append(newClass)

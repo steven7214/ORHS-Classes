@@ -83,18 +83,15 @@ class ScheduleTableViewController: UITableViewController {
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
+            YearTableViewController.schedules[yearIndex!].remove(at: indexPath.row)
             //update checklist
             ChecklistTableViewController.edit(classes[indexPath.row], false)
             // Delete the row from the data source
             classes[indexPath.row].added = false
             print("removed")
             classes.remove(at: indexPath.row)
-            YearTableViewController.schedules[yearIndex!] = classes
-            saveClasses()
-           
             tableView.deleteRows(at: [indexPath], with: .fade)
             
-           
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
@@ -138,12 +135,6 @@ class ScheduleTableViewController: UITableViewController {
     }
     
     
-    //MARK: Private Methods
-    private func saveClasses() {
-        
-    }
-    private func loadClasses() {
-        
-    }
+    
 
 }
