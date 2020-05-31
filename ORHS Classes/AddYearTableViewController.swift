@@ -108,7 +108,6 @@ class AddYearTableViewController: UITableViewController {
         }
         tempCourse!.added = true
         YearTableViewController.schedules[indexPath.row].append(tempCourse!)
-
         default: print("canceled i think")
         }
      }

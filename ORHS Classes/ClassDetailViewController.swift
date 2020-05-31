@@ -41,7 +41,7 @@ class ClassDetailViewController: UIViewController {
         GPALabel.text = "GPA: \(course!.GPA)"
         creditLabel.text = "Credits: \(course!.credits)"
         hourLabel.text = "Homework: \(course!.hours) hrs/day"
-        descriptionTextBox.text = course!.description
+        descriptionTextBox.text = course!.summary
         categoryLabel.text = "Subject: \(course!.subject)"
         
         if course!.added {

@@ -1,0 +1,20 @@
+version: "Apple Swift version 5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)"
+options: "bbdcad59706d975c333c625e487cdf0b"
+build_time: [1590806388, 171626000]
+inputs:
+  "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/ChecklistTableViewCell.swift": [1590722134, 541978691]
+  "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/ClassTableViewController.swift": [1590722134, 544402980]
+  "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/AppDelegate.swift": [1590722134, 524025504]
+  "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/ClassDetailViewController.swift": [1590789504, 100852825]
+  "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/Reader.swift": [1590722134, 546403099]
+  "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/AddYearTableViewCell.swift": [1590722134, 523254019]
+  "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/SubjectTableViewCell.swift": [1590722134, 548295370]
+  "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/ChecklistTableViewController.swift": [1590806141, 896699648]
+  "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/ScheduleTableViewController.swift": [1590804784, 74049682]
+  "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/SubjectTableViewController.swift": [1590722134, 548901416]
+  "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/YearTableViewCell.swift": [1590722134, 551845684]
+  "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/ScheduleTableViewCell.swift": [1590722134, 547081731]
+  "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/ClassTableViewCell.swift": [1590722134, 543781230]
+  "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/AddYearTableViewController.swift": [1590790197, 101820715]
+  "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/Class.swift": [1590790990, 195010349]
+  "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/YearTableViewController.swift": [1590806388, 71978012]
