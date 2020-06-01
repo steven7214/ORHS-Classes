@@ -188,6 +188,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import CoreGraphics;
 @import Foundation;
+@import ObjectiveC;
 @import UIKit;
 #endif
 
@@ -276,6 +277,15 @@ SWIFT_CLASS("_TtC12ORHS_Classes28ChecklistTableViewController")
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC12ORHS_Classes5Class")
+@interface Class : NSObject <NSCoding>
+- (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
 
 @class UITextView;
