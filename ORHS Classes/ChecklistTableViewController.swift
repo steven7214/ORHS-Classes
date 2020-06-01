@@ -61,15 +61,22 @@ class ChecklistTableViewController: UITableViewController {
         let num = indexPath.row
         cell.textLabel?.text = ChecklistTableViewController.requirements[num].0 //puts name of requirement
         if(ChecklistTableViewController.current[num] >= ChecklistTableViewController.requirements[num].1) {
-            cell.accessoryType = UITableViewCellAccessoryType.checkmark
+//            cell.accessoryType = UITableViewCellAccessoryType.checkmark
+            cell.textLabel?.textColor = UIColor(red:0, green: 0.7, blue: 0, alpha: 1.0)
+            cell.completionLabel.textColor = UIColor(red:0, green: 0.7, blue: 0, alpha: 1.0)
         }
         else {
-            cell.accessoryType = UITableViewCellAccessoryType.none
+            //cell.accessoryType = UITableViewCellAccessoryType.none
+            cell.textLabel?.textColor = UIColor(red:0, green: 0, blue: 0, alpha: 1.0)
+            cell.completionLabel.textColor = UIColor(red:0, green: 0, blue: 0, alpha: 1.0)
         }
+        
+        
         cell.completionLabel.textAlignment = .center
         var temp = ChecklistTableViewController.current[num]
         if (temp > ChecklistTableViewController.requirements[num].1) {
             temp = ChecklistTableViewController.requirements[num].1 //makes sure checklist doesn't go above 100% done
+                //Take off later
         }
         cell.completionLabel.text = "(\(temp)/\(ChecklistTableViewController.requirements[num].1))" //keeps track of how many completed in a box
 
@@ -91,6 +98,11 @@ class ChecklistTableViewController: UITableViewController {
         let encodedData = NSKeyedArchiver.archivedData(withRootObject: YearTableViewController.schedules)
          UserDefaults.standard.set(encodedData, forKey: "savedSchedules")
         print(YearTableViewController.schedules)
+        for credits in ChecklistTableViewController.current {
+            if credits < 0.0 {
+                let credits = 0.0
+            }
+        }
         
         
     }

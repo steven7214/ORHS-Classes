@@ -14,17 +14,20 @@ provides-dynamic-lookup:
 - "viewDidLoad"
 - "years"
 depends-top-level:
+- !private "!="
 - !private "??"
 - "AssignmentPrecedence"
 - "CGFloat"
 - "CastingPrecedence"
 - !private "ChecklistTableViewController"
 - "Class"
+- !private "Data"
 - !private "Double"
 - !private "FloatLiteralType"
 - "IndexPath"
 - "Int"
 - !private "IntegerLiteralType"
+- !private "NSKeyedUnarchiver"
 - !private "ScheduleTableViewController"
 - "StringLiteralType"
 - !private "UIColor"
@@ -39,6 +42,7 @@ depends-top-level:
 - !private "YearTableViewCell"
 - "YearTableViewController"
 - !private "fatalError"
+- !private "print"
 - !private "~="
 depends-member:
 - ["Sa", "init"]
@@ -63,6 +67,7 @@ depends-member:
 - !private ["So6CGRectV", "zero"]
 - !private ["s7CVarArgP", "ChecklistTableViewController"]
 - ["s7CVarArgP", "Class"]
+- !private ["s7CVarArgP", "NSKeyedUnarchiver"]
 - !private ["s7CVarArgP", "UIColor"]
 - !private ["s7CVarArgP", "UIFont"]
 - !private ["s7CVarArgP", "UIView"]
@@ -85,6 +90,7 @@ depends-member:
 - !private ["s7CVarArgP", "layer"]
 - !private ["s7CVarArgP", "object"]
 - !private ["s7CVarArgP", "prepare"]
+- !private ["s7CVarArgP", "print"]
 - !private ["s7CVarArgP", "red"]
 - !private ["s7CVarArgP", "schedules"]
 - !private ["s7CVarArgP", "standard"]
@@ -96,6 +102,7 @@ depends-member:
 - !private ["s7CVarArgP", "textColor"]
 - !private ["s7CVarArgP", "textLabel"]
 - !private ["s7CVarArgP", "tintColor"]
+- !private ["s7CVarArgP", "unarchiveObject"]
 - !private ["s7CVarArgP", "viewDidLoad"]
 - !private ["s7CVarArgP", "yearIndex"]
 - !private ["s7CVarArgP", "yearLabel"]
@@ -109,6 +116,7 @@ depends-member:
 - !private ["10Foundation15ContiguousBytesP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "ChecklistTableViewController"]
 - ["s28CustomDebugStringConvertibleP", "Class"]
+- !private ["s28CustomDebugStringConvertibleP", "NSKeyedUnarchiver"]
 - !private ["s28CustomDebugStringConvertibleP", "UIColor"]
 - !private ["s28CustomDebugStringConvertibleP", "UIFont"]
 - !private ["s28CustomDebugStringConvertibleP", "UIView"]
@@ -131,6 +139,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "layer"]
 - !private ["s28CustomDebugStringConvertibleP", "object"]
 - !private ["s28CustomDebugStringConvertibleP", "prepare"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
 - !private ["s28CustomDebugStringConvertibleP", "red"]
 - !private ["s28CustomDebugStringConvertibleP", "row"]
 - !private ["s28CustomDebugStringConvertibleP", "schedules"]
@@ -143,6 +152,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "textColor"]
 - !private ["s28CustomDebugStringConvertibleP", "textLabel"]
 - !private ["s28CustomDebugStringConvertibleP", "tintColor"]
+- !private ["s28CustomDebugStringConvertibleP", "unarchiveObject"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - !private ["s28CustomDebugStringConvertibleP", "yearIndex"]
 - !private ["s28CustomDebugStringConvertibleP", "yearLabel"]
@@ -159,6 +169,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "zero"]
 - !private ["s23CustomStringConvertibleP", "ChecklistTableViewController"]
 - ["s23CustomStringConvertibleP", "Class"]
+- !private ["s23CustomStringConvertibleP", "NSKeyedUnarchiver"]
 - !private ["s23CustomStringConvertibleP", "UIColor"]
 - !private ["s23CustomStringConvertibleP", "UIFont"]
 - !private ["s23CustomStringConvertibleP", "UIView"]
@@ -181,6 +192,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "layer"]
 - !private ["s23CustomStringConvertibleP", "object"]
 - !private ["s23CustomStringConvertibleP", "prepare"]
+- !private ["s23CustomStringConvertibleP", "print"]
 - !private ["s23CustomStringConvertibleP", "red"]
 - !private ["s23CustomStringConvertibleP", "row"]
 - !private ["s23CustomStringConvertibleP", "schedules"]
@@ -193,6 +205,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "textColor"]
 - !private ["s23CustomStringConvertibleP", "textLabel"]
 - !private ["s23CustomStringConvertibleP", "tintColor"]
+- !private ["s23CustomStringConvertibleP", "unarchiveObject"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - !private ["s23CustomStringConvertibleP", "yearIndex"]
 - !private ["s23CustomStringConvertibleP", "yearLabel"]
@@ -219,6 +232,7 @@ depends-member:
 - !private ["SE", "zero"]
 - !private ["SQ", "ChecklistTableViewController"]
 - ["SQ", "Class"]
+- !private ["SQ", "NSKeyedUnarchiver"]
 - !private ["SQ", "UIColor"]
 - !private ["SQ", "UIFont"]
 - !private ["SQ", "UIView"]
@@ -242,6 +256,7 @@ depends-member:
 - !private ["SQ", "layer"]
 - !private ["SQ", "object"]
 - !private ["SQ", "prepare"]
+- !private ["SQ", "print"]
 - !private ["SQ", "red"]
 - !private ["SQ", "row"]
 - !private ["SQ", "schedules"]
@@ -254,6 +269,7 @@ depends-member:
 - !private ["SQ", "textColor"]
 - !private ["SQ", "textLabel"]
 - !private ["SQ", "tintColor"]
+- !private ["SQ", "unarchiveObject"]
 - !private ["SQ", "viewDidLoad"]
 - !private ["SQ", "yearIndex"]
 - !private ["SQ", "yearLabel"]
@@ -269,6 +285,7 @@ depends-member:
 - !private ["s23ExpressibleByNilLiteralP", "textAlignment"]
 - !private ["SH", "ChecklistTableViewController"]
 - ["SH", "Class"]
+- !private ["SH", "NSKeyedUnarchiver"]
 - !private ["SH", "UIColor"]
 - !private ["SH", "UIFont"]
 - !private ["SH", "UIView"]
@@ -292,6 +309,7 @@ depends-member:
 - !private ["SH", "layer"]
 - !private ["SH", "object"]
 - !private ["SH", "prepare"]
+- !private ["SH", "print"]
 - !private ["SH", "red"]
 - !private ["SH", "row"]
 - !private ["SH", "schedules"]
@@ -304,6 +322,7 @@ depends-member:
 - !private ["SH", "textColor"]
 - !private ["SH", "textLabel"]
 - !private ["SH", "tintColor"]
+- !private ["SH", "unarchiveObject"]
 - !private ["SH", "viewDidLoad"]
 - !private ["SH", "yearIndex"]
 - !private ["SH", "yearLabel"]
@@ -314,8 +333,10 @@ depends-member:
 - !private ["SM", "subscript"]
 - ["10Foundation19MutableDataProtocolP", "init"]
 - !private ["10Foundation19MutableDataProtocolP", "subscript"]
+- !private ["So7NSCoderC", "unarchiveObject"]
 - !private ["So8NSCodingP", "ChecklistTableViewController"]
 - ["So8NSCodingP", "Class"]
+- !private ["So8NSCodingP", "NSKeyedUnarchiver"]
 - !private ["So8NSCodingP", "UIColor"]
 - !private ["So8NSCodingP", "UIFont"]
 - !private ["So8NSCodingP", "UIView"]
@@ -335,6 +356,7 @@ depends-member:
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "layer"]
 - !private ["So8NSCodingP", "prepare"]
+- !private ["So8NSCodingP", "print"]
 - !private ["So8NSCodingP", "red"]
 - !private ["So8NSCodingP", "schedules"]
 - !private ["So8NSCodingP", "tableFooterView"]
@@ -354,6 +376,7 @@ depends-member:
 - !private ["So9NSCopyingP", "red"]
 - !private ["So26NSExtensionRequestHandlingP", "ChecklistTableViewController"]
 - ["So26NSExtensionRequestHandlingP", "Class"]
+- !private ["So26NSExtensionRequestHandlingP", "NSKeyedUnarchiver"]
 - !private ["So26NSExtensionRequestHandlingP", "UIColor"]
 - !private ["So26NSExtensionRequestHandlingP", "UIFont"]
 - !private ["So26NSExtensionRequestHandlingP", "UIView"]
@@ -365,6 +388,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
 - !private ["So26NSExtensionRequestHandlingP", "fatalError"]
 - !private ["So26NSExtensionRequestHandlingP", "prepare"]
+- !private ["So26NSExtensionRequestHandlingP", "print"]
 - !private ["So26NSExtensionRequestHandlingP", "schedules"]
 - !private ["So26NSExtensionRequestHandlingP", "tableView"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
@@ -376,12 +400,15 @@ depends-member:
 - !private ["So21NSItemProviderWritingP", "cgColor"]
 - !private ["So21NSItemProviderWritingP", "clear"]
 - !private ["So21NSItemProviderWritingP", "red"]
+- !private ["So17NSKeyedUnarchiverC", "unarchiveObject"]
 - ["So8NSObjectC", "CGFloat"]
 - !private ["So8NSObjectC", "ChecklistTableViewController"]
 - ["So8NSObjectC", "Class"]
+- !private ["So8NSObjectC", "Data"]
 - !private ["So8NSObjectC", "Double"]
 - ["So8NSObjectC", "IndexPath"]
 - ["So8NSObjectC", "Int"]
+- !private ["So8NSObjectC", "NSKeyedUnarchiver"]
 - !private ["So8NSObjectC", "ScheduleTableViewController"]
 - !private ["So8NSObjectC", "UIColor"]
 - !private ["So8NSObjectC", "UIFont"]
@@ -410,6 +437,7 @@ depends-member:
 - ["So8NSObjectC", "numberOfSections"]
 - !private ["So8NSObjectC", "object"]
 - ["So8NSObjectC", "prepare"]
+- !private ["So8NSObjectC", "print"]
 - !private ["So8NSObjectC", "red"]
 - ["So8NSObjectC", "schedules"]
 - !private ["So8NSObjectC", "standard"]
@@ -420,12 +448,14 @@ depends-member:
 - !private ["So8NSObjectC", "textColor"]
 - !private ["So8NSObjectC", "textLabel"]
 - !private ["So8NSObjectC", "tintColor"]
+- !private ["So8NSObjectC", "unarchiveObject"]
 - ["So8NSObjectC", "viewDidLoad"]
 - !private ["So8NSObjectC", "yearIndex"]
 - !private ["So8NSObjectC", "yearLabel"]
 - ["So8NSObjectC", "years"]
 - !private ["So8NSObjectP", "ChecklistTableViewController"]
 - ["So8NSObjectP", "Class"]
+- !private ["So8NSObjectP", "NSKeyedUnarchiver"]
 - !private ["So8NSObjectP", "UIColor"]
 - !private ["So8NSObjectP", "UIFont"]
 - !private ["So8NSObjectP", "UIView"]
@@ -448,6 +478,7 @@ depends-member:
 - !private ["So8NSObjectP", "layer"]
 - !private ["So8NSObjectP", "object"]
 - !private ["So8NSObjectP", "prepare"]
+- !private ["So8NSObjectP", "print"]
 - !private ["So8NSObjectP", "red"]
 - !private ["So8NSObjectP", "schedules"]
 - !private ["So8NSObjectP", "standard"]
@@ -458,6 +489,7 @@ depends-member:
 - !private ["So8NSObjectP", "textColor"]
 - !private ["So8NSObjectP", "textLabel"]
 - !private ["So8NSObjectP", "tintColor"]
+- !private ["So8NSObjectP", "unarchiveObject"]
 - !private ["So8NSObjectP", "viewDidLoad"]
 - !private ["So8NSObjectP", "yearIndex"]
 - !private ["So8NSObjectP", "yearLabel"]
@@ -510,6 +542,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "yearLabel"]
 - !private ["So21UIAppearanceContainerP", "ChecklistTableViewController"]
 - ["So21UIAppearanceContainerP", "Class"]
+- !private ["So21UIAppearanceContainerP", "NSKeyedUnarchiver"]
 - !private ["So21UIAppearanceContainerP", "UIColor"]
 - !private ["So21UIAppearanceContainerP", "UIFont"]
 - !private ["So21UIAppearanceContainerP", "UIView"]
@@ -526,6 +559,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "layer"]
 - !private ["So21UIAppearanceContainerP", "prepare"]
+- !private ["So21UIAppearanceContainerP", "print"]
 - !private ["So21UIAppearanceContainerP", "schedules"]
 - !private ["So21UIAppearanceContainerP", "tableFooterView"]
 - !private ["So21UIAppearanceContainerP", "tableView"]
@@ -543,6 +577,7 @@ depends-member:
 - !private ["So7UIColorC", "red"]
 - !private ["So18UIContentContainerP", "ChecklistTableViewController"]
 - ["So18UIContentContainerP", "Class"]
+- !private ["So18UIContentContainerP", "NSKeyedUnarchiver"]
 - !private ["So18UIContentContainerP", "UIColor"]
 - !private ["So18UIContentContainerP", "UIFont"]
 - !private ["So18UIContentContainerP", "UIView"]
@@ -554,6 +589,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
 - !private ["So18UIContentContainerP", "fatalError"]
 - !private ["So18UIContentContainerP", "prepare"]
+- !private ["So18UIContentContainerP", "print"]
 - !private ["So18UIContentContainerP", "schedules"]
 - !private ["So18UIContentContainerP", "tableView"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
@@ -592,6 +628,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "yearLabel"]
 - !private ["So18UIFocusEnvironmentP", "ChecklistTableViewController"]
 - ["So18UIFocusEnvironmentP", "Class"]
+- !private ["So18UIFocusEnvironmentP", "NSKeyedUnarchiver"]
 - !private ["So18UIFocusEnvironmentP", "UIColor"]
 - !private ["So18UIFocusEnvironmentP", "UIFont"]
 - !private ["So18UIFocusEnvironmentP", "UIView"]
@@ -608,6 +645,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "layer"]
 - !private ["So18UIFocusEnvironmentP", "prepare"]
+- !private ["So18UIFocusEnvironmentP", "print"]
 - !private ["So18UIFocusEnvironmentP", "schedules"]
 - !private ["So18UIFocusEnvironmentP", "tableFooterView"]
 - !private ["So18UIFocusEnvironmentP", "tableView"]
@@ -668,6 +706,7 @@ depends-member:
 - !private ["So24UILargeContentViewerItemP", "yearLabel"]
 - !private ["So30UIPasteConfigurationSupportingP", "ChecklistTableViewController"]
 - ["So30UIPasteConfigurationSupportingP", "Class"]
+- !private ["So30UIPasteConfigurationSupportingP", "NSKeyedUnarchiver"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIFont"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIView"]
@@ -684,6 +723,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "layer"]
 - !private ["So30UIPasteConfigurationSupportingP", "prepare"]
+- !private ["So30UIPasteConfigurationSupportingP", "print"]
 - !private ["So30UIPasteConfigurationSupportingP", "schedules"]
 - !private ["So30UIPasteConfigurationSupportingP", "tableFooterView"]
 - !private ["So30UIPasteConfigurationSupportingP", "tableView"]
@@ -699,9 +739,11 @@ depends-member:
 - ["So11UIResponderC", "CGFloat"]
 - !private ["So11UIResponderC", "ChecklistTableViewController"]
 - ["So11UIResponderC", "Class"]
+- !private ["So11UIResponderC", "Data"]
 - !private ["So11UIResponderC", "Double"]
 - ["So11UIResponderC", "IndexPath"]
 - ["So11UIResponderC", "Int"]
+- !private ["So11UIResponderC", "NSKeyedUnarchiver"]
 - !private ["So11UIResponderC", "ScheduleTableViewController"]
 - !private ["So11UIResponderC", "UIColor"]
 - !private ["So11UIResponderC", "UIFont"]
@@ -724,6 +766,7 @@ depends-member:
 - !private ["So11UIResponderC", "layer"]
 - ["So11UIResponderC", "numberOfSections"]
 - ["So11UIResponderC", "prepare"]
+- !private ["So11UIResponderC", "print"]
 - ["So11UIResponderC", "schedules"]
 - !private ["So11UIResponderC", "tableFooterView"]
 - ["So11UIResponderC", "tableView"]
@@ -738,6 +781,7 @@ depends-member:
 - ["So11UIResponderC", "years"]
 - !private ["So30UIResponderStandardEditActionsP", "ChecklistTableViewController"]
 - ["So30UIResponderStandardEditActionsP", "Class"]
+- !private ["So30UIResponderStandardEditActionsP", "NSKeyedUnarchiver"]
 - !private ["So30UIResponderStandardEditActionsP", "UIColor"]
 - !private ["So30UIResponderStandardEditActionsP", "UIFont"]
 - !private ["So30UIResponderStandardEditActionsP", "UIView"]
@@ -754,6 +798,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "layer"]
 - !private ["So30UIResponderStandardEditActionsP", "prepare"]
+- !private ["So30UIResponderStandardEditActionsP", "print"]
 - !private ["So30UIResponderStandardEditActionsP", "schedules"]
 - !private ["So30UIResponderStandardEditActionsP", "tableFooterView"]
 - !private ["So30UIResponderStandardEditActionsP", "tableView"]
@@ -771,6 +816,7 @@ depends-member:
 - !private ["So12UIScrollViewC", "tableFooterView"]
 - !private ["So20UIScrollViewDelegateP", "ChecklistTableViewController"]
 - ["So20UIScrollViewDelegateP", "Class"]
+- !private ["So20UIScrollViewDelegateP", "NSKeyedUnarchiver"]
 - !private ["So20UIScrollViewDelegateP", "UIColor"]
 - !private ["So20UIScrollViewDelegateP", "UIFont"]
 - !private ["So20UIScrollViewDelegateP", "UIView"]
@@ -782,6 +828,7 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "didReceiveMemoryWarning"]
 - !private ["So20UIScrollViewDelegateP", "fatalError"]
 - !private ["So20UIScrollViewDelegateP", "prepare"]
+- !private ["So20UIScrollViewDelegateP", "print"]
 - !private ["So20UIScrollViewDelegateP", "schedules"]
 - !private ["So20UIScrollViewDelegateP", "tableView"]
 - !private ["So20UIScrollViewDelegateP", "viewDidLoad"]
@@ -792,6 +839,7 @@ depends-member:
 - !private ["So35UISpringLoadedInteractionSupportingP", "tableFooterView"]
 - !private ["So16UIStateRestoringP", "ChecklistTableViewController"]
 - ["So16UIStateRestoringP", "Class"]
+- !private ["So16UIStateRestoringP", "NSKeyedUnarchiver"]
 - !private ["So16UIStateRestoringP", "UIColor"]
 - !private ["So16UIStateRestoringP", "UIFont"]
 - !private ["So16UIStateRestoringP", "UIView"]
@@ -803,6 +851,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
 - !private ["So16UIStateRestoringP", "fatalError"]
 - !private ["So16UIStateRestoringP", "prepare"]
+- !private ["So16UIStateRestoringP", "print"]
 - !private ["So16UIStateRestoringP", "schedules"]
 - !private ["So16UIStateRestoringP", "tableView"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
@@ -818,9 +867,11 @@ depends-member:
 - ["So21UITableViewControllerC", "CGFloat"]
 - !private ["So21UITableViewControllerC", "ChecklistTableViewController"]
 - ["So21UITableViewControllerC", "Class"]
+- !private ["So21UITableViewControllerC", "Data"]
 - !private ["So21UITableViewControllerC", "Double"]
 - ["So21UITableViewControllerC", "IndexPath"]
 - ["So21UITableViewControllerC", "Int"]
+- !private ["So21UITableViewControllerC", "NSKeyedUnarchiver"]
 - !private ["So21UITableViewControllerC", "ScheduleTableViewController"]
 - !private ["So21UITableViewControllerC", "UIColor"]
 - !private ["So21UITableViewControllerC", "UIFont"]
@@ -840,6 +891,7 @@ depends-member:
 - ["So21UITableViewControllerC", "init"]
 - ["So21UITableViewControllerC", "numberOfSections"]
 - ["So21UITableViewControllerC", "prepare"]
+- !private ["So21UITableViewControllerC", "print"]
 - ["So21UITableViewControllerC", "schedules"]
 - ["So21UITableViewControllerC", "tableView"]
 - ["So21UITableViewControllerC", "viewDidLoad"]
@@ -847,6 +899,7 @@ depends-member:
 - ["So21UITableViewControllerC", "years"]
 - !private ["So21UITableViewDataSourceP", "ChecklistTableViewController"]
 - ["So21UITableViewDataSourceP", "Class"]
+- !private ["So21UITableViewDataSourceP", "NSKeyedUnarchiver"]
 - !private ["So21UITableViewDataSourceP", "UIColor"]
 - !private ["So21UITableViewDataSourceP", "UIFont"]
 - !private ["So21UITableViewDataSourceP", "UIView"]
@@ -858,6 +911,7 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "didReceiveMemoryWarning"]
 - !private ["So21UITableViewDataSourceP", "fatalError"]
 - !private ["So21UITableViewDataSourceP", "prepare"]
+- !private ["So21UITableViewDataSourceP", "print"]
 - !private ["So21UITableViewDataSourceP", "schedules"]
 - !private ["So21UITableViewDataSourceP", "tableView"]
 - !private ["So21UITableViewDataSourceP", "viewDidLoad"]
@@ -865,6 +919,7 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "years"]
 - !private ["So19UITableViewDelegateP", "ChecklistTableViewController"]
 - ["So19UITableViewDelegateP", "Class"]
+- !private ["So19UITableViewDelegateP", "NSKeyedUnarchiver"]
 - !private ["So19UITableViewDelegateP", "UIColor"]
 - !private ["So19UITableViewDelegateP", "UIFont"]
 - !private ["So19UITableViewDelegateP", "UIView"]
@@ -876,6 +931,7 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "didReceiveMemoryWarning"]
 - !private ["So19UITableViewDelegateP", "fatalError"]
 - !private ["So19UITableViewDelegateP", "prepare"]
+- !private ["So19UITableViewDelegateP", "print"]
 - !private ["So19UITableViewDelegateP", "schedules"]
 - !private ["So19UITableViewDelegateP", "tableView"]
 - !private ["So19UITableViewDelegateP", "viewDidLoad"]
@@ -884,6 +940,7 @@ depends-member:
 - !private ["So023UITableViewHeaderFooterB0C", "textLabel"]
 - !private ["So18UITraitEnvironmentP", "ChecklistTableViewController"]
 - ["So18UITraitEnvironmentP", "Class"]
+- !private ["So18UITraitEnvironmentP", "NSKeyedUnarchiver"]
 - !private ["So18UITraitEnvironmentP", "UIColor"]
 - !private ["So18UITraitEnvironmentP", "UIFont"]
 - !private ["So18UITraitEnvironmentP", "UIView"]
@@ -900,6 +957,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "layer"]
 - !private ["So18UITraitEnvironmentP", "prepare"]
+- !private ["So18UITraitEnvironmentP", "print"]
 - !private ["So18UITraitEnvironmentP", "schedules"]
 - !private ["So18UITraitEnvironmentP", "tableFooterView"]
 - !private ["So18UITraitEnvironmentP", "tableView"]
@@ -914,6 +972,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "years"]
 - !private ["So23UIUserActivityRestoringP", "ChecklistTableViewController"]
 - ["So23UIUserActivityRestoringP", "Class"]
+- !private ["So23UIUserActivityRestoringP", "NSKeyedUnarchiver"]
 - !private ["So23UIUserActivityRestoringP", "UIColor"]
 - !private ["So23UIUserActivityRestoringP", "UIFont"]
 - !private ["So23UIUserActivityRestoringP", "UIView"]
@@ -930,6 +989,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "layer"]
 - !private ["So23UIUserActivityRestoringP", "prepare"]
+- !private ["So23UIUserActivityRestoringP", "print"]
 - !private ["So23UIUserActivityRestoringP", "schedules"]
 - !private ["So23UIUserActivityRestoringP", "tableFooterView"]
 - !private ["So23UIUserActivityRestoringP", "tableView"]
@@ -957,9 +1017,11 @@ depends-member:
 - ["So16UIViewControllerC", "CGFloat"]
 - !private ["So16UIViewControllerC", "ChecklistTableViewController"]
 - ["So16UIViewControllerC", "Class"]
+- !private ["So16UIViewControllerC", "Data"]
 - !private ["So16UIViewControllerC", "Double"]
 - ["So16UIViewControllerC", "IndexPath"]
 - ["So16UIViewControllerC", "Int"]
+- !private ["So16UIViewControllerC", "NSKeyedUnarchiver"]
 - !private ["So16UIViewControllerC", "ScheduleTableViewController"]
 - !private ["So16UIViewControllerC", "UIColor"]
 - !private ["So16UIViewControllerC", "UIFont"]
@@ -978,6 +1040,7 @@ depends-member:
 - ["So16UIViewControllerC", "init"]
 - ["So16UIViewControllerC", "numberOfSections"]
 - ["So16UIViewControllerC", "prepare"]
+- !private ["So16UIViewControllerC", "print"]
 - ["So16UIViewControllerC", "schedules"]
 - ["So16UIViewControllerC", "tableView"]
 - ["So16UIViewControllerC", "viewDidLoad"]
@@ -990,9 +1053,11 @@ depends-member:
 - ["12ORHS_Classes23YearTableViewControllerC", "CGFloat"]
 - !private ["12ORHS_Classes23YearTableViewControllerC", "ChecklistTableViewController"]
 - ["12ORHS_Classes23YearTableViewControllerC", "Class"]
+- !private ["12ORHS_Classes23YearTableViewControllerC", "Data"]
 - !private ["12ORHS_Classes23YearTableViewControllerC", "Double"]
 - ["12ORHS_Classes23YearTableViewControllerC", "IndexPath"]
 - ["12ORHS_Classes23YearTableViewControllerC", "Int"]
+- !private ["12ORHS_Classes23YearTableViewControllerC", "NSKeyedUnarchiver"]
 - !private ["12ORHS_Classes23YearTableViewControllerC", "ScheduleTableViewController"]
 - !private ["12ORHS_Classes23YearTableViewControllerC", "UIColor"]
 - !private ["12ORHS_Classes23YearTableViewControllerC", "UIFont"]
@@ -1010,6 +1075,7 @@ depends-member:
 - ["12ORHS_Classes23YearTableViewControllerC", "init"]
 - ["12ORHS_Classes23YearTableViewControllerC", "numberOfSections"]
 - ["12ORHS_Classes23YearTableViewControllerC", "prepare"]
+- !private ["12ORHS_Classes23YearTableViewControllerC", "print"]
 - ["12ORHS_Classes23YearTableViewControllerC", "schedules"]
 - ["12ORHS_Classes23YearTableViewControllerC", "tableView"]
 - ["12ORHS_Classes23YearTableViewControllerC", "viewDidLoad"]
@@ -1028,6 +1094,7 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ChecklistTableViewController"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "Class"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NSKeyedUnarchiver"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIFont"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIView"]
@@ -1050,6 +1117,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "object"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "prepare"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "red"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "schedules"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "standard"]
@@ -1060,12 +1128,14 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "textColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "textLabel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "tintColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "unarchiveObject"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "yearIndex"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "yearLabel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "years"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ChecklistTableViewController"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Class"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "NSKeyedUnarchiver"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIColor"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIFont"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIView"]
@@ -1088,6 +1158,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "layer"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "object"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "prepare"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "print"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "red"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "schedules"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "standard"]
@@ -1098,6 +1169,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "textColor"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "textLabel"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "tintColor"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "unarchiveObject"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewDidLoad"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "yearIndex"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "yearLabel"]
@@ -1148,11 +1220,13 @@ depends-nominal:
 - !private "10Foundation9IndexPathV"
 - "SM"
 - "10Foundation19MutableDataProtocolP"
+- !private "So7NSCoderC"
 - "So8NSCodingP"
 - !private "So9NSCopyingP"
 - "So26NSExtensionRequestHandlingP"
 - !private "So21NSItemProviderReadingP"
 - !private "So21NSItemProviderWritingP"
+- !private "So17NSKeyedUnarchiverC"
 - "So8NSObjectC"
 - "So8NSObjectP"
 - !private "So14NSSecureCodingP"
@@ -1223,6 +1297,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Foundation.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreFoundation.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreGraphics.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/os.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Swift.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/UIKit.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SwiftOnoneSupport.swiftmodule/arm64.swiftmodule"
@@ -1237,6 +1312,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"

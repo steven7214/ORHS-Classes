@@ -18,6 +18,7 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "??"
 - "AssignmentPrecedence"
+- !private "BooleanLiteralType"
 - !private "Bundle"
 - "CGFloat"
 - "CastingPrecedence"
@@ -83,6 +84,7 @@ depends-member:
 - ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "main"]
 - !private ["s7CVarArgP", "makeClasses"]
+- !private ["s7CVarArgP", "name"]
 - !private ["s7CVarArgP", "print"]
 - !private ["s7CVarArgP", "reader"]
 - !private ["s7CVarArgP", "subject"]
@@ -94,6 +96,7 @@ depends-member:
 - !private ["s7CVarArgP", "textLabel"]
 - !private ["s7CVarArgP", "urls"]
 - !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["12ORHS_Classes5ClassC", "deinit"]
 - !private ["12ORHS_Classes5ClassC", "init"]
 - !private ["12ORHS_Classes5ClassC", "name"]
 - !private ["12ORHS_Classes25ClassDetailViewControllerC", "course"]
@@ -157,6 +160,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "main"]
 - !private ["s28CustomDebugStringConvertibleP", "makeClasses"]
+- !private ["s28CustomDebugStringConvertibleP", "name"]
 - !private ["s28CustomDebugStringConvertibleP", "print"]
 - !private ["s28CustomDebugStringConvertibleP", "reader"]
 - !private ["s28CustomDebugStringConvertibleP", "row"]
@@ -200,6 +204,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "main"]
 - !private ["s23CustomStringConvertibleP", "makeClasses"]
+- !private ["s23CustomStringConvertibleP", "name"]
 - !private ["s23CustomStringConvertibleP", "print"]
 - !private ["s23CustomStringConvertibleP", "reader"]
 - !private ["s23CustomStringConvertibleP", "row"]
@@ -255,6 +260,7 @@ depends-member:
 - ["SQ", "init"]
 - !private ["SQ", "main"]
 - !private ["SQ", "makeClasses"]
+- !private ["SQ", "name"]
 - !private ["SQ", "print"]
 - !private ["SQ", "reader"]
 - !private ["SQ", "row"]
@@ -296,6 +302,7 @@ depends-member:
 - ["SH", "init"]
 - !private ["SH", "main"]
 - !private ["SH", "makeClasses"]
+- !private ["SH", "name"]
 - !private ["SH", "print"]
 - !private ["SH", "reader"]
 - !private ["SH", "row"]
@@ -333,6 +340,7 @@ depends-member:
 - !private ["So8NSCodingP", "indexPath"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "makeClasses"]
+- !private ["So8NSCodingP", "name"]
 - !private ["So8NSCodingP", "print"]
 - !private ["So8NSCodingP", "reader"]
 - !private ["So8NSCodingP", "subject"]
@@ -386,6 +394,7 @@ depends-member:
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "main"]
 - ["So8NSObjectC", "makeClasses"]
+- !private ["So8NSObjectC", "name"]
 - ["So8NSObjectC", "numberOfSections"]
 - ["So8NSObjectC", "prepare"]
 - !private ["So8NSObjectC", "print"]
@@ -416,6 +425,7 @@ depends-member:
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "main"]
 - !private ["So8NSObjectP", "makeClasses"]
+- !private ["So8NSObjectP", "name"]
 - !private ["So8NSObjectP", "print"]
 - !private ["So8NSObjectP", "reader"]
 - !private ["So8NSObjectP", "subject"]
@@ -888,6 +898,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "makeClasses"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "name"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "reader"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "subject"]
@@ -916,6 +927,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "main"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "makeClasses"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "name"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "print"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "reader"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "subject"]
@@ -1038,8 +1050,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Foundation.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreFoundation.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreGraphics.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/os.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Swift.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/UIKit.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SwiftOnoneSupport.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Combine.swiftmodule/arm64-apple-ios.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
@@ -1051,6 +1065,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
