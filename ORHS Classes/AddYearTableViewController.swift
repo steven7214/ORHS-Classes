@@ -17,7 +17,35 @@ class AddYearTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.tableFooterView = UIView(frame: .zero)
-        
+        //ClassDetailViewController.dialog = false
+        for schedules in YearTableViewController.schedules {
+            for classes in schedules {
+                //ClassDetailViewController.dialog = false
+                if (classes.name == tempCourse!.name) {
+                    let dialogMessage = UIAlertController(title: "Confirm", message: "Are you sure you want to add this to your schedules again?", preferredStyle: .alert)
+                    // Create OK button with action handler
+                    let Yes = UIAlertAction(title: "Yes", style: .default, handler: { (action) -> Void in
+                        print("Yes button tapped")
+                        //ClassDetailViewController.dialog = false
+                        
+                    })
+                    
+                    // Create Cancel button with action handlder
+                    let cancel = UIAlertAction(title: "Cancel", style: .cancel) { (action) -> Void in
+                        print("Cancel button tapped")
+                        //ClassDetailViewController.dialog = true
+                        self.performSegue(withIdentifier: "unwindSegueToClassDetailViewController", sender: self)
+                    }
+                    
+                    
+                    //Add Yes and Cancel button to dialog message
+                    dialogMessage.addAction(Yes)
+                    dialogMessage.addAction(cancel)
+                    
+                    self.present(dialogMessage, animated: true, completion: nil)
+                }
+            }
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
@@ -106,9 +134,8 @@ class AddYearTableViewController: UITableViewController {
         guard let indexPath = tableView.indexPath(for: selectedCell) else {
             fatalError("The selected cell is not being displayed by table")
         }
-        tempCourse!.added = true
         YearTableViewController.schedules[indexPath.row].append(tempCourse!)
-        default: print("canceled i think")
+        default: print("cancelled")
         }
      }
     

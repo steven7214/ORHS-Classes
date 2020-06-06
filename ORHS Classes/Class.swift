@@ -23,6 +23,7 @@ class Class: NSObject, NSCoding {
     
     //MARK: Initilizer
     init?(data: [String], added: Bool) {
+        
         if data.isEmpty {
             print("missing class data")
             return nil

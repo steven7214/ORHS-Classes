@@ -238,6 +238,29 @@ SWIFT_CLASS("_TtC12ORHS_Classes26AddYearTableViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC12ORHS_Classes21AllClubsTableViewCell")
+@interface AllClubsTableViewCell : UITableViewCell
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC12ORHS_Classes27AllClubsTableViewController")
+@interface AllClubsTableViewController : UITableViewController
+- (void)viewDidLoad;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)tableView:(UITableView * _Nonnull)tableView canEditRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIWindow;
 @class UIApplication;
 
@@ -265,9 +288,12 @@ SWIFT_CLASS("_TtC12ORHS_Classes22ChecklistTableViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIBarButtonItem;
 
 SWIFT_CLASS("_TtC12ORHS_Classes28ChecklistTableViewController")
 @interface ChecklistTableViewController : UITableViewController
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified ResetButton;
+- (IBAction)ResetButton:(UIBarButtonItem * _Nonnull)sender;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
@@ -289,7 +315,6 @@ SWIFT_CLASS("_TtC12ORHS_Classes5Class")
 @end
 
 @class UITextView;
-@class UIBarButtonItem;
 
 SWIFT_CLASS("_TtC12ORHS_Classes25ClassDetailViewController")
 @interface ClassDetailViewController : UIViewController
@@ -329,6 +354,64 @@ SWIFT_CLASS("_TtC12ORHS_Classes24ClassTableViewController")
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC12ORHS_Classes4Club")
+@interface Club : NSObject <NSCoding>
+- (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC12ORHS_Classes25ClubDetailsViewController")
+@interface ClubDetailsViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified meetingDays;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified meetingTimes;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified website;
+@property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified desciption;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified addClub;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified Flexibility;
+- (void)viewDidLoad;
+- (IBAction)favoriteClub:(UIBarButtonItem * _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC12ORHS_Classes25CurrentClubsTableViewCell")
+@interface CurrentClubsTableViewCell : UITableViewCell
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC12ORHS_Classes31CurrentClubsTableViewController")
+@interface CurrentClubsTableViewController : UITableViewController
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified goingBack;
+- (IBAction)goingBack:(UIBarButtonItem * _Nonnull)sender;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewDidLoad;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)tableView:(UITableView * _Nonnull)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC12ORHS_Classes22HomePageViewController")
+@interface HomePageViewController : UIViewController
+- (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -398,6 +481,8 @@ SWIFT_CLASS("_TtC12ORHS_Classes17YearTableViewCell")
 
 SWIFT_CLASS("_TtC12ORHS_Classes23YearTableViewController")
 @interface YearTableViewController : UITableViewController
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified Back;
+- (IBAction)Back:(UIBarButtonItem * _Nonnull)sender;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;

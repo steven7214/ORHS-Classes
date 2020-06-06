@@ -1,6 +1,0 @@
-Class Name: Honors Geometry
-Subject/Category: Math
-Number of Credits: 1.0
-GPA: 4.5
-Average Number of Hours of Homework per Day: 1
-Description: This class is about shapes and lines. It is a proof based class where you will learn to understand basic geometric patterns and theorems. 

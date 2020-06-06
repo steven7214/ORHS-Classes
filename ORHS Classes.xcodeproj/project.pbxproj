@@ -8,10 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8F130DE622A60C4500742D21 /* ChecklistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F130DE522A60C4500742D21 /* ChecklistTableViewController.swift */; };
-		8F130DE822A60F5F00742D21 /* ChecklistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F130DE722A60F5F00742D21 /* ChecklistTableViewCell.swift */; };
 		8F33528620BF6AAB00B0AC8D /* ClassTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33528520BF6AAB00B0AC8D /* ClassTableViewController.swift */; };
 		8F3D7DCA20BE12FF00715952 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3D7DC920BE12FF00715952 /* AppDelegate.swift */; };
-		8F3D7DD120BE12FF00715952 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F3D7DCF20BE12FF00715952 /* Main.storyboard */; };
 		8F3D7DD320BE130100715952 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F3D7DD220BE130100715952 /* Assets.xcassets */; };
 		8F3D7DD620BE130100715952 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F3D7DD420BE130100715952 /* LaunchScreen.storyboard */; };
 		8F3D7DE120BE130100715952 /* ORHS_ClassesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3D7DE020BE130100715952 /* ORHS_ClassesTests.swift */; };
@@ -28,6 +26,16 @@
 		8FF61DEE20DC84E3004DA261 /* AddYearTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF61DED20DC84E3004DA261 /* AddYearTableViewCell.swift */; };
 		8FF61DF020DCAEAE004DA261 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF61DEF20DCAEAE004DA261 /* ScheduleTableViewCell.swift */; };
 		8FF61DF220DCAEC3004DA261 /* ScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF61DF120DCAEC3004DA261 /* ScheduleTableViewController.swift */; };
+		F674154D2485AEE300DC1E2C /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F674154C2485AEE300DC1E2C /* HomePageViewController.swift */; };
+		F674154F2486888400DC1E2C /* CurrentClubsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F674154E2486888400DC1E2C /* CurrentClubsTableViewController.swift */; };
+		F67415512486890E00DC1E2C /* AllClubsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67415502486890E00DC1E2C /* AllClubsTableViewController.swift */; };
+		F67415532486894800DC1E2C /* CurrentClubsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67415522486894800DC1E2C /* CurrentClubsTableViewCell.swift */; };
+		F67415552486896400DC1E2C /* AllClubsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67415542486896400DC1E2C /* AllClubsTableViewCell.swift */; };
+		F6945D762485339B0076EFC8 /* Clubs in Resources */ = {isa = PBXBuildFile; fileRef = F6945D752485339B0076EFC8 /* Clubs */; };
+		F6945D8E2485734B0076EFC8 /* ChecklistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6945D8D2485734B0076EFC8 /* ChecklistTableViewCell.swift */; };
+		F6BB99602487F42800EE18CB /* ClubDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BB995F2487F42800EE18CB /* ClubDetailsViewController.swift */; };
+		F6BB99622487F4F800EE18CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6BB99612487F4F800EE18CB /* Main.storyboard */; };
+		F6BB99642487FEAA00EE18CB /* Club.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BB99632487FEAA00EE18CB /* Club.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +50,9 @@
 
 /* Begin PBXFileReference section */
 		8F130DE522A60C4500742D21 /* ChecklistTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistTableViewController.swift; sourceTree = "<group>"; };
-		8F130DE722A60F5F00742D21 /* ChecklistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistTableViewCell.swift; sourceTree = "<group>"; };
 		8F33528520BF6AAB00B0AC8D /* ClassTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ClassTableViewController.swift; path = "ORHS Classes/ClassTableViewController.swift"; sourceTree = SOURCE_ROOT; };
 		8F3D7DC620BE12FF00715952 /* ORHS Classes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ORHS Classes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F3D7DC920BE12FF00715952 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8F3D7DD020BE12FF00715952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F3D7DD220BE130100715952 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F3D7DD520BE130100715952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F3D7DD720BE130100715952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,6 +72,16 @@
 		8FF61DED20DC84E3004DA261 /* AddYearTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddYearTableViewCell.swift; sourceTree = "<group>"; };
 		8FF61DEF20DCAEAE004DA261 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
 		8FF61DF120DCAEC3004DA261 /* ScheduleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewController.swift; sourceTree = "<group>"; };
+		F674154C2485AEE300DC1E2C /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		F674154E2486888400DC1E2C /* CurrentClubsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentClubsTableViewController.swift; sourceTree = "<group>"; };
+		F67415502486890E00DC1E2C /* AllClubsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllClubsTableViewController.swift; sourceTree = "<group>"; };
+		F67415522486894800DC1E2C /* CurrentClubsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentClubsTableViewCell.swift; sourceTree = "<group>"; };
+		F67415542486896400DC1E2C /* AllClubsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllClubsTableViewCell.swift; sourceTree = "<group>"; };
+		F6945D752485339B0076EFC8 /* Clubs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Clubs; path = ../Clubs; sourceTree = "<group>"; };
+		F6945D8D2485734B0076EFC8 /* ChecklistTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistTableViewCell.swift; sourceTree = "<group>"; };
+		F6BB995F2487F42800EE18CB /* ClubDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubDetailsViewController.swift; sourceTree = "<group>"; };
+		F6BB99612487F4F800EE18CB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F6BB99632487FEAA00EE18CB /* Club.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Club.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				8F97228920E422230006999F /* Subjects */,
+				F6945D752485339B0076EFC8 /* Clubs */,
 				8F3D7DC920BE12FF00715952 /* AppDelegate.swift */,
 				8FE9970320D16144005EF1ED /* YearTableViewCell.swift */,
 				8FE9970120D0B90A005EF1ED /* YearTableViewController.swift */,
@@ -115,20 +132,26 @@
 				8FF61DF120DCAEC3004DA261 /* ScheduleTableViewController.swift */,
 				8F3D7DEB20BE137000715952 /* SubjectTableViewCell.swift */,
 				8F3D7DED20BE13AA00715952 /* SubjectTableViewController.swift */,
-				8F4AE7AB20BF83FB001CFD6F /* ClassTableViewCell.swift */,
-				8F33528520BF6AAB00B0AC8D /* ClassTableViewController.swift */,
-				8F4AE7AD20BF8461001CFD6F /* ClassDetailViewController.swift */,
-				8FF61DED20DC84E3004DA261 /* AddYearTableViewCell.swift */,
 				8FF61DEB20DC84C4004DA261 /* AddYearTableViewController.swift */,
+				8FF61DED20DC84E3004DA261 /* AddYearTableViewCell.swift */,
+				8F4AE7AD20BF8461001CFD6F /* ClassDetailViewController.swift */,
+				8F33528520BF6AAB00B0AC8D /* ClassTableViewController.swift */,
+				8F4AE7AB20BF83FB001CFD6F /* ClassTableViewCell.swift */,
 				8F4AE7B620C56BC0001CFD6F /* Class.swift */,
 				8F4AE7AF20BF8550001CFD6F /* Reader.swift */,
 				8F130DE522A60C4500742D21 /* ChecklistTableViewController.swift */,
-				8F130DE722A60F5F00742D21 /* ChecklistTableViewCell.swift */,
-				8F3D7DCF20BE12FF00715952 /* Main.storyboard */,
+				F6945D8D2485734B0076EFC8 /* ChecklistTableViewCell.swift */,
+				F674154C2485AEE300DC1E2C /* HomePageViewController.swift */,
+				F674154E2486888400DC1E2C /* CurrentClubsTableViewController.swift */,
+				F67415522486894800DC1E2C /* CurrentClubsTableViewCell.swift */,
+				F67415502486890E00DC1E2C /* AllClubsTableViewController.swift */,
+				F67415542486896400DC1E2C /* AllClubsTableViewCell.swift */,
+				F6BB99632487FEAA00EE18CB /* Club.swift */,
+				F6BB995F2487F42800EE18CB /* ClubDetailsViewController.swift */,
+				F6BB99612487F4F800EE18CB /* Main.storyboard */,
 				8F3D7DD220BE130100715952 /* Assets.xcassets */,
 				8F3D7DD420BE130100715952 /* LaunchScreen.storyboard */,
 				8F3D7DD720BE130100715952 /* Info.plist */,
-				8F4AE7B120BF86DA001CFD6F /* Classes */,
 			);
 			path = "ORHS Classes";
 			sourceTree = "<group>";
@@ -140,13 +163,6 @@
 				8F3D7DE220BE130100715952 /* Info.plist */,
 			);
 			path = "ORHS ClassesTests";
-			sourceTree = "<group>";
-		};
-		8F4AE7B120BF86DA001CFD6F /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,9 +246,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6945D762485339B0076EFC8 /* Clubs in Resources */,
+				F6BB99622487F4F800EE18CB /* Main.storyboard in Resources */,
 				8F3D7DD620BE130100715952 /* LaunchScreen.storyboard in Resources */,
 				8F3D7DD320BE130100715952 /* Assets.xcassets in Resources */,
-				8F3D7DD120BE12FF00715952 /* Main.storyboard in Resources */,
 				8F97228A20E422230006999F /* Subjects in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,22 +268,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F130DE822A60F5F00742D21 /* ChecklistTableViewCell.swift in Sources */,
 				8F33528620BF6AAB00B0AC8D /* ClassTableViewController.swift in Sources */,
+				F6BB99642487FEAA00EE18CB /* Club.swift in Sources */,
+				F67415512486890E00DC1E2C /* AllClubsTableViewController.swift in Sources */,
 				8F3D7DCA20BE12FF00715952 /* AppDelegate.swift in Sources */,
 				8F4AE7AE20BF8461001CFD6F /* ClassDetailViewController.swift in Sources */,
 				8F4AE7B020BF8550001CFD6F /* Reader.swift in Sources */,
 				8FF61DEE20DC84E3004DA261 /* AddYearTableViewCell.swift in Sources */,
+				F674154F2486888400DC1E2C /* CurrentClubsTableViewController.swift in Sources */,
 				8F3D7DEC20BE137000715952 /* SubjectTableViewCell.swift in Sources */,
+				F674154D2485AEE300DC1E2C /* HomePageViewController.swift in Sources */,
+				F67415532486894800DC1E2C /* CurrentClubsTableViewCell.swift in Sources */,
 				8F130DE622A60C4500742D21 /* ChecklistTableViewController.swift in Sources */,
+				F6945D8E2485734B0076EFC8 /* ChecklistTableViewCell.swift in Sources */,
 				8FF61DF220DCAEC3004DA261 /* ScheduleTableViewController.swift in Sources */,
 				8F3D7DEE20BE13AA00715952 /* SubjectTableViewController.swift in Sources */,
 				8FE9970420D16144005EF1ED /* YearTableViewCell.swift in Sources */,
 				8FF61DF020DCAEAE004DA261 /* ScheduleTableViewCell.swift in Sources */,
 				8F4AE7AC20BF83FB001CFD6F /* ClassTableViewCell.swift in Sources */,
+				F6BB99602487F42800EE18CB /* ClubDetailsViewController.swift in Sources */,
 				8FF61DEC20DC84C4004DA261 /* AddYearTableViewController.swift in Sources */,
 				8F4AE7B720C56BC0001CFD6F /* Class.swift in Sources */,
 				8FE9970220D0B90A005EF1ED /* YearTableViewController.swift in Sources */,
+				F67415552486896400DC1E2C /* AllClubsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,14 +313,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8F3D7DCF20BE12FF00715952 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8F3D7DD020BE12FF00715952 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8F3D7DD420BE130100715952 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

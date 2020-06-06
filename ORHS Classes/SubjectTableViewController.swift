@@ -11,7 +11,7 @@ import UIKit
 class SubjectTableViewController: UITableViewController {
     //MARK: Properties
     struct subjectList {
-      static  let subjects = ["Math", "Language", "Science", "Social Studies", "Fine Arts"]
+    static  let subjects = ["English", "Math", "Science", "Economics", "World Languages", "Fine Arts", "Wellness", "Career Academies", "Other", "Personal Finance", "U.S. Government", "U.S. History", "World History:Geography"]
     }
     
     
