@@ -34,7 +34,6 @@ depends-top-level:
 - !private "NSKeyedUnarchiver"
 - !private "StringLiteralType"
 - "UIBarButtonItem"
-- !private "UIColor"
 - !private "UIFont"
 - !private "UINavigationController"
 - "UIStoryboardSegue"
@@ -57,7 +56,6 @@ depends-member:
 - !private ["SK", "row"]
 - !private ["SK", "subscript"]
 - ["So15CALayerDelegateP", "EditingStyle"]
-- !private ["So15CALayerDelegateP", "barTintColor"]
 - !private ["So15CALayerDelegateP", "deleteRows"]
 - !private ["So15CALayerDelegateP", "dequeueReusableCell"]
 - !private ["So15CALayerDelegateP", "font"]
@@ -74,13 +72,11 @@ depends-member:
 - ["s7CVarArgP", "EditingStyle"]
 - !private ["s7CVarArgP", "NSKeyedArchiver"]
 - !private ["s7CVarArgP", "NSKeyedUnarchiver"]
-- !private ["s7CVarArgP", "UIColor"]
 - !private ["s7CVarArgP", "UIFont"]
 - !private ["s7CVarArgP", "UIView"]
 - !private ["s7CVarArgP", "UserDefaults"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "archivedData"]
-- !private ["s7CVarArgP", "barTintColor"]
 - !private ["s7CVarArgP", "bool"]
 - !private ["s7CVarArgP", "club"]
 - !private ["s7CVarArgP", "count"]
@@ -96,7 +92,6 @@ depends-member:
 - !private ["s7CVarArgP", "indexPath"]
 - ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "name"]
-- !private ["s7CVarArgP", "navigationBar"]
 - !private ["s7CVarArgP", "navigationController"]
 - !private ["s7CVarArgP", "navigationItem"]
 - !private ["s7CVarArgP", "object"]
@@ -104,7 +99,6 @@ depends-member:
 - !private ["s7CVarArgP", "prepare"]
 - !private ["s7CVarArgP", "presentingViewController"]
 - !private ["s7CVarArgP", "print"]
-- !private ["s7CVarArgP", "red"]
 - !private ["s7CVarArgP", "reloadData"]
 - !private ["s7CVarArgP", "remove"]
 - !private ["s7CVarArgP", "rightBarButtonItem"]
@@ -143,7 +137,6 @@ depends-member:
 - !private ["12ORHS_Classes31CurrentClubsTableViewControllerC", "NSKeyedArchiver"]
 - !private ["12ORHS_Classes31CurrentClubsTableViewControllerC", "NSKeyedUnarchiver"]
 - ["12ORHS_Classes31CurrentClubsTableViewControllerC", "UIBarButtonItem"]
-- !private ["12ORHS_Classes31CurrentClubsTableViewControllerC", "UIColor"]
 - !private ["12ORHS_Classes31CurrentClubsTableViewControllerC", "UIFont"]
 - !private ["12ORHS_Classes31CurrentClubsTableViewControllerC", "UINavigationController"]
 - ["12ORHS_Classes31CurrentClubsTableViewControllerC", "UIStoryboardSegue"]
@@ -172,13 +165,11 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "EditingStyle"]
 - !private ["s28CustomDebugStringConvertibleP", "NSKeyedArchiver"]
 - !private ["s28CustomDebugStringConvertibleP", "NSKeyedUnarchiver"]
-- !private ["s28CustomDebugStringConvertibleP", "UIColor"]
 - !private ["s28CustomDebugStringConvertibleP", "UIFont"]
 - !private ["s28CustomDebugStringConvertibleP", "UIView"]
 - !private ["s28CustomDebugStringConvertibleP", "UserDefaults"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "archivedData"]
-- !private ["s28CustomDebugStringConvertibleP", "barTintColor"]
 - !private ["s28CustomDebugStringConvertibleP", "bool"]
 - !private ["s28CustomDebugStringConvertibleP", "club"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
@@ -194,7 +185,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "indexPath"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "name"]
-- !private ["s28CustomDebugStringConvertibleP", "navigationBar"]
 - !private ["s28CustomDebugStringConvertibleP", "navigationController"]
 - !private ["s28CustomDebugStringConvertibleP", "navigationItem"]
 - !private ["s28CustomDebugStringConvertibleP", "object"]
@@ -202,7 +192,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "prepare"]
 - !private ["s28CustomDebugStringConvertibleP", "presentingViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "print"]
-- !private ["s28CustomDebugStringConvertibleP", "red"]
 - !private ["s28CustomDebugStringConvertibleP", "reloadData"]
 - !private ["s28CustomDebugStringConvertibleP", "remove"]
 - !private ["s28CustomDebugStringConvertibleP", "rightBarButtonItem"]
@@ -233,13 +222,11 @@ depends-member:
 - ["s23CustomStringConvertibleP", "EditingStyle"]
 - !private ["s23CustomStringConvertibleP", "NSKeyedArchiver"]
 - !private ["s23CustomStringConvertibleP", "NSKeyedUnarchiver"]
-- !private ["s23CustomStringConvertibleP", "UIColor"]
 - !private ["s23CustomStringConvertibleP", "UIFont"]
 - !private ["s23CustomStringConvertibleP", "UIView"]
 - !private ["s23CustomStringConvertibleP", "UserDefaults"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "archivedData"]
-- !private ["s23CustomStringConvertibleP", "barTintColor"]
 - !private ["s23CustomStringConvertibleP", "bool"]
 - !private ["s23CustomStringConvertibleP", "club"]
 - !private ["s23CustomStringConvertibleP", "count"]
@@ -255,7 +242,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "indexPath"]
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "name"]
-- !private ["s23CustomStringConvertibleP", "navigationBar"]
 - !private ["s23CustomStringConvertibleP", "navigationController"]
 - !private ["s23CustomStringConvertibleP", "navigationItem"]
 - !private ["s23CustomStringConvertibleP", "object"]
@@ -263,7 +249,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "prepare"]
 - !private ["s23CustomStringConvertibleP", "presentingViewController"]
 - !private ["s23CustomStringConvertibleP", "print"]
-- !private ["s23CustomStringConvertibleP", "red"]
 - !private ["s23CustomStringConvertibleP", "reloadData"]
 - !private ["s23CustomStringConvertibleP", "remove"]
 - !private ["s23CustomStringConvertibleP", "rightBarButtonItem"]
@@ -308,13 +293,11 @@ depends-member:
 - ["SQ", "EditingStyle"]
 - !private ["SQ", "NSKeyedArchiver"]
 - !private ["SQ", "NSKeyedUnarchiver"]
-- !private ["SQ", "UIColor"]
 - !private ["SQ", "UIFont"]
 - !private ["SQ", "UIView"]
 - !private ["SQ", "UserDefaults"]
 - ["SQ", ""]
 - !private ["SQ", "archivedData"]
-- !private ["SQ", "barTintColor"]
 - !private ["SQ", "bool"]
 - !private ["SQ", "center"]
 - !private ["SQ", "club"]
@@ -334,7 +317,6 @@ depends-member:
 - ["SQ", "init"]
 - !private ["SQ", "insert"]
 - !private ["SQ", "name"]
-- !private ["SQ", "navigationBar"]
 - !private ["SQ", "navigationController"]
 - !private ["SQ", "navigationItem"]
 - !private ["SQ", "object"]
@@ -342,7 +324,6 @@ depends-member:
 - !private ["SQ", "prepare"]
 - !private ["SQ", "presentingViewController"]
 - !private ["SQ", "print"]
-- !private ["SQ", "red"]
 - !private ["SQ", "reloadData"]
 - !private ["SQ", "remove"]
 - !private ["SQ", "rightBarButtonItem"]
@@ -372,13 +353,11 @@ depends-member:
 - ["SH", "EditingStyle"]
 - !private ["SH", "NSKeyedArchiver"]
 - !private ["SH", "NSKeyedUnarchiver"]
-- !private ["SH", "UIColor"]
 - !private ["SH", "UIFont"]
 - !private ["SH", "UIView"]
 - !private ["SH", "UserDefaults"]
 - ["SH", ""]
 - !private ["SH", "archivedData"]
-- !private ["SH", "barTintColor"]
 - !private ["SH", "bool"]
 - !private ["SH", "center"]
 - !private ["SH", "club"]
@@ -398,7 +377,6 @@ depends-member:
 - ["SH", "init"]
 - !private ["SH", "insert"]
 - !private ["SH", "name"]
-- !private ["SH", "navigationBar"]
 - !private ["SH", "navigationController"]
 - !private ["SH", "navigationItem"]
 - !private ["SH", "object"]
@@ -406,7 +384,6 @@ depends-member:
 - !private ["SH", "prepare"]
 - !private ["SH", "presentingViewController"]
 - !private ["SH", "print"]
-- !private ["SH", "red"]
 - !private ["SH", "reloadData"]
 - !private ["SH", "remove"]
 - !private ["SH", "rightBarButtonItem"]
@@ -439,12 +416,10 @@ depends-member:
 - ["So8NSCodingP", "EditingStyle"]
 - !private ["So8NSCodingP", "NSKeyedArchiver"]
 - !private ["So8NSCodingP", "NSKeyedUnarchiver"]
-- !private ["So8NSCodingP", "UIColor"]
 - !private ["So8NSCodingP", "UIFont"]
 - !private ["So8NSCodingP", "UIView"]
 - !private ["So8NSCodingP", "UserDefaults"]
 - ["So8NSCodingP", ""]
-- !private ["So8NSCodingP", "barTintColor"]
 - !private ["So8NSCodingP", "club"]
 - !private ["So8NSCodingP", "currentClubs"]
 - !private ["So8NSCodingP", "deleteRows"]
@@ -456,14 +431,12 @@ depends-member:
 - !private ["So8NSCodingP", "indexPath"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "name"]
-- !private ["So8NSCodingP", "navigationBar"]
 - !private ["So8NSCodingP", "navigationController"]
 - !private ["So8NSCodingP", "navigationItem"]
 - !private ["So8NSCodingP", "popViewController"]
 - !private ["So8NSCodingP", "prepare"]
 - !private ["So8NSCodingP", "presentingViewController"]
 - !private ["So8NSCodingP", "print"]
-- !private ["So8NSCodingP", "red"]
 - !private ["So8NSCodingP", "reloadData"]
 - !private ["So8NSCodingP", "rightBarButtonItem"]
 - !private ["So8NSCodingP", "tableFooterView"]
@@ -474,12 +447,10 @@ depends-member:
 - !private ["So8NSCodingP", "viewDidLoad"]
 - !private ["So8NSCodingP", "viewWillAppear"]
 - !private ["So9NSCopyingP", "init"]
-- !private ["So9NSCopyingP", "red"]
 - ["So26NSExtensionRequestHandlingP", "Club"]
 - !private ["So26NSExtensionRequestHandlingP", "CurrentClubsTableViewController"]
 - !private ["So26NSExtensionRequestHandlingP", "NSKeyedArchiver"]
 - !private ["So26NSExtensionRequestHandlingP", "NSKeyedUnarchiver"]
-- !private ["So26NSExtensionRequestHandlingP", "UIColor"]
 - !private ["So26NSExtensionRequestHandlingP", "UIFont"]
 - !private ["So26NSExtensionRequestHandlingP", "UIView"]
 - !private ["So26NSExtensionRequestHandlingP", "UserDefaults"]
@@ -489,7 +460,6 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "dismiss"]
 - !private ["So26NSExtensionRequestHandlingP", "editButtonItem"]
 - !private ["So26NSExtensionRequestHandlingP", "fatalError"]
-- !private ["So26NSExtensionRequestHandlingP", "navigationBar"]
 - !private ["So26NSExtensionRequestHandlingP", "navigationController"]
 - !private ["So26NSExtensionRequestHandlingP", "navigationItem"]
 - !private ["So26NSExtensionRequestHandlingP", "popViewController"]
@@ -499,8 +469,6 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "tableView"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - !private ["So26NSExtensionRequestHandlingP", "viewWillAppear"]
-- !private ["So21NSItemProviderReadingP", "red"]
-- !private ["So21NSItemProviderWritingP", "red"]
 - !private ["So15NSKeyedArchiverC", "archivedData"]
 - !private ["So17NSKeyedUnarchiverC", "unarchiveObject"]
 - ["So8NSObjectC", "Bool"]
@@ -515,7 +483,6 @@ depends-member:
 - !private ["So8NSObjectC", "NSKeyedArchiver"]
 - !private ["So8NSObjectC", "NSKeyedUnarchiver"]
 - ["So8NSObjectC", "UIBarButtonItem"]
-- !private ["So8NSObjectC", "UIColor"]
 - !private ["So8NSObjectC", "UIFont"]
 - !private ["So8NSObjectC", "UINavigationController"]
 - ["So8NSObjectC", "UIStoryboardSegue"]
@@ -524,7 +491,6 @@ depends-member:
 - !private ["So8NSObjectC", "UIView"]
 - !private ["So8NSObjectC", "UserDefaults"]
 - !private ["So8NSObjectC", "archivedData"]
-- !private ["So8NSObjectC", "barTintColor"]
 - !private ["So8NSObjectC", "bool"]
 - !private ["So8NSObjectC", "club"]
 - ["So8NSObjectC", "currentClubs"]
@@ -540,7 +506,6 @@ depends-member:
 - !private ["So8NSObjectC", "indexPath"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "name"]
-- !private ["So8NSObjectC", "navigationBar"]
 - !private ["So8NSObjectC", "navigationController"]
 - !private ["So8NSObjectC", "navigationItem"]
 - ["So8NSObjectC", "numberOfSections"]
@@ -549,7 +514,6 @@ depends-member:
 - ["So8NSObjectC", "prepare"]
 - !private ["So8NSObjectC", "presentingViewController"]
 - !private ["So8NSObjectC", "print"]
-- !private ["So8NSObjectC", "red"]
 - !private ["So8NSObjectC", "reloadData"]
 - !private ["So8NSObjectC", "rightBarButtonItem"]
 - !private ["So8NSObjectC", "set"]
@@ -567,13 +531,11 @@ depends-member:
 - ["So8NSObjectP", "EditingStyle"]
 - !private ["So8NSObjectP", "NSKeyedArchiver"]
 - !private ["So8NSObjectP", "NSKeyedUnarchiver"]
-- !private ["So8NSObjectP", "UIColor"]
 - !private ["So8NSObjectP", "UIFont"]
 - !private ["So8NSObjectP", "UIView"]
 - !private ["So8NSObjectP", "UserDefaults"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "archivedData"]
-- !private ["So8NSObjectP", "barTintColor"]
 - !private ["So8NSObjectP", "bool"]
 - !private ["So8NSObjectP", "club"]
 - !private ["So8NSObjectP", "currentClubs"]
@@ -588,7 +550,6 @@ depends-member:
 - !private ["So8NSObjectP", "indexPath"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "name"]
-- !private ["So8NSObjectP", "navigationBar"]
 - !private ["So8NSObjectP", "navigationController"]
 - !private ["So8NSObjectP", "navigationItem"]
 - !private ["So8NSObjectP", "object"]
@@ -596,7 +557,6 @@ depends-member:
 - !private ["So8NSObjectP", "prepare"]
 - !private ["So8NSObjectP", "presentingViewController"]
 - !private ["So8NSObjectP", "print"]
-- !private ["So8NSObjectP", "red"]
 - !private ["So8NSObjectP", "reloadData"]
 - !private ["So8NSObjectP", "rightBarButtonItem"]
 - !private ["So8NSObjectP", "set"]
@@ -609,7 +569,6 @@ depends-member:
 - !private ["So8NSObjectP", "unarchiveObject"]
 - !private ["So8NSObjectP", "viewDidLoad"]
 - !private ["So8NSObjectP", "viewWillAppear"]
-- !private ["So14NSSecureCodingP", "red"]
 - !private ["So15NSTextAlignmentV", "center"]
 - !private ["Sq", "indexPath"]
 - !private ["Sq", "reloadData"]
@@ -635,7 +594,6 @@ depends-member:
 - !private ["ST", "row"]
 - !private ["ST", "subscript"]
 - ["So29UIAccessibilityIdentificationP", "EditingStyle"]
-- !private ["So29UIAccessibilityIdentificationP", "barTintColor"]
 - !private ["So29UIAccessibilityIdentificationP", "deleteRows"]
 - !private ["So29UIAccessibilityIdentificationP", "dequeueReusableCell"]
 - !private ["So29UIAccessibilityIdentificationP", "font"]
@@ -647,7 +605,6 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "textAlignment"]
 - !private ["So29UIAccessibilityIdentificationP", "textLabel"]
 - ["So12UIAppearanceP", "EditingStyle"]
-- !private ["So12UIAppearanceP", "barTintColor"]
 - !private ["So12UIAppearanceP", "deleteRows"]
 - !private ["So12UIAppearanceP", "dequeueReusableCell"]
 - !private ["So12UIAppearanceP", "font"]
@@ -663,12 +620,10 @@ depends-member:
 - ["So21UIAppearanceContainerP", "EditingStyle"]
 - !private ["So21UIAppearanceContainerP", "NSKeyedArchiver"]
 - !private ["So21UIAppearanceContainerP", "NSKeyedUnarchiver"]
-- !private ["So21UIAppearanceContainerP", "UIColor"]
 - !private ["So21UIAppearanceContainerP", "UIFont"]
 - !private ["So21UIAppearanceContainerP", "UIView"]
 - !private ["So21UIAppearanceContainerP", "UserDefaults"]
 - ["So21UIAppearanceContainerP", ""]
-- !private ["So21UIAppearanceContainerP", "barTintColor"]
 - !private ["So21UIAppearanceContainerP", "club"]
 - !private ["So21UIAppearanceContainerP", "currentClubs"]
 - !private ["So21UIAppearanceContainerP", "deleteRows"]
@@ -679,7 +634,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "font"]
 - !private ["So21UIAppearanceContainerP", "indexPath"]
 - !private ["So21UIAppearanceContainerP", "init"]
-- !private ["So21UIAppearanceContainerP", "navigationBar"]
 - !private ["So21UIAppearanceContainerP", "navigationController"]
 - !private ["So21UIAppearanceContainerP", "navigationItem"]
 - !private ["So21UIAppearanceContainerP", "popViewController"]
@@ -694,13 +648,10 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "textLabel"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - !private ["So21UIAppearanceContainerP", "viewWillAppear"]
-- !private ["So16UIBarPositioningP", "barTintColor"]
-- !private ["So7UIColorC", "red"]
 - ["So18UIContentContainerP", "Club"]
 - !private ["So18UIContentContainerP", "CurrentClubsTableViewController"]
 - !private ["So18UIContentContainerP", "NSKeyedArchiver"]
 - !private ["So18UIContentContainerP", "NSKeyedUnarchiver"]
-- !private ["So18UIContentContainerP", "UIColor"]
 - !private ["So18UIContentContainerP", "UIFont"]
 - !private ["So18UIContentContainerP", "UIView"]
 - !private ["So18UIContentContainerP", "UserDefaults"]
@@ -710,7 +661,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "dismiss"]
 - !private ["So18UIContentContainerP", "editButtonItem"]
 - !private ["So18UIContentContainerP", "fatalError"]
-- !private ["So18UIContentContainerP", "navigationBar"]
 - !private ["So18UIContentContainerP", "navigationController"]
 - !private ["So18UIContentContainerP", "navigationItem"]
 - !private ["So18UIContentContainerP", "popViewController"]
@@ -724,7 +674,6 @@ depends-member:
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "textAlignment"]
 - ["So17UICoordinateSpaceP", "EditingStyle"]
-- !private ["So17UICoordinateSpaceP", "barTintColor"]
 - !private ["So17UICoordinateSpaceP", "deleteRows"]
 - !private ["So17UICoordinateSpaceP", "dequeueReusableCell"]
 - !private ["So17UICoordinateSpaceP", "font"]
@@ -741,7 +690,6 @@ depends-member:
 - !private ["So23UIDataSourceTranslatingP", "reloadData"]
 - !private ["So23UIDataSourceTranslatingP", "tableFooterView"]
 - ["So13UIDynamicItemP", "EditingStyle"]
-- !private ["So13UIDynamicItemP", "barTintColor"]
 - !private ["So13UIDynamicItemP", "deleteRows"]
 - !private ["So13UIDynamicItemP", "dequeueReusableCell"]
 - !private ["So13UIDynamicItemP", "font"]
@@ -757,12 +705,10 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "EditingStyle"]
 - !private ["So18UIFocusEnvironmentP", "NSKeyedArchiver"]
 - !private ["So18UIFocusEnvironmentP", "NSKeyedUnarchiver"]
-- !private ["So18UIFocusEnvironmentP", "UIColor"]
 - !private ["So18UIFocusEnvironmentP", "UIFont"]
 - !private ["So18UIFocusEnvironmentP", "UIView"]
 - !private ["So18UIFocusEnvironmentP", "UserDefaults"]
 - ["So18UIFocusEnvironmentP", ""]
-- !private ["So18UIFocusEnvironmentP", "barTintColor"]
 - !private ["So18UIFocusEnvironmentP", "club"]
 - !private ["So18UIFocusEnvironmentP", "currentClubs"]
 - !private ["So18UIFocusEnvironmentP", "deleteRows"]
@@ -773,7 +719,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "font"]
 - !private ["So18UIFocusEnvironmentP", "indexPath"]
 - !private ["So18UIFocusEnvironmentP", "init"]
-- !private ["So18UIFocusEnvironmentP", "navigationBar"]
 - !private ["So18UIFocusEnvironmentP", "navigationController"]
 - !private ["So18UIFocusEnvironmentP", "navigationItem"]
 - !private ["So18UIFocusEnvironmentP", "popViewController"]
@@ -789,7 +734,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
 - !private ["So18UIFocusEnvironmentP", "viewWillAppear"]
 - ["So11UIFocusItemP", "EditingStyle"]
-- !private ["So11UIFocusItemP", "barTintColor"]
 - !private ["So11UIFocusItemP", "deleteRows"]
 - !private ["So11UIFocusItemP", "dequeueReusableCell"]
 - !private ["So11UIFocusItemP", "font"]
@@ -801,7 +745,6 @@ depends-member:
 - !private ["So11UIFocusItemP", "textAlignment"]
 - !private ["So11UIFocusItemP", "textLabel"]
 - ["So20UIFocusItemContainerP", "EditingStyle"]
-- !private ["So20UIFocusItemContainerP", "barTintColor"]
 - !private ["So20UIFocusItemContainerP", "deleteRows"]
 - !private ["So20UIFocusItemContainerP", "dequeueReusableCell"]
 - !private ["So20UIFocusItemContainerP", "font"]
@@ -824,7 +767,6 @@ depends-member:
 - !private ["So7UILabelC", "text"]
 - !private ["So7UILabelC", "textAlignment"]
 - ["So24UILargeContentViewerItemP", "EditingStyle"]
-- !private ["So24UILargeContentViewerItemP", "barTintColor"]
 - !private ["So24UILargeContentViewerItemP", "deleteRows"]
 - !private ["So24UILargeContentViewerItemP", "dequeueReusableCell"]
 - !private ["So24UILargeContentViewerItemP", "font"]
@@ -835,8 +777,6 @@ depends-member:
 - !private ["So24UILargeContentViewerItemP", "text"]
 - !private ["So24UILargeContentViewerItemP", "textAlignment"]
 - !private ["So24UILargeContentViewerItemP", "textLabel"]
-- !private ["So15UINavigationBarC", "barTintColor"]
-- !private ["So22UINavigationControllerC", "navigationBar"]
 - !private ["So22UINavigationControllerC", "popViewController"]
 - !private ["So16UINavigationItemC", "rightBarButtonItem"]
 - ["So30UIPasteConfigurationSupportingP", "Club"]
@@ -844,12 +784,10 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "EditingStyle"]
 - !private ["So30UIPasteConfigurationSupportingP", "NSKeyedArchiver"]
 - !private ["So30UIPasteConfigurationSupportingP", "NSKeyedUnarchiver"]
-- !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIFont"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIView"]
 - !private ["So30UIPasteConfigurationSupportingP", "UserDefaults"]
 - ["So30UIPasteConfigurationSupportingP", ""]
-- !private ["So30UIPasteConfigurationSupportingP", "barTintColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "club"]
 - !private ["So30UIPasteConfigurationSupportingP", "currentClubs"]
 - !private ["So30UIPasteConfigurationSupportingP", "deleteRows"]
@@ -860,7 +798,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "font"]
 - !private ["So30UIPasteConfigurationSupportingP", "indexPath"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
-- !private ["So30UIPasteConfigurationSupportingP", "navigationBar"]
 - !private ["So30UIPasteConfigurationSupportingP", "navigationController"]
 - !private ["So30UIPasteConfigurationSupportingP", "navigationItem"]
 - !private ["So30UIPasteConfigurationSupportingP", "popViewController"]
@@ -887,7 +824,6 @@ depends-member:
 - !private ["So11UIResponderC", "NSKeyedArchiver"]
 - !private ["So11UIResponderC", "NSKeyedUnarchiver"]
 - ["So11UIResponderC", "UIBarButtonItem"]
-- !private ["So11UIResponderC", "UIColor"]
 - !private ["So11UIResponderC", "UIFont"]
 - !private ["So11UIResponderC", "UINavigationController"]
 - ["So11UIResponderC", "UIStoryboardSegue"]
@@ -895,7 +831,6 @@ depends-member:
 - ["So11UIResponderC", "UITableViewCell"]
 - !private ["So11UIResponderC", "UIView"]
 - !private ["So11UIResponderC", "UserDefaults"]
-- !private ["So11UIResponderC", "barTintColor"]
 - !private ["So11UIResponderC", "club"]
 - ["So11UIResponderC", "currentClubs"]
 - !private ["So11UIResponderC", "deleteRows"]
@@ -907,7 +842,6 @@ depends-member:
 - ["So11UIResponderC", "goingBack"]
 - !private ["So11UIResponderC", "indexPath"]
 - ["So11UIResponderC", "init"]
-- !private ["So11UIResponderC", "navigationBar"]
 - !private ["So11UIResponderC", "navigationController"]
 - !private ["So11UIResponderC", "navigationItem"]
 - ["So11UIResponderC", "numberOfSections"]
@@ -928,12 +862,10 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "EditingStyle"]
 - !private ["So30UIResponderStandardEditActionsP", "NSKeyedArchiver"]
 - !private ["So30UIResponderStandardEditActionsP", "NSKeyedUnarchiver"]
-- !private ["So30UIResponderStandardEditActionsP", "UIColor"]
 - !private ["So30UIResponderStandardEditActionsP", "UIFont"]
 - !private ["So30UIResponderStandardEditActionsP", "UIView"]
 - !private ["So30UIResponderStandardEditActionsP", "UserDefaults"]
 - ["So30UIResponderStandardEditActionsP", ""]
-- !private ["So30UIResponderStandardEditActionsP", "barTintColor"]
 - !private ["So30UIResponderStandardEditActionsP", "club"]
 - !private ["So30UIResponderStandardEditActionsP", "currentClubs"]
 - !private ["So30UIResponderStandardEditActionsP", "deleteRows"]
@@ -944,7 +876,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "font"]
 - !private ["So30UIResponderStandardEditActionsP", "indexPath"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
-- !private ["So30UIResponderStandardEditActionsP", "navigationBar"]
 - !private ["So30UIResponderStandardEditActionsP", "navigationController"]
 - !private ["So30UIResponderStandardEditActionsP", "navigationItem"]
 - !private ["So30UIResponderStandardEditActionsP", "popViewController"]
@@ -968,7 +899,6 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "CurrentClubsTableViewController"]
 - !private ["So20UIScrollViewDelegateP", "NSKeyedArchiver"]
 - !private ["So20UIScrollViewDelegateP", "NSKeyedUnarchiver"]
-- !private ["So20UIScrollViewDelegateP", "UIColor"]
 - !private ["So20UIScrollViewDelegateP", "UIFont"]
 - !private ["So20UIScrollViewDelegateP", "UIView"]
 - !private ["So20UIScrollViewDelegateP", "UserDefaults"]
@@ -994,7 +924,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "CurrentClubsTableViewController"]
 - !private ["So16UIStateRestoringP", "NSKeyedArchiver"]
 - !private ["So16UIStateRestoringP", "NSKeyedUnarchiver"]
-- !private ["So16UIStateRestoringP", "UIColor"]
 - !private ["So16UIStateRestoringP", "UIFont"]
 - !private ["So16UIStateRestoringP", "UIView"]
 - !private ["So16UIStateRestoringP", "UserDefaults"]
@@ -1004,7 +933,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "dismiss"]
 - !private ["So16UIStateRestoringP", "editButtonItem"]
 - !private ["So16UIStateRestoringP", "fatalError"]
-- !private ["So16UIStateRestoringP", "navigationBar"]
 - !private ["So16UIStateRestoringP", "navigationController"]
 - !private ["So16UIStateRestoringP", "navigationItem"]
 - !private ["So16UIStateRestoringP", "popViewController"]
@@ -1034,7 +962,6 @@ depends-member:
 - !private ["So21UITableViewControllerC", "NSKeyedArchiver"]
 - !private ["So21UITableViewControllerC", "NSKeyedUnarchiver"]
 - ["So21UITableViewControllerC", "UIBarButtonItem"]
-- !private ["So21UITableViewControllerC", "UIColor"]
 - !private ["So21UITableViewControllerC", "UIFont"]
 - !private ["So21UITableViewControllerC", "UINavigationController"]
 - ["So21UITableViewControllerC", "UIStoryboardSegue"]
@@ -1062,7 +989,6 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "CurrentClubsTableViewController"]
 - !private ["So21UITableViewDataSourceP", "NSKeyedArchiver"]
 - !private ["So21UITableViewDataSourceP", "NSKeyedUnarchiver"]
-- !private ["So21UITableViewDataSourceP", "UIColor"]
 - !private ["So21UITableViewDataSourceP", "UIFont"]
 - !private ["So21UITableViewDataSourceP", "UIView"]
 - !private ["So21UITableViewDataSourceP", "UserDefaults"]
@@ -1083,7 +1009,6 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "CurrentClubsTableViewController"]
 - !private ["So19UITableViewDelegateP", "NSKeyedArchiver"]
 - !private ["So19UITableViewDelegateP", "NSKeyedUnarchiver"]
-- !private ["So19UITableViewDelegateP", "UIColor"]
 - !private ["So19UITableViewDelegateP", "UIFont"]
 - !private ["So19UITableViewDelegateP", "UIView"]
 - !private ["So19UITableViewDelegateP", "UserDefaults"]
@@ -1105,12 +1030,10 @@ depends-member:
 - ["So18UITraitEnvironmentP", "EditingStyle"]
 - !private ["So18UITraitEnvironmentP", "NSKeyedArchiver"]
 - !private ["So18UITraitEnvironmentP", "NSKeyedUnarchiver"]
-- !private ["So18UITraitEnvironmentP", "UIColor"]
 - !private ["So18UITraitEnvironmentP", "UIFont"]
 - !private ["So18UITraitEnvironmentP", "UIView"]
 - !private ["So18UITraitEnvironmentP", "UserDefaults"]
 - ["So18UITraitEnvironmentP", ""]
-- !private ["So18UITraitEnvironmentP", "barTintColor"]
 - !private ["So18UITraitEnvironmentP", "club"]
 - !private ["So18UITraitEnvironmentP", "currentClubs"]
 - !private ["So18UITraitEnvironmentP", "deleteRows"]
@@ -1121,7 +1044,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "font"]
 - !private ["So18UITraitEnvironmentP", "indexPath"]
 - !private ["So18UITraitEnvironmentP", "init"]
-- !private ["So18UITraitEnvironmentP", "navigationBar"]
 - !private ["So18UITraitEnvironmentP", "navigationController"]
 - !private ["So18UITraitEnvironmentP", "navigationItem"]
 - !private ["So18UITraitEnvironmentP", "popViewController"]
@@ -1141,12 +1063,10 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "EditingStyle"]
 - !private ["So23UIUserActivityRestoringP", "NSKeyedArchiver"]
 - !private ["So23UIUserActivityRestoringP", "NSKeyedUnarchiver"]
-- !private ["So23UIUserActivityRestoringP", "UIColor"]
 - !private ["So23UIUserActivityRestoringP", "UIFont"]
 - !private ["So23UIUserActivityRestoringP", "UIView"]
 - !private ["So23UIUserActivityRestoringP", "UserDefaults"]
 - ["So23UIUserActivityRestoringP", ""]
-- !private ["So23UIUserActivityRestoringP", "barTintColor"]
 - !private ["So23UIUserActivityRestoringP", "club"]
 - !private ["So23UIUserActivityRestoringP", "currentClubs"]
 - !private ["So23UIUserActivityRestoringP", "deleteRows"]
@@ -1157,7 +1077,6 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "font"]
 - !private ["So23UIUserActivityRestoringP", "indexPath"]
 - !private ["So23UIUserActivityRestoringP", "init"]
-- !private ["So23UIUserActivityRestoringP", "navigationBar"]
 - !private ["So23UIUserActivityRestoringP", "navigationController"]
 - !private ["So23UIUserActivityRestoringP", "navigationItem"]
 - !private ["So23UIUserActivityRestoringP", "popViewController"]
@@ -1173,7 +1092,6 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
 - !private ["So23UIUserActivityRestoringP", "viewWillAppear"]
 - ["So6UIViewC", "EditingStyle"]
-- !private ["So6UIViewC", "barTintColor"]
 - !private ["So6UIViewC", "deleteRows"]
 - !private ["So6UIViewC", "dequeueReusableCell"]
 - !private ["So6UIViewC", "font"]
@@ -1195,7 +1113,6 @@ depends-member:
 - !private ["So16UIViewControllerC", "NSKeyedArchiver"]
 - !private ["So16UIViewControllerC", "NSKeyedUnarchiver"]
 - ["So16UIViewControllerC", "UIBarButtonItem"]
-- !private ["So16UIViewControllerC", "UIColor"]
 - !private ["So16UIViewControllerC", "UIFont"]
 - !private ["So16UIViewControllerC", "UINavigationController"]
 - ["So16UIViewControllerC", "UIStoryboardSegue"]
@@ -1210,7 +1127,6 @@ depends-member:
 - !private ["So16UIViewControllerC", "fatalError"]
 - ["So16UIViewControllerC", "goingBack"]
 - ["So16UIViewControllerC", "init"]
-- !private ["So16UIViewControllerC", "navigationBar"]
 - !private ["So16UIViewControllerC", "navigationController"]
 - !private ["So16UIViewControllerC", "navigationItem"]
 - ["So16UIViewControllerC", "numberOfSections"]
@@ -1234,7 +1150,6 @@ depends-member:
 - ["s24_DestructorSafeContainerP", "init"]
 - !private ["s24_DestructorSafeContainerP", "remove"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
-- !private ["s26_ExpressibleByColorLiteralP", "red"]
 - !private ["s19_HasContiguousBytesP", "count"]
 - ["s19_HasContiguousBytesP", "init"]
 - !private ["s19_HasContiguousBytesP", "remove"]
@@ -1248,13 +1163,11 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "EditingStyle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSKeyedArchiver"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSKeyedUnarchiver"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIFont"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UserDefaults"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "archivedData"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "barTintColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "bool"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "club"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "currentClubs"]
@@ -1269,7 +1182,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "indexPath"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "name"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationBar"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationItem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "object"]
@@ -1277,7 +1189,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "prepare"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "presentingViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "red"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "reloadData"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "rightBarButtonItem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "set"]
@@ -1295,13 +1206,11 @@ depends-member:
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "EditingStyle"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "NSKeyedArchiver"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "NSKeyedUnarchiver"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIColor"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIFont"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIView"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UserDefaults"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "archivedData"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "barTintColor"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "bool"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "club"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "currentClubs"]
@@ -1316,7 +1225,6 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "indexPath"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "name"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "navigationBar"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "navigationController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "navigationItem"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "object"]
@@ -1324,7 +1232,6 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "prepare"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "presentingViewController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "print"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "red"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "reloadData"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "rightBarButtonItem"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "set"]
@@ -1347,7 +1254,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "tableFooterView"]
 - !private ["s21_ObjectiveCBridgeableP", "zero"]
 - ["s38__DefaultCustomPlaygroundQuickLookableP", "EditingStyle"]
-- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "barTintColor"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "deleteRows"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "dequeueReusableCell"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "font"]
@@ -1389,13 +1295,10 @@ depends-nominal:
 - "So8NSCodingP"
 - !private "So9NSCopyingP"
 - "So26NSExtensionRequestHandlingP"
-- !private "So21NSItemProviderReadingP"
-- !private "So21NSItemProviderWritingP"
 - !private "So15NSKeyedArchiverC"
 - !private "So17NSKeyedUnarchiverC"
 - "So8NSObjectC"
 - "So8NSObjectP"
-- !private "So14NSSecureCodingP"
 - !private "So15NSTextAlignmentV"
 - !private "Sq"
 - "Sk"
@@ -1407,8 +1310,6 @@ depends-nominal:
 - "So29UIAccessibilityIdentificationP"
 - "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
-- !private "So16UIBarPositioningP"
-- !private "So7UIColorC"
 - "So18UIContentContainerP"
 - !private "So30UIContentSizeCategoryAdjustingP"
 - "So17UICoordinateSpaceP"
@@ -1422,7 +1323,6 @@ depends-nominal:
 - "So27UIGestureRecognizerDelegateP"
 - !private "So7UILabelC"
 - "So24UILargeContentViewerItemP"
-- !private "So15UINavigationBarC"
 - !private "So22UINavigationControllerC"
 - !private "So16UINavigationItemC"
 - "So30UIPasteConfigurationSupportingP"
@@ -1446,7 +1346,6 @@ depends-nominal:
 - "s14_ArrayProtocolP"
 - !private "s30_CustomPlaygroundQuickLookableP"
 - "s24_DestructorSafeContainerP"
-- !private "s26_ExpressibleByColorLiteralP"
 - "s19_HasContiguousBytesP"
 - "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
@@ -1460,27 +1359,21 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/os.swiftmodule/x86_64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 interface-hash: "c59a6899ef940ce4085d38d512a59703"

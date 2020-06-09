@@ -12,7 +12,6 @@ provides-dynamic-lookup:
 - "course"
 - "creditLabel"
 - "descriptionTextBox"
-- "dialog"
 - "didReceiveMemoryWarning"
 - "hourLabel"
 - "prepare"
@@ -27,7 +26,7 @@ depends-top-level:
 - !private "AddYearTableViewController"
 - "AssignmentPrecedence"
 - "Bool"
-- "BooleanLiteralType"
+- !private "BooleanLiteralType"
 - "CastingPrecedence"
 - !private "ChecklistTableViewController"
 - "Class"
@@ -52,7 +51,6 @@ depends-member:
 - !private ["12ORHS_Classes26AddYearTableViewControllerC", "tempCourse"]
 - !private ["So15CALayerDelegateP", "text"]
 - !private ["s7CVarArgP", "ChecklistTableViewController"]
-- !private ["s7CVarArgP", "ClassDetailViewController"]
 - !private ["s7CVarArgP", "GPA"]
 - !private ["s7CVarArgP", "GPALabel"]
 - !private ["s7CVarArgP", "NSKeyedArchiver"]
@@ -67,7 +65,6 @@ depends-member:
 - !private ["s7CVarArgP", "credits"]
 - !private ["s7CVarArgP", "descriptionTextBox"]
 - !private ["s7CVarArgP", "destination"]
-- !private ["s7CVarArgP", "dialog"]
 - !private ["s7CVarArgP", "didReceiveMemoryWarning"]
 - !private ["s7CVarArgP", "edit"]
 - !private ["s7CVarArgP", "fatalError"]
@@ -100,7 +97,6 @@ depends-member:
 - ["12ORHS_Classes25ClassDetailViewControllerC", "Bool"]
 - !private ["12ORHS_Classes25ClassDetailViewControllerC", "ChecklistTableViewController"]
 - ["12ORHS_Classes25ClassDetailViewControllerC", "Class"]
-- !private ["12ORHS_Classes25ClassDetailViewControllerC", "ClassDetailViewController"]
 - ["12ORHS_Classes25ClassDetailViewControllerC", "GPALabel"]
 - !private ["12ORHS_Classes25ClassDetailViewControllerC", "NSKeyedArchiver"]
 - ["12ORHS_Classes25ClassDetailViewControllerC", "String"]
@@ -116,7 +112,6 @@ depends-member:
 - ["12ORHS_Classes25ClassDetailViewControllerC", "creditLabel"]
 - ["12ORHS_Classes25ClassDetailViewControllerC", "deinit"]
 - ["12ORHS_Classes25ClassDetailViewControllerC", "descriptionTextBox"]
-- ["12ORHS_Classes25ClassDetailViewControllerC", "dialog"]
 - ["12ORHS_Classes25ClassDetailViewControllerC", "didReceiveMemoryWarning"]
 - !private ["12ORHS_Classes25ClassDetailViewControllerC", "fatalError"]
 - ["12ORHS_Classes25ClassDetailViewControllerC", "hourLabel"]
@@ -129,7 +124,6 @@ depends-member:
 - ["12ORHS_Classes25ClassDetailViewControllerC", "viewDidLoad"]
 - ["12ORHS_Classes25ClassDetailViewControllerC", "viewWillAppear"]
 - !private ["s28CustomDebugStringConvertibleP", "ChecklistTableViewController"]
-- !private ["s28CustomDebugStringConvertibleP", "ClassDetailViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "GPA"]
 - !private ["s28CustomDebugStringConvertibleP", "GPALabel"]
 - !private ["s28CustomDebugStringConvertibleP", "NSKeyedArchiver"]
@@ -144,7 +138,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "credits"]
 - !private ["s28CustomDebugStringConvertibleP", "descriptionTextBox"]
 - !private ["s28CustomDebugStringConvertibleP", "destination"]
-- !private ["s28CustomDebugStringConvertibleP", "dialog"]
 - !private ["s28CustomDebugStringConvertibleP", "didReceiveMemoryWarning"]
 - !private ["s28CustomDebugStringConvertibleP", "edit"]
 - !private ["s28CustomDebugStringConvertibleP", "fatalError"]
@@ -166,7 +159,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "viewWillAppear"]
 - !private ["s17CustomReflectableP", "text"]
 - !private ["s23CustomStringConvertibleP", "ChecklistTableViewController"]
-- !private ["s23CustomStringConvertibleP", "ClassDetailViewController"]
 - !private ["s23CustomStringConvertibleP", "GPA"]
 - !private ["s23CustomStringConvertibleP", "GPALabel"]
 - !private ["s23CustomStringConvertibleP", "NSKeyedArchiver"]
@@ -183,7 +175,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "credits"]
 - !private ["s23CustomStringConvertibleP", "descriptionTextBox"]
 - !private ["s23CustomStringConvertibleP", "destination"]
-- !private ["s23CustomStringConvertibleP", "dialog"]
 - !private ["s23CustomStringConvertibleP", "didReceiveMemoryWarning"]
 - !private ["s23CustomStringConvertibleP", "edit"]
 - !private ["s23CustomStringConvertibleP", "fatalError"]
@@ -208,7 +199,6 @@ depends-member:
 - !private ["s26DefaultStringInterpolationV", "appendLiteral"]
 - !private ["SE", "text"]
 - !private ["SQ", "ChecklistTableViewController"]
-- !private ["SQ", "ClassDetailViewController"]
 - !private ["SQ", "GPA"]
 - !private ["SQ", "GPALabel"]
 - !private ["SQ", "NSKeyedArchiver"]
@@ -223,7 +213,6 @@ depends-member:
 - !private ["SQ", "credits"]
 - !private ["SQ", "descriptionTextBox"]
 - !private ["SQ", "destination"]
-- !private ["SQ", "dialog"]
 - !private ["SQ", "didReceiveMemoryWarning"]
 - !private ["SQ", "edit"]
 - !private ["SQ", "fatalError"]
@@ -245,7 +234,6 @@ depends-member:
 - !private ["SQ", "viewWillAppear"]
 - !private ["s23ExpressibleByNilLiteralP", "text"]
 - !private ["SH", "ChecklistTableViewController"]
-- !private ["SH", "ClassDetailViewController"]
 - !private ["SH", "GPA"]
 - !private ["SH", "GPALabel"]
 - !private ["SH", "NSKeyedArchiver"]
@@ -260,7 +248,6 @@ depends-member:
 - !private ["SH", "credits"]
 - !private ["SH", "descriptionTextBox"]
 - !private ["SH", "destination"]
-- !private ["SH", "dialog"]
 - !private ["SH", "didReceiveMemoryWarning"]
 - !private ["SH", "edit"]
 - !private ["SH", "fatalError"]
@@ -282,7 +269,6 @@ depends-member:
 - !private ["SH", "viewWillAppear"]
 - !private ["So7NSCoderC", "archivedData"]
 - !private ["So8NSCodingP", "ChecklistTableViewController"]
-- !private ["So8NSCodingP", "ClassDetailViewController"]
 - !private ["So8NSCodingP", "GPA"]
 - !private ["So8NSCodingP", "GPALabel"]
 - !private ["So8NSCodingP", "NSKeyedArchiver"]
@@ -295,7 +281,6 @@ depends-member:
 - !private ["So8NSCodingP", "creditLabel"]
 - !private ["So8NSCodingP", "credits"]
 - !private ["So8NSCodingP", "descriptionTextBox"]
-- !private ["So8NSCodingP", "dialog"]
 - !private ["So8NSCodingP", "didReceiveMemoryWarning"]
 - !private ["So8NSCodingP", "edit"]
 - !private ["So8NSCodingP", "fatalError"]
@@ -313,7 +298,6 @@ depends-member:
 - !private ["So8NSCodingP", "viewDidLoad"]
 - !private ["So8NSCodingP", "viewWillAppear"]
 - !private ["So26NSExtensionRequestHandlingP", "ChecklistTableViewController"]
-- !private ["So26NSExtensionRequestHandlingP", "ClassDetailViewController"]
 - !private ["So26NSExtensionRequestHandlingP", "GPALabel"]
 - !private ["So26NSExtensionRequestHandlingP", "NSKeyedArchiver"]
 - !private ["So26NSExtensionRequestHandlingP", "UserDefaults"]
@@ -323,7 +307,6 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "course"]
 - !private ["So26NSExtensionRequestHandlingP", "creditLabel"]
 - !private ["So26NSExtensionRequestHandlingP", "descriptionTextBox"]
-- !private ["So26NSExtensionRequestHandlingP", "dialog"]
 - !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
 - !private ["So26NSExtensionRequestHandlingP", "edit"]
 - !private ["So26NSExtensionRequestHandlingP", "fatalError"]
@@ -342,7 +325,6 @@ depends-member:
 - ["So8NSObjectC", "Bool"]
 - !private ["So8NSObjectC", "ChecklistTableViewController"]
 - ["So8NSObjectC", "Class"]
-- !private ["So8NSObjectC", "ClassDetailViewController"]
 - !private ["So8NSObjectC", "GPA"]
 - ["So8NSObjectC", "GPALabel"]
 - !private ["So8NSObjectC", "NSKeyedArchiver"]
@@ -362,7 +344,6 @@ depends-member:
 - !private ["So8NSObjectC", "credits"]
 - ["So8NSObjectC", "descriptionTextBox"]
 - !private ["So8NSObjectC", "destination"]
-- ["So8NSObjectC", "dialog"]
 - ["So8NSObjectC", "didReceiveMemoryWarning"]
 - !private ["So8NSObjectC", "edit"]
 - !private ["So8NSObjectC", "fatalError"]
@@ -386,7 +367,6 @@ depends-member:
 - ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectC", "viewWillAppear"]
 - !private ["So8NSObjectP", "ChecklistTableViewController"]
-- !private ["So8NSObjectP", "ClassDetailViewController"]
 - !private ["So8NSObjectP", "GPA"]
 - !private ["So8NSObjectP", "GPALabel"]
 - !private ["So8NSObjectP", "NSKeyedArchiver"]
@@ -401,7 +381,6 @@ depends-member:
 - !private ["So8NSObjectP", "credits"]
 - !private ["So8NSObjectP", "descriptionTextBox"]
 - !private ["So8NSObjectP", "destination"]
-- !private ["So8NSObjectP", "dialog"]
 - !private ["So8NSObjectP", "didReceiveMemoryWarning"]
 - !private ["So8NSObjectP", "edit"]
 - !private ["So8NSObjectP", "fatalError"]
@@ -429,7 +408,6 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "text"]
 - !private ["So12UIAppearanceP", "text"]
 - !private ["So21UIAppearanceContainerP", "ChecklistTableViewController"]
-- !private ["So21UIAppearanceContainerP", "ClassDetailViewController"]
 - !private ["So21UIAppearanceContainerP", "GPALabel"]
 - !private ["So21UIAppearanceContainerP", "NSKeyedArchiver"]
 - !private ["So21UIAppearanceContainerP", "UserDefaults"]
@@ -439,7 +417,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "course"]
 - !private ["So21UIAppearanceContainerP", "creditLabel"]
 - !private ["So21UIAppearanceContainerP", "descriptionTextBox"]
-- !private ["So21UIAppearanceContainerP", "dialog"]
 - !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
 - !private ["So21UIAppearanceContainerP", "edit"]
 - !private ["So21UIAppearanceContainerP", "fatalError"]
@@ -454,7 +431,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - !private ["So21UIAppearanceContainerP", "viewWillAppear"]
 - !private ["So18UIContentContainerP", "ChecklistTableViewController"]
-- !private ["So18UIContentContainerP", "ClassDetailViewController"]
 - !private ["So18UIContentContainerP", "GPALabel"]
 - !private ["So18UIContentContainerP", "NSKeyedArchiver"]
 - !private ["So18UIContentContainerP", "UserDefaults"]
@@ -464,7 +440,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "course"]
 - !private ["So18UIContentContainerP", "creditLabel"]
 - !private ["So18UIContentContainerP", "descriptionTextBox"]
-- !private ["So18UIContentContainerP", "dialog"]
 - !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
 - !private ["So18UIContentContainerP", "edit"]
 - !private ["So18UIContentContainerP", "fatalError"]
@@ -481,7 +456,6 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "text"]
 - !private ["So13UIDynamicItemP", "text"]
 - !private ["So18UIFocusEnvironmentP", "ChecklistTableViewController"]
-- !private ["So18UIFocusEnvironmentP", "ClassDetailViewController"]
 - !private ["So18UIFocusEnvironmentP", "GPALabel"]
 - !private ["So18UIFocusEnvironmentP", "NSKeyedArchiver"]
 - !private ["So18UIFocusEnvironmentP", "UserDefaults"]
@@ -491,7 +465,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "course"]
 - !private ["So18UIFocusEnvironmentP", "creditLabel"]
 - !private ["So18UIFocusEnvironmentP", "descriptionTextBox"]
-- !private ["So18UIFocusEnvironmentP", "dialog"]
 - !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
 - !private ["So18UIFocusEnvironmentP", "edit"]
 - !private ["So18UIFocusEnvironmentP", "fatalError"]
@@ -513,7 +486,6 @@ depends-member:
 - !private ["So24UILargeContentViewerItemP", "text"]
 - !private ["So22UINavigationControllerC", "topViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "ChecklistTableViewController"]
-- !private ["So30UIPasteConfigurationSupportingP", "ClassDetailViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "GPALabel"]
 - !private ["So30UIPasteConfigurationSupportingP", "NSKeyedArchiver"]
 - !private ["So30UIPasteConfigurationSupportingP", "UserDefaults"]
@@ -523,7 +495,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "course"]
 - !private ["So30UIPasteConfigurationSupportingP", "creditLabel"]
 - !private ["So30UIPasteConfigurationSupportingP", "descriptionTextBox"]
-- !private ["So30UIPasteConfigurationSupportingP", "dialog"]
 - !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
 - !private ["So30UIPasteConfigurationSupportingP", "edit"]
 - !private ["So30UIPasteConfigurationSupportingP", "fatalError"]
@@ -542,7 +513,6 @@ depends-member:
 - ["So11UIResponderC", "Bool"]
 - !private ["So11UIResponderC", "ChecklistTableViewController"]
 - ["So11UIResponderC", "Class"]
-- !private ["So11UIResponderC", "ClassDetailViewController"]
 - ["So11UIResponderC", "GPALabel"]
 - !private ["So11UIResponderC", "NSKeyedArchiver"]
 - ["So11UIResponderC", "String"]
@@ -557,7 +527,6 @@ depends-member:
 - ["So11UIResponderC", "course"]
 - ["So11UIResponderC", "creditLabel"]
 - ["So11UIResponderC", "descriptionTextBox"]
-- ["So11UIResponderC", "dialog"]
 - ["So11UIResponderC", "didReceiveMemoryWarning"]
 - !private ["So11UIResponderC", "edit"]
 - !private ["So11UIResponderC", "fatalError"]
@@ -575,7 +544,6 @@ depends-member:
 - ["So11UIResponderC", "viewDidLoad"]
 - ["So11UIResponderC", "viewWillAppear"]
 - !private ["So30UIResponderStandardEditActionsP", "ChecklistTableViewController"]
-- !private ["So30UIResponderStandardEditActionsP", "ClassDetailViewController"]
 - !private ["So30UIResponderStandardEditActionsP", "GPALabel"]
 - !private ["So30UIResponderStandardEditActionsP", "NSKeyedArchiver"]
 - !private ["So30UIResponderStandardEditActionsP", "UserDefaults"]
@@ -585,7 +553,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "course"]
 - !private ["So30UIResponderStandardEditActionsP", "creditLabel"]
 - !private ["So30UIResponderStandardEditActionsP", "descriptionTextBox"]
-- !private ["So30UIResponderStandardEditActionsP", "dialog"]
 - !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
 - !private ["So30UIResponderStandardEditActionsP", "edit"]
 - !private ["So30UIResponderStandardEditActionsP", "fatalError"]
@@ -604,7 +571,6 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "schedules"]
 - !private ["So20UIScrollViewDelegateP", "tempCourse"]
 - !private ["So16UIStateRestoringP", "ChecklistTableViewController"]
-- !private ["So16UIStateRestoringP", "ClassDetailViewController"]
 - !private ["So16UIStateRestoringP", "GPALabel"]
 - !private ["So16UIStateRestoringP", "NSKeyedArchiver"]
 - !private ["So16UIStateRestoringP", "UserDefaults"]
@@ -614,7 +580,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "course"]
 - !private ["So16UIStateRestoringP", "creditLabel"]
 - !private ["So16UIStateRestoringP", "descriptionTextBox"]
-- !private ["So16UIStateRestoringP", "dialog"]
 - !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
 - !private ["So16UIStateRestoringP", "edit"]
 - !private ["So16UIStateRestoringP", "fatalError"]
@@ -645,7 +610,6 @@ depends-member:
 - !private ["So34UITextPasteConfigurationSupportingP", "text"]
 - !private ["So10UITextViewC", "text"]
 - !private ["So18UITraitEnvironmentP", "ChecklistTableViewController"]
-- !private ["So18UITraitEnvironmentP", "ClassDetailViewController"]
 - !private ["So18UITraitEnvironmentP", "GPALabel"]
 - !private ["So18UITraitEnvironmentP", "NSKeyedArchiver"]
 - !private ["So18UITraitEnvironmentP", "UserDefaults"]
@@ -655,7 +619,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "course"]
 - !private ["So18UITraitEnvironmentP", "creditLabel"]
 - !private ["So18UITraitEnvironmentP", "descriptionTextBox"]
-- !private ["So18UITraitEnvironmentP", "dialog"]
 - !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
 - !private ["So18UITraitEnvironmentP", "edit"]
 - !private ["So18UITraitEnvironmentP", "fatalError"]
@@ -670,7 +633,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - !private ["So18UITraitEnvironmentP", "viewWillAppear"]
 - !private ["So23UIUserActivityRestoringP", "ChecklistTableViewController"]
-- !private ["So23UIUserActivityRestoringP", "ClassDetailViewController"]
 - !private ["So23UIUserActivityRestoringP", "GPALabel"]
 - !private ["So23UIUserActivityRestoringP", "NSKeyedArchiver"]
 - !private ["So23UIUserActivityRestoringP", "UserDefaults"]
@@ -680,7 +642,6 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "course"]
 - !private ["So23UIUserActivityRestoringP", "creditLabel"]
 - !private ["So23UIUserActivityRestoringP", "descriptionTextBox"]
-- !private ["So23UIUserActivityRestoringP", "dialog"]
 - !private ["So23UIUserActivityRestoringP", "didReceiveMemoryWarning"]
 - !private ["So23UIUserActivityRestoringP", "edit"]
 - !private ["So23UIUserActivityRestoringP", "fatalError"]
@@ -700,7 +661,6 @@ depends-member:
 - ["So16UIViewControllerC", "Bool"]
 - !private ["So16UIViewControllerC", "ChecklistTableViewController"]
 - ["So16UIViewControllerC", "Class"]
-- !private ["So16UIViewControllerC", "ClassDetailViewController"]
 - ["So16UIViewControllerC", "GPALabel"]
 - !private ["So16UIViewControllerC", "NSKeyedArchiver"]
 - ["So16UIViewControllerC", "String"]
@@ -716,7 +676,6 @@ depends-member:
 - ["So16UIViewControllerC", "course"]
 - ["So16UIViewControllerC", "creditLabel"]
 - ["So16UIViewControllerC", "descriptionTextBox"]
-- ["So16UIViewControllerC", "dialog"]
 - ["So16UIViewControllerC", "didReceiveMemoryWarning"]
 - !private ["So16UIViewControllerC", "edit"]
 - !private ["So16UIViewControllerC", "fatalError"]
@@ -736,7 +695,6 @@ depends-member:
 - !private ["So14NSUserDefaultsC", "standard"]
 - !private ["12ORHS_Classes23YearTableViewControllerC", "schedules"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ChecklistTableViewController"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "ClassDetailViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "GPA"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "GPALabel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSKeyedArchiver"]
@@ -751,7 +709,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "credits"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "descriptionTextBox"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "destination"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "dialog"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "didReceiveMemoryWarning"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "edit"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fatalError"]
@@ -772,7 +729,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewWillAppear"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ChecklistTableViewController"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ClassDetailViewController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "GPA"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "GPALabel"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "NSKeyedArchiver"]
@@ -787,7 +743,6 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "credits"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "descriptionTextBox"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "destination"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dialog"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "didReceiveMemoryWarning"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "edit"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "fatalError"]
@@ -891,18 +846,18 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "99809a9766498af7b104dcfc247416e4"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "3a27577a743f51761809b5c703b98d5d"

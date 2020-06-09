@@ -131,8 +131,11 @@ class ClassTableViewController: UITableViewController {
                 fatalError("Unable to create class")
             }
             classes.append(newClass)
-        
         }
+        func cmp(c1: Class, c2: Class) -> Bool {
+            return c1.name < c2.name
+        }
+        classes.sort(by: cmp)
     }
 
 }

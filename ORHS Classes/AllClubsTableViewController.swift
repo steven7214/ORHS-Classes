@@ -13,25 +13,32 @@ class AllClubsTableViewController: UITableViewController {
     // MARK: Properties
     var reader = Reader()
     var clubs = [Club]()
-    
     func getClubs() {
         //add club data
         let clubArray = Bundle.main.urls(forResourcesWithExtension: "txt", subdirectory: "Clubs")! as [URL]
         print(clubArray)
+        
         for files: URL in clubArray {
             let data = reader.findData(fileURL: files)
             guard let new_club = Club(data: data, add: false) else {
                 fatalError("Unable to create class")
             }
             clubs.append(new_club)
-            print(data)
         }
+        func sortFunc(Club1: Club, Club2: Club) -> Bool {
+            return Club1.name < Club2.name
+        }
+        clubs.sort(by: sortFunc)
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         getClubs()
         tableView.tableFooterView = UIView(frame: .zero)
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -56,13 +63,9 @@ class AllClubsTableViewController: UITableViewController {
             fatalError("The dequeued cell is not an instance of ClassTableViewCell")
         }
         let club = clubs[indexPath.row]
-        clubs[indexPath.row].add = false
-        print(club.name)
         cell.textLabel?.text = club.name
         cell.textLabel?.textAlignment = .center
         cell.textLabel?.font = UIFont(name:"HelveticaNeue-Bold", size: 25.0)
-        
-
         return cell
     }
     

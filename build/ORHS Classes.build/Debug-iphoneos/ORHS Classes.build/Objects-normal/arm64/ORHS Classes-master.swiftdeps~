@@ -1,15 +1,15 @@
-version: "Apple Swift version 5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)"
-options: "bbdcad59706d975c333c625e487cdf0b"
-build_time: [1591483886, 497261000]
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "12e7dac58a06d9cd5f35ef2d86bce19b"
+build_time: [1591670696, 744825000]
 inputs:
-  "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/ClassTableViewController.swift": [1591212455, 751489261]
-  "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/Club.swift": [1591284480, 996170654]
-  "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/AllClubsTableViewController.swift": [1591293491, 635617978]
+  "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/ClassTableViewController.swift": [1591648166, 357502487]
+  "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/Club.swift": [1591626835, 887352744]
+  "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/AllClubsTableViewController.swift": [1591670555, 9956080]
   "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/AppDelegate.swift": [1590957806, 726202743]
-  "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/ClassDetailViewController.swift": [1591483886, 403188349]
+  "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/ClassDetailViewController.swift": [1591670516, 824660591]
   "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/Reader.swift": [1591199730, 450548959]
-  "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/AddYearTableViewCell.swift": [1590957806, 725693161]
-  "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/CurrentClubsTableViewController.swift": [1591293387, 3021521]
+  "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/AddYearTableViewCell.swift": [1591553849, 730523885]
+  "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/CurrentClubsTableViewController.swift": [1591651053, 877872416]
   "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/SubjectTableViewCell.swift": [1590957806, 752828793]
   "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/HomePageViewController.swift": [1591052984, 649644503]
   "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/CurrentClubsTableViewCell.swift": [1591218984, 132110948]
@@ -20,8 +20,8 @@ inputs:
   "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/YearTableViewCell.swift": [1590957806, 754842803]
   "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/ScheduleTableViewCell.swift": [1590957806, 752421574]
   "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/ClassTableViewCell.swift": [1590957806, 750802844]
-  "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/ClubDetailsViewController.swift": [1591288242, 97837206]
-  "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/AddYearTableViewController.swift": !private [1591483866, 934713351]
+  "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/ClubDetailsViewController.swift": [1591652642, 241556236]
+  "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/AddYearTableViewController.swift": [1591572697, 357796633]
   "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/Class.swift": [1591477194, 315139012]
-  "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/YearTableViewController.swift": [1591195953, 602525299]
+  "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/YearTableViewController.swift": [1591649723, 371569793]
   "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/AllClubsTableViewCell.swift": [1591195925, 531390600]

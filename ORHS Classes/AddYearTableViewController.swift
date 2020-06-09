@@ -13,15 +13,35 @@ class AddYearTableViewController: UITableViewController {
     //MARK: Properties
     let years = ["Freshman", "Sophomore", "Junior", "Senior"]
     var tempCourse: Class?
-    
+    var count = 0
+    var repeated = [] as [String]
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.tableFooterView = UIView(frame: .zero)
         //ClassDetailViewController.dialog = false
+        print(YearTableViewController.schedules)
         for schedules in YearTableViewController.schedules {
             for classes in schedules {
                 //ClassDetailViewController.dialog = false
                 if (classes.name == tempCourse!.name) {
+                    if schedules == YearTableViewController.schedules[0] {
+                        count = 0
+                        repeated.append(years[0])
+                    }
+                    if schedules == YearTableViewController.schedules[1] {
+                        count = 1
+                        repeated.append(years[1])
+                    }
+                    if schedules == YearTableViewController.schedules[2] {
+                        count = 2
+                        repeated.append(years[2])
+                    }
+                    if schedules == YearTableViewController.schedules[3] {
+                        count = 3
+                        repeated.append(years[3])
+                    }
+                    print(count)
+                    print(repeated)
                     let dialogMessage = UIAlertController(title: "Confirm", message: "Are you sure you want to add this to your schedules again?", preferredStyle: .alert)
                     // Create OK button with action handler
                     let Yes = UIAlertAction(title: "Yes", style: .default, handler: { (action) -> Void in
@@ -80,6 +100,15 @@ class AddYearTableViewController: UITableViewController {
         cell.yearLabel.text = self.years[indexPath.row]
         cell.yearLabel.textAlignment = .center
         cell.yearLabel.font = UIFont(name:"HelveticaNeue-Bold", size: 28.0)
+        if count < 0 {
+            count = 0
+        }
+        print(repeated)
+        
+        if repeated.contains(cell.yearLabel.text!) {
+            cell.isUserInteractionEnabled = false
+            cell.textLabel!.isEnabled = false
+        }
         
         return cell
     }

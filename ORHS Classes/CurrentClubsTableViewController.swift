@@ -41,7 +41,6 @@ class CurrentClubsTableViewController: UITableViewController {
             if let old = NSKeyedUnarchiver.unarchiveObject(with: key as! Data) as? [Club] {
                 CurrentClubsTableViewController.currentClubs = old
             }
-        print(UserDefaults.standard.bool(forKey: "sound"))
         }
     }
 
@@ -87,7 +86,6 @@ class CurrentClubsTableViewController: UITableViewController {
             // Delete the row from the data source
             CurrentClubsTableViewController.currentClubs.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
-            UserDefaults.standard.set(false, forKey: "sound")
             let encodedData = NSKeyedArchiver.archivedData(withRootObject: CurrentClubsTableViewController.currentClubs)
             UserDefaults.standard.set(encodedData, forKey: "savedClubs")
         } else if editingStyle == .insert {

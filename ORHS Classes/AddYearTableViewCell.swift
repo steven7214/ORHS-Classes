@@ -9,7 +9,6 @@
 import UIKit
 
 class AddYearTableViewCell: UITableViewCell {
-
     //MARK: Properties
     @IBOutlet weak var yearLabel: UILabel!
     
@@ -17,11 +16,11 @@ class AddYearTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        print("achoo")
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
         // Configure the view for the selected state
     }
 

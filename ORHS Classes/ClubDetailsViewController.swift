@@ -10,51 +10,47 @@ import UIKit
 
 class ClubDetailsViewController: UIViewController {
     var club: Club?
-    @IBOutlet weak var meetingDays: UILabel!
-    @IBOutlet weak var meetingTimes: UILabel!
-    @IBOutlet weak var website: UILabel!
+    @IBOutlet weak var meetingDays: UITextView!
+    @IBOutlet weak var meetingTimes: UITextView!
+    @IBOutlet weak var website: UITextView!
     @IBOutlet weak var desciption: UITextView!
     @IBOutlet weak var addClub: UIBarButtonItem!
-    @IBOutlet weak var Flexibility: UILabel!
+    @IBOutlet weak var Flexibility: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("loading club data")
-        meetingDays.text = "Meeting Days: \(club!.days)"
+        self.title = club?.name
+        meetingDays.text = "Meeting Location: \(club!.days)"
         meetingTimes.text = "Meeting Times: \(club!.times)"
-        website.text = "Website: \(club!.link)"
-        Flexibility.text = "Flexibility: \(club!.commitment)"
+        website.text = "Announcements: \(club!.link)"
+        Flexibility.text = "Sponsors: \(club!.commitment)"
         desciption.text = club!.summary
         meetingDays.sizeToFit()
         meetingTimes.sizeToFit()
         website.sizeToFit()
         desciption.sizeToFit()
         Flexibility.sizeToFit()
-        if CurrentClubsTableViewController.currentClubs.contains(club!) {
-            addClub.isEnabled = false
+        for clubs in CurrentClubsTableViewController.currentClubs {
+            if clubs.name == club!.name {
+                addClub.isEnabled = false
+            }
         }
-        if UserDefaults.standard.bool(forKey: "sound") == true {
-            addClub.isEnabled = false
-            
-        }
+        print(club!.name)
+        print(club!.add)
     }
     
     
     @IBAction func favoriteClub(_ sender: UIBarButtonItem) {
-        CurrentClubsTableViewController.currentClubs.append(club!)
         let dialogMessage = UIAlertController(title: "Confirm", message: "Are you sure you want add this club to your favorites?", preferredStyle: .alert)
-                
         // Create OK button with action handler
         let Yes = UIAlertAction(title: "Yes", style: .default, handler: { (action) -> Void in
             print("Yes button tapped")
             self.addClub.isEnabled = false
             self.club!.add = true
-            print(self.club!.add)
-            print(self.club!.add)
+            CurrentClubsTableViewController.currentClubs.append(self.club!)
             let encodedData = NSKeyedArchiver.archivedData(withRootObject: CurrentClubsTableViewController.currentClubs)
             UserDefaults.standard.set(encodedData, forKey: "savedClubs")
-            UserDefaults.standard.set(self.club!.add, forKey: "sound")
-            UserDefaults.standard.synchronize()
-            print(UserDefaults.standard.bool(forKey: "sound"))
         })
         
         // Create Cancel button with action handlder

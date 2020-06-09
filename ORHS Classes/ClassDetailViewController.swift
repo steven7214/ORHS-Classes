@@ -73,7 +73,6 @@ class ClassDetailViewController: UIViewController {
     }
     
     @IBAction func unwindToVC1(sender:UIStoryboardSegue) {
-        print("hi")
         if subject == "Other" {
             if sender.identifier == "SaveClass" {
                 course!.added = true

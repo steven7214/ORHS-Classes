@@ -35,7 +35,7 @@ class YearTableViewController: UITableViewController {
         super.viewDidLoad()
         tableView.tableFooterView = UIView(frame: .zero)
         if let old = UserDefaults.standard.object(forKey: "savedList") as? [Double] {
-                   ChecklistTableViewController.current = old
+            ChecklistTableViewController.current = old
         }
         let key = UserDefaults.standard.object(forKey: "savedSchedules")
         if key != nil {
