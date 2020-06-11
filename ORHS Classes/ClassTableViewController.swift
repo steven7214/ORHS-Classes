@@ -19,6 +19,26 @@ class ClassTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         makeClasses()
+        for Classes in classes {
+            if Classes.name == "English 9 Honors" {
+                if let index = classes.firstIndex(of: Classes) {
+                    classes.remove(at: index)
+                }
+                classes.insert(Classes, at: 4)
+            }
+            if Classes.name == "English 9 CP" {
+                if let index = classes.firstIndex(of: Classes) {
+                    classes.remove(at: index)
+                }
+                classes.insert(Classes, at: 3)
+            }
+            if Classes.name == "English 9 Workshop" {
+                if let index = classes.firstIndex(of: Classes) {
+                    classes.remove(at: index)
+                }
+                classes.insert(Classes, at: 5)
+            }
+        }
         tableView.tableFooterView = UIView(frame: .zero)
 
         // Uncomment the following line to preserve selection between presentations

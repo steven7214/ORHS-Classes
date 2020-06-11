@@ -9,6 +9,18 @@
 import UIKit
 
 class ChecklistTableViewController: UITableViewController {
+    @IBOutlet weak var Home: UIBarButtonItem!
+    @IBAction func Home(_ sender: UIBarButtonItem) {
+        let isPresentingInAddMealMode = presentingViewController is UINavigationController
+        
+        if isPresentingInAddMealMode {
+            dismiss(animated: true, completion: nil)
+        }
+        
+        else if let owningNavigationController = navigationController{
+            owningNavigationController.popViewController(animated: true)
+        }
+    }
     
     
     //MARK: properties
@@ -202,15 +214,19 @@ class ChecklistTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch(segue.identifier ?? "") {
+        case "goinHome":
+            return
+        default: fatalError("Unexpected segue identifier")
+        }
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
     
     //attempted to restore state
 //    override func encodeRestorableState(with coder: NSCoder) {

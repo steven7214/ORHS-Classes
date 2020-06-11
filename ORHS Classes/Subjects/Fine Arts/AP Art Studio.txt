@@ -1,5 +1,5 @@
 Class Name: AP Art Studio
-Subject/Category: Visual Arts
+Subject/Category: Fine Arts
 Number of Credits: 1.0
 GPA: 5.0
 Average Number of Hours of Homework per Day: NA

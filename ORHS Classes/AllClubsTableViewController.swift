@@ -9,6 +9,18 @@
 import UIKit
 
 class AllClubsTableViewController: UITableViewController {
+    @IBOutlet weak var Homes: UIBarButtonItem!
+    @IBAction func Homes(_ sender: UIBarButtonItem) {
+        let isPresentingInAddMealMode = presentingViewController is UINavigationController
+        
+        if isPresentingInAddMealMode {
+            dismiss(animated: true, completion: nil)
+        }
+        
+        else if let owningNavigationController = navigationController{
+            owningNavigationController.popViewController(animated: true)
+        }
+    }
     
     // MARK: Properties
     var reader = Reader()
@@ -122,6 +134,8 @@ class AllClubsTableViewController: UITableViewController {
                     fatalError("The selected cell is not being displayed by table")
                 }
                 ClubDetail.club = clubs[indexPath.row]
+        case "Homes":
+            return
             default: fatalError("Unexpected Segue Identifier")
         }
     }

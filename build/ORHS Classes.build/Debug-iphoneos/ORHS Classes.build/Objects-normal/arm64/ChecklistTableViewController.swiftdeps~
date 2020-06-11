@@ -6,12 +6,14 @@ provides-nominal:
 provides-member:
 - ["12ORHS_Classes28ChecklistTableViewControllerC", ""]
 provides-dynamic-lookup:
+- "Home"
 - "ResetButton"
 - "convert"
 - "current"
 - "didReceiveMemoryWarning"
 - "edit"
 - "numberOfSections"
+- "prepare"
 - "requirements"
 - "tableView"
 - "viewDidLoad"
@@ -23,6 +25,7 @@ depends-top-level:
 - !private "=="
 - !private ">"
 - !private ">="
+- !private "??"
 - "AssignmentPrecedence"
 - "Bool"
 - !private "BooleanLiteralType"
@@ -42,6 +45,8 @@ depends-top-level:
 - !private "UIAlertController"
 - "UIBarButtonItem"
 - !private "UIColor"
+- !private "UINavigationController"
+- "UIStoryboardSegue"
 - "UITableView"
 - !private "UITableViewAutomaticDimension"
 - "UITableViewCell"
@@ -53,6 +58,7 @@ depends-top-level:
 - !private "YearTableViewController"
 - !private "fatalError"
 - !private "print"
+- !private "~="
 depends-member:
 - !private ["s18AdditiveArithmeticP", "init"]
 - !private ["Sa", "count"]
@@ -100,10 +106,15 @@ depends-member:
 - !private ["s7CVarArgP", "current"]
 - !private ["s7CVarArgP", "dequeueReusableCell"]
 - !private ["s7CVarArgP", "didReceiveMemoryWarning"]
+- !private ["s7CVarArgP", "dismiss"]
 - !private ["s7CVarArgP", "estimatedRowHeight"]
 - !private ["s7CVarArgP", "fatalError"]
+- !private ["s7CVarArgP", "identifier"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "navigationController"]
+- !private ["s7CVarArgP", "popViewController"]
 - !private ["s7CVarArgP", "present"]
+- !private ["s7CVarArgP", "presentingViewController"]
 - !private ["s7CVarArgP", "print"]
 - !private ["s7CVarArgP", "reloadData"]
 - !private ["s7CVarArgP", "requirements"]
@@ -128,6 +139,7 @@ depends-member:
 - !private ["12ORHS_Classes28ChecklistTableViewControllerC", "ChecklistTableViewController"]
 - ["12ORHS_Classes28ChecklistTableViewControllerC", "Class"]
 - !private ["12ORHS_Classes28ChecklistTableViewControllerC", "Double"]
+- ["12ORHS_Classes28ChecklistTableViewControllerC", "Home"]
 - ["12ORHS_Classes28ChecklistTableViewControllerC", "IndexPath"]
 - ["12ORHS_Classes28ChecklistTableViewControllerC", "Int"]
 - !private ["12ORHS_Classes28ChecklistTableViewControllerC", "NSKeyedArchiver"]
@@ -137,6 +149,8 @@ depends-member:
 - !private ["12ORHS_Classes28ChecklistTableViewControllerC", "UIAlertController"]
 - ["12ORHS_Classes28ChecklistTableViewControllerC", "UIBarButtonItem"]
 - !private ["12ORHS_Classes28ChecklistTableViewControllerC", "UIColor"]
+- !private ["12ORHS_Classes28ChecklistTableViewControllerC", "UINavigationController"]
+- ["12ORHS_Classes28ChecklistTableViewControllerC", "UIStoryboardSegue"]
 - ["12ORHS_Classes28ChecklistTableViewControllerC", "UITableView"]
 - !private ["12ORHS_Classes28ChecklistTableViewControllerC", "UITableViewAutomaticDimension"]
 - ["12ORHS_Classes28ChecklistTableViewControllerC", "UITableViewCell"]
@@ -148,11 +162,15 @@ depends-member:
 - ["12ORHS_Classes28ChecklistTableViewControllerC", "current"]
 - ["12ORHS_Classes28ChecklistTableViewControllerC", "deinit"]
 - ["12ORHS_Classes28ChecklistTableViewControllerC", "didReceiveMemoryWarning"]
+- !private ["12ORHS_Classes28ChecklistTableViewControllerC", "dismiss"]
 - ["12ORHS_Classes28ChecklistTableViewControllerC", "edit"]
 - !private ["12ORHS_Classes28ChecklistTableViewControllerC", "fatalError"]
 - ["12ORHS_Classes28ChecklistTableViewControllerC", "init"]
+- !private ["12ORHS_Classes28ChecklistTableViewControllerC", "navigationController"]
 - ["12ORHS_Classes28ChecklistTableViewControllerC", "numberOfSections"]
+- ["12ORHS_Classes28ChecklistTableViewControllerC", "prepare"]
 - !private ["12ORHS_Classes28ChecklistTableViewControllerC", "present"]
+- !private ["12ORHS_Classes28ChecklistTableViewControllerC", "presentingViewController"]
 - !private ["12ORHS_Classes28ChecklistTableViewControllerC", "print"]
 - ["12ORHS_Classes28ChecklistTableViewControllerC", "requirements"]
 - ["12ORHS_Classes28ChecklistTableViewControllerC", "tableView"]
@@ -196,10 +214,15 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "current"]
 - !private ["s28CustomDebugStringConvertibleP", "dequeueReusableCell"]
 - !private ["s28CustomDebugStringConvertibleP", "didReceiveMemoryWarning"]
+- !private ["s28CustomDebugStringConvertibleP", "dismiss"]
 - !private ["s28CustomDebugStringConvertibleP", "estimatedRowHeight"]
 - !private ["s28CustomDebugStringConvertibleP", "fatalError"]
+- !private ["s28CustomDebugStringConvertibleP", "identifier"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "navigationController"]
+- !private ["s28CustomDebugStringConvertibleP", "popViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "present"]
+- !private ["s28CustomDebugStringConvertibleP", "presentingViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "print"]
 - !private ["s28CustomDebugStringConvertibleP", "reloadData"]
 - !private ["s28CustomDebugStringConvertibleP", "requirements"]
@@ -256,10 +279,15 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "current"]
 - !private ["s23CustomStringConvertibleP", "dequeueReusableCell"]
 - !private ["s23CustomStringConvertibleP", "didReceiveMemoryWarning"]
+- !private ["s23CustomStringConvertibleP", "dismiss"]
 - !private ["s23CustomStringConvertibleP", "estimatedRowHeight"]
 - !private ["s23CustomStringConvertibleP", "fatalError"]
+- !private ["s23CustomStringConvertibleP", "identifier"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "navigationController"]
+- !private ["s23CustomStringConvertibleP", "popViewController"]
 - !private ["s23CustomStringConvertibleP", "present"]
+- !private ["s23CustomStringConvertibleP", "presentingViewController"]
 - !private ["s23CustomStringConvertibleP", "print"]
 - !private ["s23CustomStringConvertibleP", "reloadData"]
 - !private ["s23CustomStringConvertibleP", "requirements"]
@@ -333,10 +361,15 @@ depends-member:
 - !private ["SQ", "default"]
 - !private ["SQ", "dequeueReusableCell"]
 - !private ["SQ", "didReceiveMemoryWarning"]
+- !private ["SQ", "dismiss"]
 - !private ["SQ", "estimatedRowHeight"]
 - !private ["SQ", "fatalError"]
+- !private ["SQ", "identifier"]
 - !private ["SQ", "init"]
+- !private ["SQ", "navigationController"]
+- !private ["SQ", "popViewController"]
 - !private ["SQ", "present"]
+- !private ["SQ", "presentingViewController"]
 - !private ["SQ", "print"]
 - !private ["SQ", "reloadData"]
 - !private ["SQ", "requirements"]
@@ -397,10 +430,15 @@ depends-member:
 - !private ["SH", "default"]
 - !private ["SH", "dequeueReusableCell"]
 - !private ["SH", "didReceiveMemoryWarning"]
+- !private ["SH", "dismiss"]
 - !private ["SH", "estimatedRowHeight"]
 - !private ["SH", "fatalError"]
+- !private ["SH", "identifier"]
 - !private ["SH", "init"]
+- !private ["SH", "navigationController"]
+- !private ["SH", "popViewController"]
 - !private ["SH", "present"]
+- !private ["SH", "presentingViewController"]
 - !private ["SH", "print"]
 - !private ["SH", "reloadData"]
 - !private ["SH", "requirements"]
@@ -450,10 +488,14 @@ depends-member:
 - !private ["So8NSCodingP", "current"]
 - !private ["So8NSCodingP", "dequeueReusableCell"]
 - !private ["So8NSCodingP", "didReceiveMemoryWarning"]
+- !private ["So8NSCodingP", "dismiss"]
 - !private ["So8NSCodingP", "estimatedRowHeight"]
 - !private ["So8NSCodingP", "fatalError"]
 - !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "navigationController"]
+- !private ["So8NSCodingP", "popViewController"]
 - !private ["So8NSCodingP", "present"]
+- !private ["So8NSCodingP", "presentingViewController"]
 - !private ["So8NSCodingP", "print"]
 - !private ["So8NSCodingP", "reloadData"]
 - !private ["So8NSCodingP", "requirements"]
@@ -485,9 +527,13 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "convert"]
 - !private ["So26NSExtensionRequestHandlingP", "current"]
 - !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
+- !private ["So26NSExtensionRequestHandlingP", "dismiss"]
 - !private ["So26NSExtensionRequestHandlingP", "fatalError"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "navigationController"]
+- !private ["So26NSExtensionRequestHandlingP", "popViewController"]
 - !private ["So26NSExtensionRequestHandlingP", "present"]
+- !private ["So26NSExtensionRequestHandlingP", "presentingViewController"]
 - !private ["So26NSExtensionRequestHandlingP", "print"]
 - !private ["So26NSExtensionRequestHandlingP", "requirements"]
 - !private ["So26NSExtensionRequestHandlingP", "schedules"]
@@ -502,6 +548,7 @@ depends-member:
 - !private ["So8NSObjectC", "ChecklistTableViewController"]
 - ["So8NSObjectC", "Class"]
 - !private ["So8NSObjectC", "Double"]
+- ["So8NSObjectC", "Home"]
 - ["So8NSObjectC", "IndexPath"]
 - ["So8NSObjectC", "Int"]
 - !private ["So8NSObjectC", "NSKeyedArchiver"]
@@ -511,6 +558,8 @@ depends-member:
 - !private ["So8NSObjectC", "UIAlertController"]
 - ["So8NSObjectC", "UIBarButtonItem"]
 - !private ["So8NSObjectC", "UIColor"]
+- !private ["So8NSObjectC", "UINavigationController"]
+- ["So8NSObjectC", "UIStoryboardSegue"]
 - ["So8NSObjectC", "UITableView"]
 - !private ["So8NSObjectC", "UITableViewAutomaticDimension"]
 - ["So8NSObjectC", "UITableViewCell"]
@@ -526,12 +575,18 @@ depends-member:
 - ["So8NSObjectC", "current"]
 - !private ["So8NSObjectC", "dequeueReusableCell"]
 - ["So8NSObjectC", "didReceiveMemoryWarning"]
+- !private ["So8NSObjectC", "dismiss"]
 - ["So8NSObjectC", "edit"]
 - !private ["So8NSObjectC", "estimatedRowHeight"]
 - !private ["So8NSObjectC", "fatalError"]
+- !private ["So8NSObjectC", "identifier"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "navigationController"]
 - ["So8NSObjectC", "numberOfSections"]
+- !private ["So8NSObjectC", "popViewController"]
+- ["So8NSObjectC", "prepare"]
 - !private ["So8NSObjectC", "present"]
+- !private ["So8NSObjectC", "presentingViewController"]
 - !private ["So8NSObjectC", "print"]
 - !private ["So8NSObjectC", "reloadData"]
 - ["So8NSObjectC", "requirements"]
@@ -568,10 +623,15 @@ depends-member:
 - !private ["So8NSObjectP", "current"]
 - !private ["So8NSObjectP", "dequeueReusableCell"]
 - !private ["So8NSObjectP", "didReceiveMemoryWarning"]
+- !private ["So8NSObjectP", "dismiss"]
 - !private ["So8NSObjectP", "estimatedRowHeight"]
 - !private ["So8NSObjectP", "fatalError"]
+- !private ["So8NSObjectP", "identifier"]
 - !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "navigationController"]
+- !private ["So8NSObjectP", "popViewController"]
 - !private ["So8NSObjectP", "present"]
+- !private ["So8NSObjectP", "presentingViewController"]
 - !private ["So8NSObjectP", "print"]
 - !private ["So8NSObjectP", "reloadData"]
 - !private ["So8NSObjectP", "requirements"]
@@ -672,10 +732,14 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "current"]
 - !private ["So21UIAppearanceContainerP", "dequeueReusableCell"]
 - !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
+- !private ["So21UIAppearanceContainerP", "dismiss"]
 - !private ["So21UIAppearanceContainerP", "estimatedRowHeight"]
 - !private ["So21UIAppearanceContainerP", "fatalError"]
 - !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "navigationController"]
+- !private ["So21UIAppearanceContainerP", "popViewController"]
 - !private ["So21UIAppearanceContainerP", "present"]
+- !private ["So21UIAppearanceContainerP", "presentingViewController"]
 - !private ["So21UIAppearanceContainerP", "print"]
 - !private ["So21UIAppearanceContainerP", "reloadData"]
 - !private ["So21UIAppearanceContainerP", "requirements"]
@@ -706,9 +770,13 @@ depends-member:
 - !private ["So18UIContentContainerP", "convert"]
 - !private ["So18UIContentContainerP", "current"]
 - !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
+- !private ["So18UIContentContainerP", "dismiss"]
 - !private ["So18UIContentContainerP", "fatalError"]
 - !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "navigationController"]
+- !private ["So18UIContentContainerP", "popViewController"]
 - !private ["So18UIContentContainerP", "present"]
+- !private ["So18UIContentContainerP", "presentingViewController"]
 - !private ["So18UIContentContainerP", "print"]
 - !private ["So18UIContentContainerP", "requirements"]
 - !private ["So18UIContentContainerP", "schedules"]
@@ -763,10 +831,14 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "current"]
 - !private ["So18UIFocusEnvironmentP", "dequeueReusableCell"]
 - !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
+- !private ["So18UIFocusEnvironmentP", "dismiss"]
 - !private ["So18UIFocusEnvironmentP", "estimatedRowHeight"]
 - !private ["So18UIFocusEnvironmentP", "fatalError"]
 - !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "navigationController"]
+- !private ["So18UIFocusEnvironmentP", "popViewController"]
 - !private ["So18UIFocusEnvironmentP", "present"]
+- !private ["So18UIFocusEnvironmentP", "presentingViewController"]
 - !private ["So18UIFocusEnvironmentP", "print"]
 - !private ["So18UIFocusEnvironmentP", "reloadData"]
 - !private ["So18UIFocusEnvironmentP", "requirements"]
@@ -823,6 +895,7 @@ depends-member:
 - !private ["So24UILargeContentViewerItemP", "textAlignment"]
 - !private ["So24UILargeContentViewerItemP", "textColor"]
 - !private ["So24UILargeContentViewerItemP", "textLabel"]
+- !private ["So22UINavigationControllerC", "popViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "ChecklistTableViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "Class"]
 - !private ["So30UIPasteConfigurationSupportingP", "Double"]
@@ -841,10 +914,14 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "current"]
 - !private ["So30UIPasteConfigurationSupportingP", "dequeueReusableCell"]
 - !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
+- !private ["So30UIPasteConfigurationSupportingP", "dismiss"]
 - !private ["So30UIPasteConfigurationSupportingP", "estimatedRowHeight"]
 - !private ["So30UIPasteConfigurationSupportingP", "fatalError"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "navigationController"]
+- !private ["So30UIPasteConfigurationSupportingP", "popViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "present"]
+- !private ["So30UIPasteConfigurationSupportingP", "presentingViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "print"]
 - !private ["So30UIPasteConfigurationSupportingP", "reloadData"]
 - !private ["So30UIPasteConfigurationSupportingP", "requirements"]
@@ -863,6 +940,7 @@ depends-member:
 - !private ["So11UIResponderC", "ChecklistTableViewController"]
 - ["So11UIResponderC", "Class"]
 - !private ["So11UIResponderC", "Double"]
+- ["So11UIResponderC", "Home"]
 - ["So11UIResponderC", "IndexPath"]
 - ["So11UIResponderC", "Int"]
 - !private ["So11UIResponderC", "NSKeyedArchiver"]
@@ -872,6 +950,8 @@ depends-member:
 - !private ["So11UIResponderC", "UIAlertController"]
 - ["So11UIResponderC", "UIBarButtonItem"]
 - !private ["So11UIResponderC", "UIColor"]
+- !private ["So11UIResponderC", "UINavigationController"]
+- ["So11UIResponderC", "UIStoryboardSegue"]
 - ["So11UIResponderC", "UITableView"]
 - !private ["So11UIResponderC", "UITableViewAutomaticDimension"]
 - ["So11UIResponderC", "UITableViewCell"]
@@ -885,12 +965,17 @@ depends-member:
 - ["So11UIResponderC", "current"]
 - !private ["So11UIResponderC", "dequeueReusableCell"]
 - ["So11UIResponderC", "didReceiveMemoryWarning"]
+- !private ["So11UIResponderC", "dismiss"]
 - ["So11UIResponderC", "edit"]
 - !private ["So11UIResponderC", "estimatedRowHeight"]
 - !private ["So11UIResponderC", "fatalError"]
 - ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "navigationController"]
 - ["So11UIResponderC", "numberOfSections"]
+- !private ["So11UIResponderC", "popViewController"]
+- ["So11UIResponderC", "prepare"]
 - !private ["So11UIResponderC", "present"]
+- !private ["So11UIResponderC", "presentingViewController"]
 - !private ["So11UIResponderC", "print"]
 - !private ["So11UIResponderC", "reloadData"]
 - ["So11UIResponderC", "requirements"]
@@ -922,10 +1007,14 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "current"]
 - !private ["So30UIResponderStandardEditActionsP", "dequeueReusableCell"]
 - !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
+- !private ["So30UIResponderStandardEditActionsP", "dismiss"]
 - !private ["So30UIResponderStandardEditActionsP", "estimatedRowHeight"]
 - !private ["So30UIResponderStandardEditActionsP", "fatalError"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "navigationController"]
+- !private ["So30UIResponderStandardEditActionsP", "popViewController"]
 - !private ["So30UIResponderStandardEditActionsP", "present"]
+- !private ["So30UIResponderStandardEditActionsP", "presentingViewController"]
 - !private ["So30UIResponderStandardEditActionsP", "print"]
 - !private ["So30UIResponderStandardEditActionsP", "reloadData"]
 - !private ["So30UIResponderStandardEditActionsP", "requirements"]
@@ -959,8 +1048,11 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "convert"]
 - !private ["So20UIScrollViewDelegateP", "current"]
 - !private ["So20UIScrollViewDelegateP", "didReceiveMemoryWarning"]
+- !private ["So20UIScrollViewDelegateP", "dismiss"]
 - !private ["So20UIScrollViewDelegateP", "fatalError"]
+- !private ["So20UIScrollViewDelegateP", "navigationController"]
 - !private ["So20UIScrollViewDelegateP", "present"]
+- !private ["So20UIScrollViewDelegateP", "presentingViewController"]
 - !private ["So20UIScrollViewDelegateP", "print"]
 - !private ["So20UIScrollViewDelegateP", "requirements"]
 - !private ["So20UIScrollViewDelegateP", "schedules"]
@@ -990,15 +1082,20 @@ depends-member:
 - !private ["So16UIStateRestoringP", "convert"]
 - !private ["So16UIStateRestoringP", "current"]
 - !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
+- !private ["So16UIStateRestoringP", "dismiss"]
 - !private ["So16UIStateRestoringP", "fatalError"]
 - !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "navigationController"]
+- !private ["So16UIStateRestoringP", "popViewController"]
 - !private ["So16UIStateRestoringP", "present"]
+- !private ["So16UIStateRestoringP", "presentingViewController"]
 - !private ["So16UIStateRestoringP", "print"]
 - !private ["So16UIStateRestoringP", "requirements"]
 - !private ["So16UIStateRestoringP", "schedules"]
 - !private ["So16UIStateRestoringP", "tableView"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - !private ["So16UIStateRestoringP", "viewWillAppear"]
+- !private ["So17UIStoryboardSegueC", "identifier"]
 - !private ["So11UITableViewC", "dequeueReusableCell"]
 - !private ["So11UITableViewC", "estimatedRowHeight"]
 - !private ["So11UITableViewC", "reloadData"]
@@ -1011,6 +1108,7 @@ depends-member:
 - !private ["So21UITableViewControllerC", "ChecklistTableViewController"]
 - ["So21UITableViewControllerC", "Class"]
 - !private ["So21UITableViewControllerC", "Double"]
+- ["So21UITableViewControllerC", "Home"]
 - ["So21UITableViewControllerC", "IndexPath"]
 - ["So21UITableViewControllerC", "Int"]
 - !private ["So21UITableViewControllerC", "NSKeyedArchiver"]
@@ -1020,6 +1118,8 @@ depends-member:
 - !private ["So21UITableViewControllerC", "UIAlertController"]
 - ["So21UITableViewControllerC", "UIBarButtonItem"]
 - !private ["So21UITableViewControllerC", "UIColor"]
+- !private ["So21UITableViewControllerC", "UINavigationController"]
+- ["So21UITableViewControllerC", "UIStoryboardSegue"]
 - ["So21UITableViewControllerC", "UITableView"]
 - !private ["So21UITableViewControllerC", "UITableViewAutomaticDimension"]
 - ["So21UITableViewControllerC", "UITableViewCell"]
@@ -1031,11 +1131,15 @@ depends-member:
 - ["So21UITableViewControllerC", "convert"]
 - ["So21UITableViewControllerC", "current"]
 - ["So21UITableViewControllerC", "didReceiveMemoryWarning"]
+- !private ["So21UITableViewControllerC", "dismiss"]
 - ["So21UITableViewControllerC", "edit"]
 - !private ["So21UITableViewControllerC", "fatalError"]
 - ["So21UITableViewControllerC", "init"]
+- !private ["So21UITableViewControllerC", "navigationController"]
 - ["So21UITableViewControllerC", "numberOfSections"]
+- ["So21UITableViewControllerC", "prepare"]
 - !private ["So21UITableViewControllerC", "present"]
+- !private ["So21UITableViewControllerC", "presentingViewController"]
 - !private ["So21UITableViewControllerC", "print"]
 - ["So21UITableViewControllerC", "requirements"]
 - !private ["So21UITableViewControllerC", "schedules"]
@@ -1057,8 +1161,11 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "convert"]
 - !private ["So21UITableViewDataSourceP", "current"]
 - !private ["So21UITableViewDataSourceP", "didReceiveMemoryWarning"]
+- !private ["So21UITableViewDataSourceP", "dismiss"]
 - !private ["So21UITableViewDataSourceP", "fatalError"]
+- !private ["So21UITableViewDataSourceP", "navigationController"]
 - !private ["So21UITableViewDataSourceP", "present"]
+- !private ["So21UITableViewDataSourceP", "presentingViewController"]
 - !private ["So21UITableViewDataSourceP", "print"]
 - !private ["So21UITableViewDataSourceP", "requirements"]
 - !private ["So21UITableViewDataSourceP", "schedules"]
@@ -1080,8 +1187,11 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "convert"]
 - !private ["So19UITableViewDelegateP", "current"]
 - !private ["So19UITableViewDelegateP", "didReceiveMemoryWarning"]
+- !private ["So19UITableViewDelegateP", "dismiss"]
 - !private ["So19UITableViewDelegateP", "fatalError"]
+- !private ["So19UITableViewDelegateP", "navigationController"]
 - !private ["So19UITableViewDelegateP", "present"]
+- !private ["So19UITableViewDelegateP", "presentingViewController"]
 - !private ["So19UITableViewDelegateP", "print"]
 - !private ["So19UITableViewDelegateP", "requirements"]
 - !private ["So19UITableViewDelegateP", "schedules"]
@@ -1106,10 +1216,14 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "current"]
 - !private ["So18UITraitEnvironmentP", "dequeueReusableCell"]
 - !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
+- !private ["So18UITraitEnvironmentP", "dismiss"]
 - !private ["So18UITraitEnvironmentP", "estimatedRowHeight"]
 - !private ["So18UITraitEnvironmentP", "fatalError"]
 - !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "navigationController"]
+- !private ["So18UITraitEnvironmentP", "popViewController"]
 - !private ["So18UITraitEnvironmentP", "present"]
+- !private ["So18UITraitEnvironmentP", "presentingViewController"]
 - !private ["So18UITraitEnvironmentP", "print"]
 - !private ["So18UITraitEnvironmentP", "reloadData"]
 - !private ["So18UITraitEnvironmentP", "requirements"]
@@ -1141,10 +1255,14 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "current"]
 - !private ["So23UIUserActivityRestoringP", "dequeueReusableCell"]
 - !private ["So23UIUserActivityRestoringP", "didReceiveMemoryWarning"]
+- !private ["So23UIUserActivityRestoringP", "dismiss"]
 - !private ["So23UIUserActivityRestoringP", "estimatedRowHeight"]
 - !private ["So23UIUserActivityRestoringP", "fatalError"]
 - !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "navigationController"]
+- !private ["So23UIUserActivityRestoringP", "popViewController"]
 - !private ["So23UIUserActivityRestoringP", "present"]
+- !private ["So23UIUserActivityRestoringP", "presentingViewController"]
 - !private ["So23UIUserActivityRestoringP", "print"]
 - !private ["So23UIUserActivityRestoringP", "reloadData"]
 - !private ["So23UIUserActivityRestoringP", "requirements"]
@@ -1174,6 +1292,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "ChecklistTableViewController"]
 - ["So16UIViewControllerC", "Class"]
 - !private ["So16UIViewControllerC", "Double"]
+- ["So16UIViewControllerC", "Home"]
 - ["So16UIViewControllerC", "IndexPath"]
 - ["So16UIViewControllerC", "Int"]
 - !private ["So16UIViewControllerC", "NSKeyedArchiver"]
@@ -1183,6 +1302,8 @@ depends-member:
 - !private ["So16UIViewControllerC", "UIAlertController"]
 - ["So16UIViewControllerC", "UIBarButtonItem"]
 - !private ["So16UIViewControllerC", "UIColor"]
+- !private ["So16UIViewControllerC", "UINavigationController"]
+- ["So16UIViewControllerC", "UIStoryboardSegue"]
 - ["So16UIViewControllerC", "UITableView"]
 - !private ["So16UIViewControllerC", "UITableViewAutomaticDimension"]
 - ["So16UIViewControllerC", "UITableViewCell"]
@@ -1194,11 +1315,16 @@ depends-member:
 - ["So16UIViewControllerC", "convert"]
 - ["So16UIViewControllerC", "current"]
 - ["So16UIViewControllerC", "didReceiveMemoryWarning"]
+- !private ["So16UIViewControllerC", "dismiss"]
 - ["So16UIViewControllerC", "edit"]
 - !private ["So16UIViewControllerC", "fatalError"]
 - ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "navigationController"]
 - ["So16UIViewControllerC", "numberOfSections"]
+- !private ["So16UIViewControllerC", "popViewController"]
+- ["So16UIViewControllerC", "prepare"]
 - !private ["So16UIViewControllerC", "present"]
+- !private ["So16UIViewControllerC", "presentingViewController"]
 - !private ["So16UIViewControllerC", "print"]
 - ["So16UIViewControllerC", "requirements"]
 - !private ["So16UIViewControllerC", "schedules"]
@@ -1251,10 +1377,15 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "current"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dequeueReusableCell"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "didReceiveMemoryWarning"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dismiss"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "estimatedRowHeight"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fatalError"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "identifier"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "popViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "present"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "presentingViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "reloadData"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "requirements"]
@@ -1291,10 +1422,15 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "current"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dequeueReusableCell"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "didReceiveMemoryWarning"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dismiss"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "estimatedRowHeight"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "fatalError"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "identifier"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "navigationController"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "popViewController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "present"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "presentingViewController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "print"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "reloadData"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "requirements"]
@@ -1410,6 +1546,7 @@ depends-nominal:
 - !private "So27UIGestureRecognizerDelegateP"
 - !private "So7UILabelC"
 - !private "So24UILargeContentViewerItemP"
+- !private "So22UINavigationControllerC"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
@@ -1417,6 +1554,7 @@ depends-nominal:
 - "So20UIScrollViewDelegateP"
 - !private "So35UISpringLoadedInteractionSupportingP"
 - "So16UIStateRestoringP"
+- !private "So17UIStoryboardSegueC"
 - !private "So11UITableViewC"
 - !private "So15UITableViewCellC"
 - "So21UITableViewControllerC"
@@ -1458,18 +1596,18 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/UIKit.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SwiftOnoneSupport.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Combine.swiftmodule/arm64-apple-ios.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "fda7d04cadfc4a717c86fd098f4e8fa1"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "ebc9cace4e962232b018de7292efc7f7"
