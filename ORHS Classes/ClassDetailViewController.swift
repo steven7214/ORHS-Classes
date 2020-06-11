@@ -9,7 +9,7 @@
 import UIKit
 
 class ClassDetailViewController: UIViewController {
-
+    //static var dialog = false
     //MARK: Properties
     var course: Class?
     var subject: String? //passed from classTableView
@@ -25,16 +25,19 @@ class ClassDetailViewController: UIViewController {
         for schedules in YearTableViewController.schedules {
             for classes in schedules {
                 if (classes.name == course!.name) {
-                    AddButton.isEnabled = false
+                    // AddButton.isEnabled = false
                     course?.added = true
                     return
                 }
             }
         }
-        AddButton.isEnabled = true
+        //AddButton.isEnabled = true
         course?.added = false
     }
+    
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = course?.name
@@ -43,9 +46,8 @@ class ClassDetailViewController: UIViewController {
         hourLabel.text = "Homework: \(course!.hours) hrs/day"
         descriptionTextBox.text = course!.summary
         categoryLabel.text = "Subject: \(course!.subject)"
-        
         if course!.added {
-            AddButton.isEnabled = false
+            // AddButton.isEnabled = false
         }
     }
 
@@ -62,19 +64,36 @@ class ClassDetailViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch(segue.identifier ?? "") {
         case "ChooseYear": guard let Navigation = segue.destination as? UINavigationController else {
-            fatalError("Unexpected deestination")
+            fatalError("Unexpected destination")
         }
         let Year = Navigation.topViewController as! AddYearTableViewController
-        Year.tempCourse = course!
+        Year.tempCourse = self.course!
         default: fatalError("Unexpected Segue Identifier")
         }
-        
     }
     
     @IBAction func unwindToVC1(sender:UIStoryboardSegue) {
+        if subject == "Other" {
+            if sender.identifier == "SaveClass" {
+                course!.added = true
+                //AddButton.isEnabled = false
+                let encodedData = NSKeyedArchiver.archivedData(withRootObject: YearTableViewController.schedules)
+                UserDefaults.standard.set(encodedData, forKey: "savedSchedules")
+                return
+            }
+        }
+        if subject == "Career Academies" {
+            if sender.identifier == "SaveClass" {
+                course!.added = true
+                //AddButton.isEnabled = false
+                let encodedData = NSKeyedArchiver.archivedData(withRootObject: YearTableViewController.schedules)
+                UserDefaults.standard.set(encodedData, forKey: "savedSchedules")
+                return
+            }
+        }
         if sender.identifier == "SaveClass" {
             course!.added = true
-            AddButton.isEnabled = false
+            //AddButton.isEnabled = false
             print("added " + course!.name)
             print(course!.credits)
             ChecklistTableViewController.edit(course!, true) //passes course on to edit checklist

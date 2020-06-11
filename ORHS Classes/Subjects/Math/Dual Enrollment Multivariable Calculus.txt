@@ -1,0 +1,6 @@
+Class Name: Dual Enrollment Multivariable Calculus
+Subject/Category: Math
+Number of Credits: 1.0
+GPA: 5.0
+Average Number of Hours of Homework per Day: NA
+Description: This course covers typical topics from Calculus 3 including analytic geometry and vectors, differential calculus of functions of several variables, multiple integration, and topics from vector calculus. This course is equivalent to MATH 2110 at Tennessee Tech University and students have the opportunity for dual enrollment.

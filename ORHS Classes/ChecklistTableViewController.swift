@@ -9,13 +9,57 @@
 import UIKit
 
 class ChecklistTableViewController: UITableViewController {
+    @IBOutlet weak var Home: UIBarButtonItem!
+    @IBAction func Home(_ sender: UIBarButtonItem) {
+        let isPresentingInAddMealMode = presentingViewController is UINavigationController
+        
+        if isPresentingInAddMealMode {
+            dismiss(animated: true, completion: nil)
+        }
+        
+        else if let owningNavigationController = navigationController{
+            owningNavigationController.popViewController(animated: true)
+        }
+    }
     
     
     //MARK: properties
-    static let requirements = [("English", 4.0), ("Math", 4.0), ("Science", 3.0), ("World Language", 2.0), ("Fine Art", 1.0), ("U.S. History", 1.0), ("History/Geography", 1.0), ("Economics", 0.5), ("Government", 0.5), ("Personal Finance", 0.5), ("Lifetime Wellness", 1.5)]
+    static let requirements = [("English", 4.0), ("Math", 4.0), ("Science", 3.0), ("World Languages", 2.0), ("Fine Arts", 1.0), ("U.S. History", 1.0), ("History/Geography", 1.0), ("Economics", 0.5), ("Government", 0.5), ("Personal Finance", 0.5), ("Lifetime Wellness", 1.5)]
     static var current = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
     
+    @IBOutlet weak var ResetButton: UIBarButtonItem!
+    
+    @IBAction func ResetButton(_ sender: UIBarButtonItem) {
+            // Declare Alert message
+        let dialogMessage = UIAlertController(title: "Confirm", message: "Are you sure you want to reset your schedules?", preferredStyle: .alert)
+            
+        // Create OK button with action handler
+        let Yes = UIAlertAction(title: "Yes", style: .default, handler: { (action) -> Void in
+            print("Yes button tapped")
+            ChecklistTableViewController.current = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+            UserDefaults.standard.set(ChecklistTableViewController.current, forKey: "savedList")
+            YearTableViewController.schedules = [[Class](), [Class](), [Class](), [Class]()]
+            let encodedData = NSKeyedArchiver.archivedData(withRootObject: YearTableViewController.schedules)
+            UserDefaults.standard.set(encodedData, forKey: "savedSchedules")
+            self.tableView.reloadData()
+        })
+        
+        // Create Cancel button with action handlder
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel) { (action) -> Void in
+            print("Cancel button tapped")
+        }
+        
+        //Add Yes and Cancel button to dialog message
+        dialogMessage.addAction(Yes)
+        dialogMessage.addAction(cancel)
+        
+        // Present dialog message to user
+        self.present(dialogMessage, animated: true, completion: nil)
+        tableView.reloadData()
+    }
 
+        
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
@@ -25,7 +69,6 @@ class ChecklistTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.tableFooterView = UIView(frame: .zero)
-        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -87,28 +130,39 @@ class ChecklistTableViewController: UITableViewController {
     static func edit(_ course:Class, _ add:Bool) {
         //this is wrong we need the real graduation credit subject fix later
         let index = convert(course.subject)
-        
+        print(course.subject)
         if (add == false){
-            ChecklistTableViewController.current[index] -= Double(course.credits)! //don't want to be negative
+            if course.subject == "Other" {
+                let encodedData = NSKeyedArchiver.archivedData(withRootObject: YearTableViewController.schedules)
+                UserDefaults.standard.set(encodedData, forKey: "savedSchedules")
+                return
+            }
+            if course.subject == "Career Academies" {
+                let encodedData = NSKeyedArchiver.archivedData(withRootObject: YearTableViewController.schedules)
+                UserDefaults.standard.set(encodedData, forKey: "savedSchedules")
+                return
+            }
+            ChecklistTableViewController.current[index] -= Double(course.credits)!
+            if (ChecklistTableViewController.current[index] < 0.0) {
+                ChecklistTableViewController.current[index] = 0.0
+            }
         }
         else {
-            ChecklistTableViewController.current[index] += Double(course.credits)!  
+            print(index)
+            print(ChecklistTableViewController.current.count)
+            ChecklistTableViewController.current[index] += Double(course.credits)!
         }
         UserDefaults.standard.set(ChecklistTableViewController.current, forKey: "savedList")
         let encodedData = NSKeyedArchiver.archivedData(withRootObject: YearTableViewController.schedules)
-         UserDefaults.standard.set(encodedData, forKey: "savedSchedules")
+        UserDefaults.standard.set(encodedData, forKey: "savedSchedules")
         print(YearTableViewController.schedules)
-        for credits in ChecklistTableViewController.current {
-            if credits < 0.0 {
-                let credits = 0.0
-            }
-        }
         
         
     }
     
     
     static func convert(_ oldNum:String) -> Int{
+        print(oldNum)
         var num = -1
         var index = 0
         for tuples in requirements{
@@ -121,7 +175,7 @@ class ChecklistTableViewController: UITableViewController {
         if (num < 0) {
             print("subject not found")
         }
-        print("num\(num)")
+        print("num \(num)")
         return num
     }
     
@@ -160,15 +214,19 @@ class ChecklistTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch(segue.identifier ?? "") {
+        case "goinHome":
+            return
+        default: fatalError("Unexpected segue identifier")
+        }
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
     
     //attempted to restore state
 //    override func encodeRestorableState(with coder: NSCoder) {

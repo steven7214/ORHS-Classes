@@ -9,6 +9,24 @@
 import UIKit
 
 class YearTableViewController: UITableViewController {
+    
+    
+    @IBOutlet weak var Back: UIBarButtonItem!
+    @IBAction func Back(_ sender: UIBarButtonItem) {
+        let isPresentingInAddMealMode = presentingViewController is UINavigationController
+        
+        if isPresentingInAddMealMode {
+            dismiss(animated: true, completion: nil)
+        }
+        
+        else if let owningNavigationController = navigationController{
+            owningNavigationController.popViewController(animated: true)
+        }
+        
+        else {
+            fatalError("The MealViewController is not inside a navigation controller.")
+        }
+    }
     //MARK: Properties
     let years = ["Freshman", "Sophomore", "Junior", "Senior"]
     static var schedules = [[Class](), [Class](), [Class](), [Class]()]
@@ -17,7 +35,7 @@ class YearTableViewController: UITableViewController {
         super.viewDidLoad()
         tableView.tableFooterView = UIView(frame: .zero)
         if let old = UserDefaults.standard.object(forKey: "savedList") as? [Double] {
-                   ChecklistTableViewController.current = old
+            ChecklistTableViewController.current = old
         }
         let key = UserDefaults.standard.object(forKey: "savedSchedules")
         if key != nil {
@@ -122,17 +140,19 @@ class YearTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
         switch(segue.identifier ?? "") {
-        case "ShowSchedule": guard let ScheduleController = segue.destination as? ScheduleTableViewController else {
+        case "ShowSchedule":
+            guard let ScheduleController = segue.destination as? ScheduleTableViewController else {
             fatalError("Unexpected deestination")
-        }
-        guard let selectedYearCell = sender as? YearTableViewCell else {
-            fatalError("Unexpected sender")
-        }
-        guard let indexPath = tableView.indexPath(for: selectedYearCell) else {
-            fatalError("The selected cell is not being displayed by table")
-        }
-        ScheduleController.classes = YearTableViewController.schedules[indexPath.row]
-        ScheduleController.yearIndex = indexPath.row
+            }
+            guard let selectedYearCell = sender as? YearTableViewCell else {
+                fatalError("Unexpected sender")
+            }
+            guard let indexPath = tableView.indexPath(for: selectedYearCell) else {
+                fatalError("The selected cell is not being displayed by table")
+            }
+            ScheduleController.classes = YearTableViewController.schedules[indexPath.row]
+            ScheduleController.yearIndex = indexPath.row
+        case "HomeScreen": return
         default: fatalError("Unexpected Segue Identifier")
         }
         

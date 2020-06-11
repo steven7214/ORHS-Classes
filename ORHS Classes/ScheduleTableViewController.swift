@@ -58,15 +58,10 @@ class ScheduleTableViewController: UITableViewController {
         cell.textLabel?.textAlignment = .center
         cell.textLabel?.font = UIFont(name:"HelveticaNeue-Bold", size: 28.0)
         var index = indexPath.row
-        if index == 5 {
-            cell.textLabel?.text = "Lunch"
+        if index > 5 {
+            index -= 1
         }
-        else{
-            if index > 5 {
-                index -= 1
-            }
-            cell.textLabel?.text = classes[index].name
-        }
+        cell.textLabel?.text = classes[index].name
         return cell
     }
     

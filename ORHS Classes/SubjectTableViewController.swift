@@ -9,9 +9,21 @@
 import UIKit
 
 class SubjectTableViewController: UITableViewController {
+    @IBOutlet weak var Home: UIBarButtonItem!
+    @IBAction func Home(_ sender: UIBarButtonItem) {
+        let isPresentingInAddMealMode = presentingViewController is UINavigationController
+        
+        if isPresentingInAddMealMode {
+            dismiss(animated: true, completion: nil)
+        }
+        
+        else if let owningNavigationController = navigationController{
+            owningNavigationController.popViewController(animated: true)
+        }
+    }
     //MARK: Properties
     struct subjectList {
-      static  let subjects = ["Math", "Language", "Science", "Social Studies", "Fine Arts"]
+    static  let subjects = ["English", "Math", "Science", "Economics", "World Languages", "Fine Arts", "Wellness", "Career Academies", "Other", "Personal Finance", "U.S. Government", "U.S. History", "World History:Geography"]
     }
     
     
@@ -119,6 +131,8 @@ class SubjectTableViewController: UITableViewController {
         let selectedSubject = subjectList.subjects[indexPath.row]
         ClassTableViewController.subject = selectedSubject
         print(selectedSubject)
+        case "goesHome":
+            return
         default: fatalError("Unexpected Segue Identifier")
         }
     }
