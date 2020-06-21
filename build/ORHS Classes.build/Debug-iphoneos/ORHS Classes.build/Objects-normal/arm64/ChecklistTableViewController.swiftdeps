@@ -6,6 +6,8 @@ provides-nominal:
 provides-member:
 - ["12ORHS_Classes28ChecklistTableViewControllerC", ""]
 provides-dynamic-lookup:
+- "GPA"
+- "GPALabel"
 - "Home"
 - "ResetButton"
 - "convert"
@@ -23,7 +25,6 @@ depends-top-level:
 - !private "-="
 - !private "<"
 - !private "=="
-- !private ">"
 - !private ">="
 - !private "??"
 - "AssignmentPrecedence"
@@ -45,6 +46,7 @@ depends-top-level:
 - !private "UIAlertController"
 - "UIBarButtonItem"
 - !private "UIColor"
+- "UILabel"
 - !private "UINavigationController"
 - "UIStoryboardSegue"
 - "UITableView"
@@ -111,6 +113,7 @@ depends-member:
 - !private ["s7CVarArgP", "fatalError"]
 - !private ["s7CVarArgP", "identifier"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "name"]
 - !private ["s7CVarArgP", "navigationController"]
 - !private ["s7CVarArgP", "popViewController"]
 - !private ["s7CVarArgP", "present"]
@@ -139,6 +142,8 @@ depends-member:
 - !private ["12ORHS_Classes28ChecklistTableViewControllerC", "ChecklistTableViewController"]
 - ["12ORHS_Classes28ChecklistTableViewControllerC", "Class"]
 - !private ["12ORHS_Classes28ChecklistTableViewControllerC", "Double"]
+- ["12ORHS_Classes28ChecklistTableViewControllerC", "GPA"]
+- ["12ORHS_Classes28ChecklistTableViewControllerC", "GPALabel"]
 - ["12ORHS_Classes28ChecklistTableViewControllerC", "Home"]
 - ["12ORHS_Classes28ChecklistTableViewControllerC", "IndexPath"]
 - ["12ORHS_Classes28ChecklistTableViewControllerC", "Int"]
@@ -149,6 +154,7 @@ depends-member:
 - !private ["12ORHS_Classes28ChecklistTableViewControllerC", "UIAlertController"]
 - ["12ORHS_Classes28ChecklistTableViewControllerC", "UIBarButtonItem"]
 - !private ["12ORHS_Classes28ChecklistTableViewControllerC", "UIColor"]
+- ["12ORHS_Classes28ChecklistTableViewControllerC", "UILabel"]
 - !private ["12ORHS_Classes28ChecklistTableViewControllerC", "UINavigationController"]
 - ["12ORHS_Classes28ChecklistTableViewControllerC", "UIStoryboardSegue"]
 - ["12ORHS_Classes28ChecklistTableViewControllerC", "UITableView"]
@@ -177,6 +183,7 @@ depends-member:
 - ["12ORHS_Classes28ChecklistTableViewControllerC", "viewDidLoad"]
 - ["12ORHS_Classes28ChecklistTableViewControllerC", "viewWillAppear"]
 - !private ["12ORHS_Classes5ClassC", "credits"]
+- !private ["12ORHS_Classes5ClassC", "name"]
 - !private ["12ORHS_Classes5ClassC", "subject"]
 - !private ["Sl", "0"]
 - !private ["Sl", "1"]
@@ -219,6 +226,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "fatalError"]
 - !private ["s28CustomDebugStringConvertibleP", "identifier"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "name"]
 - !private ["s28CustomDebugStringConvertibleP", "navigationController"]
 - !private ["s28CustomDebugStringConvertibleP", "popViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "present"]
@@ -284,6 +292,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "fatalError"]
 - !private ["s23CustomStringConvertibleP", "identifier"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "name"]
 - !private ["s23CustomStringConvertibleP", "navigationController"]
 - !private ["s23CustomStringConvertibleP", "popViewController"]
 - !private ["s23CustomStringConvertibleP", "present"]
@@ -366,6 +375,7 @@ depends-member:
 - !private ["SQ", "fatalError"]
 - !private ["SQ", "identifier"]
 - !private ["SQ", "init"]
+- !private ["SQ", "name"]
 - !private ["SQ", "navigationController"]
 - !private ["SQ", "popViewController"]
 - !private ["SQ", "present"]
@@ -435,6 +445,7 @@ depends-member:
 - !private ["SH", "fatalError"]
 - !private ["SH", "identifier"]
 - !private ["SH", "init"]
+- !private ["SH", "name"]
 - !private ["SH", "navigationController"]
 - !private ["SH", "popViewController"]
 - !private ["SH", "present"]
@@ -492,6 +503,7 @@ depends-member:
 - !private ["So8NSCodingP", "estimatedRowHeight"]
 - !private ["So8NSCodingP", "fatalError"]
 - !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "name"]
 - !private ["So8NSCodingP", "navigationController"]
 - !private ["So8NSCodingP", "popViewController"]
 - !private ["So8NSCodingP", "present"]
@@ -548,6 +560,8 @@ depends-member:
 - !private ["So8NSObjectC", "ChecklistTableViewController"]
 - ["So8NSObjectC", "Class"]
 - !private ["So8NSObjectC", "Double"]
+- ["So8NSObjectC", "GPA"]
+- ["So8NSObjectC", "GPALabel"]
 - ["So8NSObjectC", "Home"]
 - ["So8NSObjectC", "IndexPath"]
 - ["So8NSObjectC", "Int"]
@@ -558,6 +572,7 @@ depends-member:
 - !private ["So8NSObjectC", "UIAlertController"]
 - ["So8NSObjectC", "UIBarButtonItem"]
 - !private ["So8NSObjectC", "UIColor"]
+- ["So8NSObjectC", "UILabel"]
 - !private ["So8NSObjectC", "UINavigationController"]
 - ["So8NSObjectC", "UIStoryboardSegue"]
 - ["So8NSObjectC", "UITableView"]
@@ -581,6 +596,7 @@ depends-member:
 - !private ["So8NSObjectC", "fatalError"]
 - !private ["So8NSObjectC", "identifier"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "name"]
 - !private ["So8NSObjectC", "navigationController"]
 - ["So8NSObjectC", "numberOfSections"]
 - !private ["So8NSObjectC", "popViewController"]
@@ -628,6 +644,7 @@ depends-member:
 - !private ["So8NSObjectP", "fatalError"]
 - !private ["So8NSObjectP", "identifier"]
 - !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "name"]
 - !private ["So8NSObjectP", "navigationController"]
 - !private ["So8NSObjectP", "popViewController"]
 - !private ["So8NSObjectP", "present"]
@@ -940,6 +957,8 @@ depends-member:
 - !private ["So11UIResponderC", "ChecklistTableViewController"]
 - ["So11UIResponderC", "Class"]
 - !private ["So11UIResponderC", "Double"]
+- ["So11UIResponderC", "GPA"]
+- ["So11UIResponderC", "GPALabel"]
 - ["So11UIResponderC", "Home"]
 - ["So11UIResponderC", "IndexPath"]
 - ["So11UIResponderC", "Int"]
@@ -950,6 +969,7 @@ depends-member:
 - !private ["So11UIResponderC", "UIAlertController"]
 - ["So11UIResponderC", "UIBarButtonItem"]
 - !private ["So11UIResponderC", "UIColor"]
+- ["So11UIResponderC", "UILabel"]
 - !private ["So11UIResponderC", "UINavigationController"]
 - ["So11UIResponderC", "UIStoryboardSegue"]
 - ["So11UIResponderC", "UITableView"]
@@ -1108,6 +1128,8 @@ depends-member:
 - !private ["So21UITableViewControllerC", "ChecklistTableViewController"]
 - ["So21UITableViewControllerC", "Class"]
 - !private ["So21UITableViewControllerC", "Double"]
+- ["So21UITableViewControllerC", "GPA"]
+- ["So21UITableViewControllerC", "GPALabel"]
 - ["So21UITableViewControllerC", "Home"]
 - ["So21UITableViewControllerC", "IndexPath"]
 - ["So21UITableViewControllerC", "Int"]
@@ -1118,6 +1140,7 @@ depends-member:
 - !private ["So21UITableViewControllerC", "UIAlertController"]
 - ["So21UITableViewControllerC", "UIBarButtonItem"]
 - !private ["So21UITableViewControllerC", "UIColor"]
+- ["So21UITableViewControllerC", "UILabel"]
 - !private ["So21UITableViewControllerC", "UINavigationController"]
 - ["So21UITableViewControllerC", "UIStoryboardSegue"]
 - ["So21UITableViewControllerC", "UITableView"]
@@ -1292,6 +1315,8 @@ depends-member:
 - !private ["So16UIViewControllerC", "ChecklistTableViewController"]
 - ["So16UIViewControllerC", "Class"]
 - !private ["So16UIViewControllerC", "Double"]
+- ["So16UIViewControllerC", "GPA"]
+- ["So16UIViewControllerC", "GPALabel"]
 - ["So16UIViewControllerC", "Home"]
 - ["So16UIViewControllerC", "IndexPath"]
 - ["So16UIViewControllerC", "Int"]
@@ -1302,6 +1327,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "UIAlertController"]
 - ["So16UIViewControllerC", "UIBarButtonItem"]
 - !private ["So16UIViewControllerC", "UIColor"]
+- ["So16UIViewControllerC", "UILabel"]
 - !private ["So16UIViewControllerC", "UINavigationController"]
 - ["So16UIViewControllerC", "UIStoryboardSegue"]
 - ["So16UIViewControllerC", "UITableView"]
@@ -1382,6 +1408,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fatalError"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "identifier"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "name"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "popViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "present"]
@@ -1427,6 +1454,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "fatalError"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "identifier"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "name"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "navigationController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "popViewController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "present"]
@@ -1610,4 +1638,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "ebc9cace4e962232b018de7292efc7f7"
+interface-hash: "b7d316a8535aa502d4d7d1d51fa2c75a"

@@ -14,10 +14,12 @@ provides-dynamic-lookup:
 - "meetingDays"
 - "meetingTimes"
 - "viewDidLoad"
+- "viewWillAppear"
 - "website"
 depends-top-level:
 - !private "=="
 - "AssignmentPrecedence"
+- "Bool"
 - !private "BooleanLiteralType"
 - "Club"
 - "ClubDetailsViewController"
@@ -72,6 +74,7 @@ depends-member:
 - !private ["s7CVarArgP", "times"]
 - !private ["s7CVarArgP", "title"]
 - !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["s7CVarArgP", "viewWillAppear"]
 - !private ["s7CVarArgP", "website"]
 - !private ["12ORHS_Classes4ClubC", "add"]
 - !private ["12ORHS_Classes4ClubC", "commitment"]
@@ -80,6 +83,7 @@ depends-member:
 - !private ["12ORHS_Classes4ClubC", "name"]
 - !private ["12ORHS_Classes4ClubC", "summary"]
 - !private ["12ORHS_Classes4ClubC", "times"]
+- ["12ORHS_Classes25ClubDetailsViewControllerC", "Bool"]
 - ["12ORHS_Classes25ClubDetailsViewControllerC", "Club"]
 - !private ["12ORHS_Classes25ClubDetailsViewControllerC", "CurrentClubsTableViewController"]
 - ["12ORHS_Classes25ClubDetailsViewControllerC", "Flexibility"]
@@ -102,6 +106,7 @@ depends-member:
 - !private ["12ORHS_Classes25ClubDetailsViewControllerC", "print"]
 - !private ["12ORHS_Classes25ClubDetailsViewControllerC", "title"]
 - ["12ORHS_Classes25ClubDetailsViewControllerC", "viewDidLoad"]
+- ["12ORHS_Classes25ClubDetailsViewControllerC", "viewWillAppear"]
 - ["12ORHS_Classes25ClubDetailsViewControllerC", "website"]
 - !private ["Sl", "append"]
 - !private ["10Foundation15ContiguousBytesP", "append"]
@@ -139,6 +144,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "times"]
 - !private ["s28CustomDebugStringConvertibleP", "title"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s28CustomDebugStringConvertibleP", "viewWillAppear"]
 - !private ["s28CustomDebugStringConvertibleP", "website"]
 - !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "isEnabled"]
@@ -179,6 +185,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "times"]
 - !private ["s23CustomStringConvertibleP", "title"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["s23CustomStringConvertibleP", "viewWillAppear"]
 - !private ["s23CustomStringConvertibleP", "website"]
 - !private ["10Foundation12DataProtocolP", "append"]
 - !private ["Se", "append"]
@@ -227,6 +234,7 @@ depends-member:
 - !private ["SQ", "times"]
 - !private ["SQ", "title"]
 - !private ["SQ", "viewDidLoad"]
+- !private ["SQ", "viewWillAppear"]
 - !private ["SQ", "website"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s23ExpressibleByNilLiteralP", "isEnabled"]
@@ -268,6 +276,7 @@ depends-member:
 - !private ["SH", "times"]
 - !private ["SH", "title"]
 - !private ["SH", "viewDidLoad"]
+- !private ["SH", "viewWillAppear"]
 - !private ["SH", "website"]
 - !private ["SM", "append"]
 - !private ["10Foundation19MutableDataProtocolP", "append"]
@@ -301,6 +310,7 @@ depends-member:
 - !private ["So8NSCodingP", "times"]
 - !private ["So8NSCodingP", "title"]
 - !private ["So8NSCodingP", "viewDidLoad"]
+- !private ["So8NSCodingP", "viewWillAppear"]
 - !private ["So8NSCodingP", "website"]
 - !private ["So9NSCopyingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "CurrentClubsTableViewController"]
@@ -322,8 +332,10 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "print"]
 - !private ["So26NSExtensionRequestHandlingP", "title"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- !private ["So26NSExtensionRequestHandlingP", "viewWillAppear"]
 - !private ["So26NSExtensionRequestHandlingP", "website"]
 - !private ["So15NSKeyedArchiverC", "archivedData"]
+- ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "Club"]
 - !private ["So8NSObjectC", "CurrentClubsTableViewController"]
 - ["So8NSObjectC", "Flexibility"]
@@ -360,6 +372,7 @@ depends-member:
 - !private ["So8NSObjectC", "times"]
 - !private ["So8NSObjectC", "title"]
 - ["So8NSObjectC", "viewDidLoad"]
+- ["So8NSObjectC", "viewWillAppear"]
 - ["So8NSObjectC", "website"]
 - !private ["So8NSObjectP", "CurrentClubsTableViewController"]
 - !private ["So8NSObjectP", "Flexibility"]
@@ -393,6 +406,7 @@ depends-member:
 - !private ["So8NSObjectP", "times"]
 - !private ["So8NSObjectP", "title"]
 - !private ["So8NSObjectP", "viewDidLoad"]
+- !private ["So8NSObjectP", "viewWillAppear"]
 - !private ["So8NSObjectP", "website"]
 - !private ["Sq", "isEnabled"]
 - !private ["Sq", "sizeToFit"]
@@ -440,6 +454,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "text"]
 - !private ["So21UIAppearanceContainerP", "title"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- !private ["So21UIAppearanceContainerP", "viewWillAppear"]
 - !private ["So21UIAppearanceContainerP", "website"]
 - !private ["So15UIBarButtonItemC", "isEnabled"]
 - !private ["So9UIBarItemC", "isEnabled"]
@@ -462,6 +477,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "print"]
 - !private ["So18UIContentContainerP", "title"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
+- !private ["So18UIContentContainerP", "viewWillAppear"]
 - !private ["So18UIContentContainerP", "website"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "sizeToFit"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
@@ -490,6 +506,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "text"]
 - !private ["So18UIFocusEnvironmentP", "title"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- !private ["So18UIFocusEnvironmentP", "viewWillAppear"]
 - !private ["So18UIFocusEnvironmentP", "website"]
 - !private ["So11UIFocusItemP", "sizeToFit"]
 - !private ["So11UIFocusItemP", "text"]
@@ -522,7 +539,9 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "title"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewWillAppear"]
 - !private ["So30UIPasteConfigurationSupportingP", "website"]
+- ["So11UIResponderC", "Bool"]
 - ["So11UIResponderC", "Club"]
 - !private ["So11UIResponderC", "CurrentClubsTableViewController"]
 - ["So11UIResponderC", "Flexibility"]
@@ -548,6 +567,7 @@ depends-member:
 - !private ["So11UIResponderC", "text"]
 - !private ["So11UIResponderC", "title"]
 - ["So11UIResponderC", "viewDidLoad"]
+- ["So11UIResponderC", "viewWillAppear"]
 - ["So11UIResponderC", "website"]
 - !private ["So30UIResponderStandardEditActionsP", "CurrentClubsTableViewController"]
 - !private ["So30UIResponderStandardEditActionsP", "Flexibility"]
@@ -570,6 +590,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "text"]
 - !private ["So30UIResponderStandardEditActionsP", "title"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "viewWillAppear"]
 - !private ["So30UIResponderStandardEditActionsP", "website"]
 - !private ["So12UIScrollViewC", "sizeToFit"]
 - !private ["So12UIScrollViewC", "text"]
@@ -596,6 +617,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "print"]
 - !private ["So16UIStateRestoringP", "title"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
+- !private ["So16UIStateRestoringP", "viewWillAppear"]
 - !private ["So16UIStateRestoringP", "website"]
 - !private ["So21UITableViewControllerC", "currentClubs"]
 - !private ["So21UITableViewDataSourceP", "currentClubs"]
@@ -633,6 +655,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "text"]
 - !private ["So18UITraitEnvironmentP", "title"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- !private ["So18UITraitEnvironmentP", "viewWillAppear"]
 - !private ["So18UITraitEnvironmentP", "website"]
 - !private ["So23UIUserActivityRestoringP", "CurrentClubsTableViewController"]
 - !private ["So23UIUserActivityRestoringP", "Flexibility"]
@@ -655,9 +678,11 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "text"]
 - !private ["So23UIUserActivityRestoringP", "title"]
 - !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
+- !private ["So23UIUserActivityRestoringP", "viewWillAppear"]
 - !private ["So23UIUserActivityRestoringP", "website"]
 - !private ["So6UIViewC", "sizeToFit"]
 - !private ["So6UIViewC", "text"]
+- ["So16UIViewControllerC", "Bool"]
 - ["So16UIViewControllerC", "Club"]
 - !private ["So16UIViewControllerC", "CurrentClubsTableViewController"]
 - ["So16UIViewControllerC", "Flexibility"]
@@ -682,6 +707,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "print"]
 - !private ["So16UIViewControllerC", "title"]
 - ["So16UIViewControllerC", "viewDidLoad"]
+- ["So16UIViewControllerC", "viewWillAppear"]
 - ["So16UIViewControllerC", "website"]
 - !private ["So14NSUserDefaultsC", "set"]
 - !private ["So14NSUserDefaultsC", "standard"]
@@ -721,6 +747,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "times"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "title"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewWillAppear"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "website"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CurrentClubsTableViewController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Flexibility"]
@@ -754,6 +781,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "times"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "title"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewDidLoad"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewWillAppear"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "website"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "isEnabled"]
@@ -876,4 +904,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "219e266c9056eb6ca795b557ef50e957"
+interface-hash: "eefb2b23701bf5d00022f0c99e2bdabc"

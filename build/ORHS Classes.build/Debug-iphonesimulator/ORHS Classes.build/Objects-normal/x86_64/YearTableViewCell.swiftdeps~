@@ -1,13 +1,11 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "YearTableViewCell"
-- "/"
 provides-nominal:
 - "12ORHS_Classes17YearTableViewCellC"
 provides-member:
 - ["12ORHS_Classes17YearTableViewCellC", ""]
 provides-dynamic-lookup:
-- "/"
 - "awakeFromNib"
 - "setSelected"
 - "yearLabel"
@@ -38,7 +36,6 @@ depends-member:
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "awakeFromNib"]
 - !private ["So8NSCodingP", "setSelected"]
-- ["So8NSObjectC", "/"]
 - ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "UILabel"]
 - ["So8NSObjectC", "awakeFromNib"]
@@ -81,7 +78,6 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "awakeFromNib"]
 - !private ["So30UIPasteConfigurationSupportingP", "setSelected"]
-- ["So11UIResponderC", "/"]
 - ["So11UIResponderC", "Bool"]
 - ["So11UIResponderC", "UILabel"]
 - ["So11UIResponderC", "awakeFromNib"]
@@ -91,7 +87,6 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "awakeFromNib"]
 - !private ["So30UIResponderStandardEditActionsP", "setSelected"]
-- ["So15UITableViewCellC", "/"]
 - ["So15UITableViewCellC", "Bool"]
 - ["So15UITableViewCellC", "UILabel"]
 - ["So15UITableViewCellC", ""]
@@ -105,14 +100,12 @@ depends-member:
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "awakeFromNib"]
 - !private ["So23UIUserActivityRestoringP", "setSelected"]
-- ["So6UIViewC", "/"]
 - ["So6UIViewC", "Bool"]
 - ["So6UIViewC", "UILabel"]
 - ["So6UIViewC", "awakeFromNib"]
 - ["So6UIViewC", "init"]
 - ["So6UIViewC", "setSelected"]
 - ["So6UIViewC", "yearLabel"]
-- ["12ORHS_Classes17YearTableViewCellC", "/"]
 - ["12ORHS_Classes17YearTableViewCellC", "Bool"]
 - ["12ORHS_Classes17YearTableViewCellC", "UILabel"]
 - ["12ORHS_Classes17YearTableViewCellC", "awakeFromNib"]
@@ -190,4 +183,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "2f74310d135e3dd9bcff12e5983ba2f2"
+interface-hash: "5725a8a16fe8cfe0d207817059e638dd"

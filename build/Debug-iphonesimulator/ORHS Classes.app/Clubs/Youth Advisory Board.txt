@@ -1,6 +1,6 @@
-Club Name: Youth Advisory Board
-Meeting Location: TBD
-Meeting Times: TBD
-Sponsers: Matt Reedy
-Announcements: Morning Announcements or contact sponsor
-Description: NA
+Club Name[[[ Youth Advisory Board
+Meeting Location[[[ TBD
+Meeting Times[[[ TBD
+Sponsers[[[ Matt Reedy
+Announcements[[[ Morning Announcements or contact sponsor
+Description[[[ NA

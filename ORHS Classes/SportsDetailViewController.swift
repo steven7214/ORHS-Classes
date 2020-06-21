@@ -15,6 +15,17 @@ class SportsDetailViewController: UIViewController {
     @IBOutlet weak var addButton: UIBarButtonItem!
     @IBOutlet weak var Link: UITextView!
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        for sports in CurrentSportsTableViewController.currentSports {
+            if sports.name == sport!.name {
+                addButton.isEnabled = false
+                return
+            }
+        }
+        addButton.isEnabled = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = sport?.name

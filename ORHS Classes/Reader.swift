@@ -25,7 +25,7 @@ class Reader {
         let words = readFile(fileURL: fileURL)
         var output = [String]()
         for lines in words {
-            let line = lines.components(separatedBy: ":")
+            let line = lines.components(separatedBy: "[[[")
             if line.count < 2 {
                 break
             }
