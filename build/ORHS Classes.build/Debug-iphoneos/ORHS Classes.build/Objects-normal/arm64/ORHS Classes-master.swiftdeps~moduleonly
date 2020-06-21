@@ -1,12 +1,12 @@
 version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
 options: "12e7dac58a06d9cd5f35ef2d86bce19b"
-build_time: [1592749219, 481948000]
+build_time: [1592757141, 784345000]
 inputs:
   "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/ClassTableViewController.swift": [1592572668, 849074392]
   "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/Club.swift": [1591806270, 868921686]
   "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/AllClubsTableViewController.swift": [1591904654, 860355138]
   "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/AppDelegate.swift": [1590957806, 726202743]
-  "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/ClassDetailViewController.swift": [1592749219, 241615319]
+  "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/ClassDetailViewController.swift": [1592757141, 645904119]
   "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/HomeViewController.swift": [1591922987, 76317836]
   "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/CurrentSportsTableViewCell.swift": [1591805725, 155149552]
   "/Users/brianqu/Desktop/ORHS-Classes/ORHS Classes/Reader.swift": [1592572009, 398815723]

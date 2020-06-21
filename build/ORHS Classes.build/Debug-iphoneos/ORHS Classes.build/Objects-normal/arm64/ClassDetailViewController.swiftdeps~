@@ -20,18 +20,19 @@ provides-dynamic-lookup:
 - "viewDidLoad"
 - "viewWillAppear"
 depends-top-level:
+- !private "*"
 - !private "+"
 - !private "-"
 - !private "/"
 - !private "<="
 - !private "=="
 - !private ">"
-- !private ">="
 - !private "??"
 - !private "AddYearTableViewController"
 - "AssignmentPrecedence"
 - "Bool"
 - !private "BooleanLiteralType"
+- !private "CGFloat"
 - !private "CGPoint"
 - "CastingPrecedence"
 - !private "ChecklistTableViewController"
@@ -53,11 +54,13 @@ depends-top-level:
 - !private "YearTableViewController"
 - !private "fatalError"
 - !private "print"
+- !private "||"
 - !private "~="
 depends-member:
 - !private ["12ORHS_Classes26AddYearTableViewControllerC", "tempCourse"]
 - !private ["s18AdditiveArithmeticP", "init"]
 - !private ["SK", "count"]
+- !private ["SB", "init"]
 - !private ["Sz", "init"]
 - !private ["So15CALayerDelegateP", "contentSize"]
 - !private ["So15CALayerDelegateP", "font"]
@@ -65,9 +68,11 @@ depends-member:
 - !private ["So15CALayerDelegateP", "numberOfLines"]
 - !private ["So15CALayerDelegateP", "sizeToFit"]
 - !private ["So15CALayerDelegateP", "text"]
+- !private ["12CoreGraphics7CGFloatV", "init"]
 - !private ["So7CGPointV", "init"]
 - !private ["So6CGRectV", "origin"]
 - !private ["So6CGSizeV", "height"]
+- !private ["s7CVarArgP", "CGFloat"]
 - !private ["s7CVarArgP", "CGPoint"]
 - !private ["s7CVarArgP", "ChecklistTableViewController"]
 - !private ["s7CVarArgP", "GPA"]
@@ -123,6 +128,7 @@ depends-member:
 - ["12ORHS_Classes25ClassDetailViewControllerC", "AddButton"]
 - !private ["12ORHS_Classes25ClassDetailViewControllerC", "AddYearTableViewController"]
 - ["12ORHS_Classes25ClassDetailViewControllerC", "Bool"]
+- !private ["12ORHS_Classes25ClassDetailViewControllerC", "CGFloat"]
 - !private ["12ORHS_Classes25ClassDetailViewControllerC", "CGPoint"]
 - !private ["12ORHS_Classes25ClassDetailViewControllerC", "ChecklistTableViewController"]
 - ["12ORHS_Classes25ClassDetailViewControllerC", "Class"]
@@ -156,6 +162,7 @@ depends-member:
 - !private ["Sl", "count"]
 - !private ["SL", "count"]
 - !private ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "CGFloat"]
 - !private ["s28CustomDebugStringConvertibleP", "CGPoint"]
 - !private ["s28CustomDebugStringConvertibleP", "ChecklistTableViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "GPA"]
@@ -212,6 +219,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "origin"]
 - !private ["s17CustomReflectableP", "sizeToFit"]
 - !private ["s17CustomReflectableP", "text"]
+- !private ["s23CustomStringConvertibleP", "CGFloat"]
 - !private ["s23CustomStringConvertibleP", "CGPoint"]
 - !private ["s23CustomStringConvertibleP", "ChecklistTableViewController"]
 - !private ["s23CustomStringConvertibleP", "GPA"]
@@ -280,6 +288,7 @@ depends-member:
 - !private ["SE", "origin"]
 - !private ["SE", "sizeToFit"]
 - !private ["SE", "text"]
+- !private ["SQ", "CGFloat"]
 - !private ["SQ", "CGPoint"]
 - !private ["SQ", "ChecklistTableViewController"]
 - !private ["SQ", "GPA"]
@@ -327,6 +336,7 @@ depends-member:
 - !private ["SQ", "viewDidLoad"]
 - !private ["SQ", "viewWillAppear"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "count"]
+- !private ["s25ExpressibleByFloatLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "contentSize"]
 - !private ["s23ExpressibleByNilLiteralP", "font"]
@@ -338,6 +348,8 @@ depends-member:
 - !private ["s26ExpressibleByStringLiteralP", "count"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "count"]
 - !private ["s17FixedWidthIntegerP", "init"]
+- !private ["SF", "init"]
+- !private ["SH", "CGFloat"]
 - !private ["SH", "CGPoint"]
 - !private ["SH", "ChecklistTableViewController"]
 - !private ["SH", "GPA"]
@@ -388,6 +400,7 @@ depends-member:
 - !private ["s10MirrorPathP", "count"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["So7NSCoderC", "archivedData"]
+- !private ["So8NSCodingP", "CGFloat"]
 - !private ["So8NSCodingP", "CGPoint"]
 - !private ["So8NSCodingP", "ChecklistTableViewController"]
 - !private ["So8NSCodingP", "GPA"]
@@ -427,6 +440,7 @@ depends-member:
 - !private ["So8NSCodingP", "viewWillAppear"]
 - !private ["So9NSCopyingP", "count"]
 - !private ["So9NSCopyingP", "lineHeight"]
+- !private ["So26NSExtensionRequestHandlingP", "CGFloat"]
 - !private ["So26NSExtensionRequestHandlingP", "CGPoint"]
 - !private ["So26NSExtensionRequestHandlingP", "ChecklistTableViewController"]
 - !private ["So26NSExtensionRequestHandlingP", "GPALabel"]
@@ -458,6 +472,7 @@ depends-member:
 - ["So8NSObjectC", "AddButton"]
 - !private ["So8NSObjectC", "AddYearTableViewController"]
 - ["So8NSObjectC", "Bool"]
+- !private ["So8NSObjectC", "CGFloat"]
 - !private ["So8NSObjectC", "CGPoint"]
 - !private ["So8NSObjectC", "ChecklistTableViewController"]
 - ["So8NSObjectC", "Class"]
@@ -510,6 +525,7 @@ depends-member:
 - ["So8NSObjectC", "unwindToVC1"]
 - ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectC", "viewWillAppear"]
+- !private ["So8NSObjectP", "CGFloat"]
 - !private ["So8NSObjectP", "CGPoint"]
 - !private ["So8NSObjectP", "ChecklistTableViewController"]
 - !private ["So8NSObjectP", "GPA"]
@@ -588,6 +604,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "numberOfLines"]
 - !private ["So12UIAppearanceP", "sizeToFit"]
 - !private ["So12UIAppearanceP", "text"]
+- !private ["So21UIAppearanceContainerP", "CGFloat"]
 - !private ["So21UIAppearanceContainerP", "CGPoint"]
 - !private ["So21UIAppearanceContainerP", "ChecklistTableViewController"]
 - !private ["So21UIAppearanceContainerP", "GPALabel"]
@@ -618,6 +635,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "topViewController"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - !private ["So21UIAppearanceContainerP", "viewWillAppear"]
+- !private ["So18UIContentContainerP", "CGFloat"]
 - !private ["So18UIContentContainerP", "CGPoint"]
 - !private ["So18UIContentContainerP", "ChecklistTableViewController"]
 - !private ["So18UIContentContainerP", "GPALabel"]
@@ -660,6 +678,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "numberOfLines"]
 - !private ["So13UIDynamicItemP", "sizeToFit"]
 - !private ["So13UIDynamicItemP", "text"]
+- !private ["So18UIFocusEnvironmentP", "CGFloat"]
 - !private ["So18UIFocusEnvironmentP", "CGPoint"]
 - !private ["So18UIFocusEnvironmentP", "ChecklistTableViewController"]
 - !private ["So18UIFocusEnvironmentP", "GPALabel"]
@@ -724,6 +743,7 @@ depends-member:
 - !private ["So24UILargeContentViewerItemP", "sizeToFit"]
 - !private ["So24UILargeContentViewerItemP", "text"]
 - !private ["So22UINavigationControllerC", "topViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "CGFloat"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGPoint"]
 - !private ["So30UIPasteConfigurationSupportingP", "ChecklistTableViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "GPALabel"]
@@ -757,6 +777,7 @@ depends-member:
 - ["So11UIResponderC", "AddButton"]
 - !private ["So11UIResponderC", "AddYearTableViewController"]
 - ["So11UIResponderC", "Bool"]
+- !private ["So11UIResponderC", "CGFloat"]
 - !private ["So11UIResponderC", "CGPoint"]
 - !private ["So11UIResponderC", "ChecklistTableViewController"]
 - ["So11UIResponderC", "Class"]
@@ -796,6 +817,7 @@ depends-member:
 - ["So11UIResponderC", "unwindToVC1"]
 - ["So11UIResponderC", "viewDidLoad"]
 - ["So11UIResponderC", "viewWillAppear"]
+- !private ["So30UIResponderStandardEditActionsP", "CGFloat"]
 - !private ["So30UIResponderStandardEditActionsP", "CGPoint"]
 - !private ["So30UIResponderStandardEditActionsP", "ChecklistTableViewController"]
 - !private ["So30UIResponderStandardEditActionsP", "GPALabel"]
@@ -834,6 +856,7 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "edit"]
 - !private ["So20UIScrollViewDelegateP", "schedules"]
 - !private ["So20UIScrollViewDelegateP", "tempCourse"]
+- !private ["So16UIStateRestoringP", "CGFloat"]
 - !private ["So16UIStateRestoringP", "CGPoint"]
 - !private ["So16UIStateRestoringP", "ChecklistTableViewController"]
 - !private ["So16UIStateRestoringP", "GPALabel"]
@@ -899,6 +922,7 @@ depends-member:
 - !private ["So10UITextViewC", "frame"]
 - !private ["So10UITextViewC", "sizeToFit"]
 - !private ["So10UITextViewC", "text"]
+- !private ["So18UITraitEnvironmentP", "CGFloat"]
 - !private ["So18UITraitEnvironmentP", "CGPoint"]
 - !private ["So18UITraitEnvironmentP", "ChecklistTableViewController"]
 - !private ["So18UITraitEnvironmentP", "GPALabel"]
@@ -929,6 +953,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "topViewController"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - !private ["So18UITraitEnvironmentP", "viewWillAppear"]
+- !private ["So23UIUserActivityRestoringP", "CGFloat"]
 - !private ["So23UIUserActivityRestoringP", "CGPoint"]
 - !private ["So23UIUserActivityRestoringP", "ChecklistTableViewController"]
 - !private ["So23UIUserActivityRestoringP", "GPALabel"]
@@ -968,6 +993,7 @@ depends-member:
 - ["So16UIViewControllerC", "AddButton"]
 - !private ["So16UIViewControllerC", "AddYearTableViewController"]
 - ["So16UIViewControllerC", "Bool"]
+- !private ["So16UIViewControllerC", "CGFloat"]
 - !private ["So16UIViewControllerC", "CGPoint"]
 - !private ["So16UIViewControllerC", "ChecklistTableViewController"]
 - ["So16UIViewControllerC", "Class"]
@@ -1005,6 +1031,8 @@ depends-member:
 - !private ["So14NSUserDefaultsC", "set"]
 - !private ["So14NSUserDefaultsC", "standard"]
 - !private ["12ORHS_Classes23YearTableViewControllerC", "schedules"]
+- !private ["s15_CVarArgAlignedP", "init"]
+- !private ["s22_CVarArgPassedAsDoubleP", "init"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "count"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "height"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
@@ -1016,6 +1044,7 @@ depends-member:
 - !private ["s19_HasContiguousBytesP", "count"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CGFloat"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGPoint"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ChecklistTableViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "GPA"]
@@ -1059,6 +1088,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "topViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewWillAppear"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CGFloat"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CGPoint"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ChecklistTableViewController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "GPA"]
@@ -1122,8 +1152,10 @@ depends-nominal:
 - !private "12ORHS_Classes26AddYearTableViewControllerC"
 - !private "s18AdditiveArithmeticP"
 - !private "SK"
+- !private "SB"
 - !private "Sz"
 - !private "So15CALayerDelegateP"
+- !private "12CoreGraphics7CGFloatV"
 - !private "So7CGPointV"
 - !private "So6CGRectV"
 - !private "So6CGSizeV"
@@ -1141,12 +1173,14 @@ depends-nominal:
 - !private "SE"
 - "SQ"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
 - !private "s32ExpressibleByStringInterpolationP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "s17FixedWidthIntegerP"
+- !private "SF"
 - "SH"
 - !private "Si"
 - !private "s25LosslessStringConvertibleP"
@@ -1214,6 +1248,8 @@ depends-nominal:
 - "So16UIViewControllerC"
 - !private "So14NSUserDefaultsC"
 - !private "12ORHS_Classes23YearTableViewControllerC"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
 - !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"

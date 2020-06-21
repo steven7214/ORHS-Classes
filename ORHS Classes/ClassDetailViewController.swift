@@ -55,6 +55,7 @@ class ClassDetailViewController: UIViewController {
         categoryLabel.numberOfLines = 0
         print(course?.subject.count)
         print(course?.hours.count)
+        print(hourLabel.font!.lineHeight)
 //        if course?.name == "AGATE 2 Geometry and Algebra 2 Trigonometry Advanced" {
 //            print("asdkjfl Joooo")
 //            creditLabel.frame.origin = CGPoint(x: 250, y: 185)
@@ -64,31 +65,45 @@ class ClassDetailViewController: UIViewController {
 //        }
         let numLines = (Int(hourLabel.contentSize.height) / Int(hourLabel.font!.lineHeight)) - 1
         print(numLines)
-        if numLines > 8 {
-            creditLabel.frame.origin = CGPoint(x: 250, y: 262)
-            GPALabel.frame.origin = CGPoint(x: 250, y: 150.6666666666666666666667)
-            descriptionTextBox.frame.origin = CGPoint(x: 0, y: 356)
-
-        }
-        if numLines >= 15 {
-            creditLabel.frame.origin = CGPoint(x: 250, y: 262)
-            GPALabel.frame.origin = CGPoint(x: 250, y: 150.6666666666666666666667)
-            descriptionTextBox.frame.origin = CGPoint(x: 0, y: 390)
-
-        }
+//        if numLines > 8 {
+//            creditLabel.frame.origin = CGPoint(x: 250, y: 262)
+//            GPALabel.frame.origin = CGPoint(x: 250, y: 150.6666666666666666666667)
+//            descriptionTextBox.frame.origin = CGPoint(x: 0, y: 356)
+//
+//        }
+//        if numLines >= 15 {
+//            creditLabel.frame.origin = CGPoint(x: 250, y: 262)
+//            GPALabel.frame.origin = CGPoint(x: 250, y: 150.6666666666666666666667)
+//            descriptionTextBox.frame.origin = CGPoint(x: 0, y: 390)
+//
+//        }
         if numLines <= 3 {
             hourLabel.frame.origin = CGPoint(x: 0, y: 88)
             GPALabel.frame.origin = CGPoint(x: 250, y: 120)
             creditLabel.frame.origin = CGPoint(x: 5, y: 120)
             descriptionTextBox.frame.origin = CGPoint(x: 0, y: 194)
         }
-        if numLines <= 8 {
-            if numLines > 3 {
-                creditLabel.frame.origin = CGPoint(x: 250, y: 185)
-                GPALabel.frame.origin = CGPoint(x: 250, y: 125)
-                descriptionTextBox.frame.origin = CGPoint(x: 0, y: 250)
+        if numLines > 3 {
+            if (course?.subject) == "Personal Finance" || (course?.subject) == "U.S. Government" || (course?.subject) == "World Languages" || (course?.subject) == "Career Academies" || (course?.subject) == "World History/Geography" {
+                hourLabel.frame.origin = CGPoint(x: 0, y: 88)
+                creditLabel.frame.origin = CGPoint(x: 250, y: ((hourLabel.font!.lineHeight * CGFloat(numLines-3) + 88) + 88)/2)
+                GPALabel.frame.origin = CGPoint(x: 250, y: hourLabel.font!.lineHeight * CGFloat(numLines-3) + 98)
+                descriptionTextBox.frame.origin = CGPoint(x: 0, y: hourLabel.font!.lineHeight * CGFloat(numLines-2)+150)
+            }
+            else {
+                hourLabel.frame.origin = CGPoint(x: 0, y: 88)
+                creditLabel.frame.origin = CGPoint(x: 250, y: ((hourLabel.font!.lineHeight * CGFloat(numLines-4) + 88) + 88)/2)
+                GPALabel.frame.origin = CGPoint(x: 250, y: hourLabel.font!.lineHeight * CGFloat(numLines-3) + 98)
+                descriptionTextBox.frame.origin = CGPoint(x: 0, y: hourLabel.font!.lineHeight * CGFloat(numLines-2)+150)
             }
         }
+//        if numLines <= 8 {
+//            if numLines > 3 {
+//                creditLabel.frame.origin = CGPoint(x: 250, y: 185)
+//                GPALabel.frame.origin = CGPoint(x: 250, y: 125)
+//                descriptionTextBox.frame.origin = CGPoint(x: 0, y: 250)
+//            }
+//        }
         if (course?.subject) == "Personal Finance" {
             
             categoryLabel.text = "Subject: Personal \n" + "Finance"
