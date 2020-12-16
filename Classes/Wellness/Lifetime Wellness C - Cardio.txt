@@ -4,3 +4,4 @@ Number of Credits[[[ 0.5
 GPA[[[ 4.0
 Average Number of Hours of Homework per Day[[[ None
 Description[[[ Wellness C – Cardio is primarily a walking class. A minimal amount of classroom instruction may be included.
+grading[[[ General

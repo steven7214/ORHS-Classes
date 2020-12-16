@@ -24,6 +24,7 @@ class ScheduleTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("hiiiii")
         tableView.tableFooterView = UIView(frame: .zero)
         navigationItem.rightBarButtonItem = editButtonItem
         self.title = years[yearIndex!]
@@ -54,6 +55,7 @@ class ScheduleTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        print("whhy")
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "scheduleCells", for: indexPath) as? ScheduleTableViewCell else {
             fatalError("The dequeued cell is not an instance of ScheduleTableViewCell")
         }
@@ -87,7 +89,7 @@ class ScheduleTableViewController: UITableViewController {
 
     
     // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             YearTableViewController.schedules[yearIndex!].remove(at: indexPath.row)
             //update checklist
@@ -122,8 +124,9 @@ class ScheduleTableViewController: UITableViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
+        print("hi")
         switch(segue.identifier ?? "") {
-        case "ShowClass": guard let ClassController = segue.destination as? ClassDetailViewController else {
+        case "test": guard let ClassController = segue.destination as? ScheduleDetailViewController else {
             fatalError("Unexpected deestination")
         }
         guard let selectedClassCell = sender as? ScheduleTableViewCell else {

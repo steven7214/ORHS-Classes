@@ -46,11 +46,11 @@ class SportsDetailViewController: UIViewController {
             Link.attributedText = attributedString
         Link.font = UIFont(name: Link.font!.fontName, size: 30)
         }
-
-        func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
-            UIApplication.shared.open(URL)
-            return false
-        }
+//make this uncommented later
+//        func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
+//            UIApplication.shared.openconvertToUIApplicationOpenExternalURLOptionsKeyDictionary((),URL)
+//            return false
+//        }
 
         // Do any additional setup after loading the view.
     @IBAction func addButton(_ sender: UIBarButtonItem) {
@@ -89,4 +89,9 @@ class SportsDetailViewController: UIViewController {
     }
     */
 
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToUIApplicationOpenExternalURLOptionsKeyDictionary(_ input: [String: Any]) -> [UIApplication.OpenExternalURLOptionsKey: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (UIApplication.OpenExternalURLOptionsKey(rawValue: key), value)})
 }

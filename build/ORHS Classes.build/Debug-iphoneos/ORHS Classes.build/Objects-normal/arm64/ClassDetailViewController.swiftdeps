@@ -59,7 +59,6 @@ depends-top-level:
 depends-member:
 - !private ["12ORHS_Classes26AddYearTableViewControllerC", "tempCourse"]
 - !private ["s18AdditiveArithmeticP", "init"]
-- !private ["SK", "count"]
 - !private ["SB", "init"]
 - !private ["Sz", "init"]
 - !private ["So15CALayerDelegateP", "contentSize"]
@@ -86,7 +85,6 @@ depends-member:
 - !private ["s7CVarArgP", "archivedData"]
 - !private ["s7CVarArgP", "categoryLabel"]
 - !private ["s7CVarArgP", "contentSize"]
-- !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "course"]
 - !private ["s7CVarArgP", "creditLabel"]
 - !private ["s7CVarArgP", "credits"]
@@ -159,8 +157,6 @@ depends-member:
 - ["12ORHS_Classes25ClassDetailViewControllerC", "unwindToVC1"]
 - ["12ORHS_Classes25ClassDetailViewControllerC", "viewDidLoad"]
 - ["12ORHS_Classes25ClassDetailViewControllerC", "viewWillAppear"]
-- !private ["Sl", "count"]
-- !private ["SL", "count"]
 - !private ["SL", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "CGFloat"]
 - !private ["s28CustomDebugStringConvertibleP", "CGPoint"]
@@ -176,7 +172,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "archivedData"]
 - !private ["s28CustomDebugStringConvertibleP", "categoryLabel"]
 - !private ["s28CustomDebugStringConvertibleP", "contentSize"]
-- !private ["s28CustomDebugStringConvertibleP", "count"]
 - !private ["s28CustomDebugStringConvertibleP", "course"]
 - !private ["s28CustomDebugStringConvertibleP", "creditLabel"]
 - !private ["s28CustomDebugStringConvertibleP", "credits"]
@@ -210,7 +205,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - !private ["s28CustomDebugStringConvertibleP", "viewWillAppear"]
 - !private ["s17CustomReflectableP", "contentSize"]
-- !private ["s17CustomReflectableP", "count"]
 - !private ["s17CustomReflectableP", "font"]
 - !private ["s17CustomReflectableP", "frame"]
 - !private ["s17CustomReflectableP", "height"]
@@ -235,7 +229,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "archivedData"]
 - !private ["s23CustomStringConvertibleP", "categoryLabel"]
 - !private ["s23CustomStringConvertibleP", "contentSize"]
-- !private ["s23CustomStringConvertibleP", "count"]
 - !private ["s23CustomStringConvertibleP", "course"]
 - !private ["s23CustomStringConvertibleP", "creditLabel"]
 - !private ["s23CustomStringConvertibleP", "credits"]
@@ -267,7 +260,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - !private ["s23CustomStringConvertibleP", "viewWillAppear"]
 - !private ["Se", "contentSize"]
-- !private ["Se", "count"]
 - !private ["Se", "font"]
 - !private ["Se", "frame"]
 - !private ["Se", "height"]
@@ -279,7 +271,6 @@ depends-member:
 - !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
 - !private ["s26DefaultStringInterpolationV", "appendLiteral"]
 - !private ["SE", "contentSize"]
-- !private ["SE", "count"]
 - !private ["SE", "font"]
 - !private ["SE", "frame"]
 - !private ["SE", "height"]
@@ -302,7 +293,6 @@ depends-member:
 - !private ["SQ", "archivedData"]
 - !private ["SQ", "categoryLabel"]
 - !private ["SQ", "contentSize"]
-- !private ["SQ", "count"]
 - !private ["SQ", "course"]
 - !private ["SQ", "creditLabel"]
 - !private ["SQ", "credits"]
@@ -335,7 +325,6 @@ depends-member:
 - !private ["SQ", "topViewController"]
 - !private ["SQ", "viewDidLoad"]
 - !private ["SQ", "viewWillAppear"]
-- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "count"]
 - !private ["s25ExpressibleByFloatLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "contentSize"]
@@ -344,9 +333,6 @@ depends-member:
 - !private ["s23ExpressibleByNilLiteralP", "numberOfLines"]
 - !private ["s23ExpressibleByNilLiteralP", "sizeToFit"]
 - !private ["s23ExpressibleByNilLiteralP", "text"]
-- !private ["s32ExpressibleByStringInterpolationP", "count"]
-- !private ["s26ExpressibleByStringLiteralP", "count"]
-- !private ["s33ExpressibleByUnicodeScalarLiteralP", "count"]
 - !private ["s17FixedWidthIntegerP", "init"]
 - !private ["SF", "init"]
 - !private ["SH", "CGFloat"]
@@ -363,7 +349,6 @@ depends-member:
 - !private ["SH", "archivedData"]
 - !private ["SH", "categoryLabel"]
 - !private ["SH", "contentSize"]
-- !private ["SH", "count"]
 - !private ["SH", "course"]
 - !private ["SH", "creditLabel"]
 - !private ["SH", "credits"]
@@ -395,9 +380,7 @@ depends-member:
 - !private ["SH", "viewDidLoad"]
 - !private ["SH", "viewWillAppear"]
 - !private ["Si", "init"]
-- !private ["s25LosslessStringConvertibleP", "count"]
 - !private ["s25LosslessStringConvertibleP", "init"]
-- !private ["s10MirrorPathP", "count"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["So7NSCoderC", "archivedData"]
 - !private ["So8NSCodingP", "CGFloat"]
@@ -413,7 +396,6 @@ depends-member:
 - !private ["So8NSCodingP", "added"]
 - !private ["So8NSCodingP", "categoryLabel"]
 - !private ["So8NSCodingP", "contentSize"]
-- !private ["So8NSCodingP", "count"]
 - !private ["So8NSCodingP", "course"]
 - !private ["So8NSCodingP", "creditLabel"]
 - !private ["So8NSCodingP", "credits"]
@@ -438,7 +420,6 @@ depends-member:
 - !private ["So8NSCodingP", "topViewController"]
 - !private ["So8NSCodingP", "viewDidLoad"]
 - !private ["So8NSCodingP", "viewWillAppear"]
-- !private ["So9NSCopyingP", "count"]
 - !private ["So9NSCopyingP", "lineHeight"]
 - !private ["So26NSExtensionRequestHandlingP", "CGFloat"]
 - !private ["So26NSExtensionRequestHandlingP", "CGPoint"]
@@ -465,10 +446,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "topViewController"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - !private ["So26NSExtensionRequestHandlingP", "viewWillAppear"]
-- !private ["So21NSItemProviderReadingP", "count"]
-- !private ["So21NSItemProviderWritingP", "count"]
 - !private ["So15NSKeyedArchiverC", "archivedData"]
-- !private ["So16NSMutableCopyingP", "count"]
 - ["So8NSObjectC", "AddButton"]
 - !private ["So8NSObjectC", "AddYearTableViewController"]
 - ["So8NSObjectC", "Bool"]
@@ -492,7 +470,6 @@ depends-member:
 - !private ["So8NSObjectC", "archivedData"]
 - ["So8NSObjectC", "categoryLabel"]
 - !private ["So8NSObjectC", "contentSize"]
-- !private ["So8NSObjectC", "count"]
 - ["So8NSObjectC", "course"]
 - ["So8NSObjectC", "creditLabel"]
 - !private ["So8NSObjectC", "credits"]
@@ -539,7 +516,6 @@ depends-member:
 - !private ["So8NSObjectP", "archivedData"]
 - !private ["So8NSObjectP", "categoryLabel"]
 - !private ["So8NSObjectP", "contentSize"]
-- !private ["So8NSObjectP", "count"]
 - !private ["So8NSObjectP", "course"]
 - !private ["So8NSObjectP", "creditLabel"]
 - !private ["So8NSObjectP", "credits"]
@@ -569,8 +545,6 @@ depends-member:
 - !private ["So8NSObjectP", "topViewController"]
 - !private ["So8NSObjectP", "viewDidLoad"]
 - !private ["So8NSObjectP", "viewWillAppear"]
-- !private ["So14NSSecureCodingP", "count"]
-- !private ["So8NSStringC", "count"]
 - !private ["Sj", "init"]
 - !private ["Sq", "contentSize"]
 - !private ["Sq", "font"]
@@ -578,20 +552,14 @@ depends-member:
 - !private ["Sq", "numberOfLines"]
 - !private ["Sq", "sizeToFit"]
 - !private ["Sq", "text"]
-- !private ["Sm", "count"]
 - !private ["s10SIMDScalarP", "init"]
-- !private ["ST", "count"]
 - !private ["SZ", "init"]
 - !private ["s13SignedNumericP", "init"]
 - !private ["Sx", "init"]
-- !private ["SS", "count"]
 - !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
 - !private ["s27StringInterpolationProtocolP", "appendLiteral"]
-- !private ["Sy", "count"]
 - !private ["s16TextOutputStreamP", "appendInterpolation"]
 - !private ["s16TextOutputStreamP", "appendLiteral"]
-- !private ["s16TextOutputStreamP", "count"]
-- !private ["s20TextOutputStreamableP", "count"]
 - !private ["So29UIAccessibilityIdentificationP", "contentSize"]
 - !private ["So29UIAccessibilityIdentificationP", "font"]
 - !private ["So29UIAccessibilityIdentificationP", "frame"]
@@ -1033,16 +1001,10 @@ depends-member:
 - !private ["12ORHS_Classes23YearTableViewControllerC", "schedules"]
 - !private ["s15_CVarArgAlignedP", "init"]
 - !private ["s22_CVarArgPassedAsDoubleP", "init"]
-- !private ["s30_CustomPlaygroundQuickLookableP", "count"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "height"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "origin"]
-- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "count"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
-- !private ["s34_ExpressibleByBuiltinStringLiteralP", "count"]
-- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "count"]
-- !private ["s19_HasContiguousBytesP", "count"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGFloat"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGPoint"]
@@ -1058,7 +1020,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "archivedData"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "categoryLabel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "contentSize"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "count"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "course"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "creditLabel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "credits"]
@@ -1102,7 +1063,6 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "archivedData"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "categoryLabel"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "contentSize"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "count"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "course"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "creditLabel"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "credits"]
@@ -1133,7 +1093,6 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewDidLoad"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewWillAppear"]
 - !private ["s21_ObjectiveCBridgeableP", "contentSize"]
-- !private ["s21_ObjectiveCBridgeableP", "count"]
 - !private ["s21_ObjectiveCBridgeableP", "font"]
 - !private ["s21_ObjectiveCBridgeableP", "frame"]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
@@ -1151,7 +1110,6 @@ depends-member:
 depends-nominal:
 - !private "12ORHS_Classes26AddYearTableViewControllerC"
 - !private "s18AdditiveArithmeticP"
-- !private "SK"
 - !private "SB"
 - !private "Sz"
 - !private "So15CALayerDelegateP"
@@ -1163,7 +1121,6 @@ depends-nominal:
 - !private "12ORHS_Classes28ChecklistTableViewControllerC"
 - !private "12ORHS_Classes5ClassC"
 - "12ORHS_Classes25ClassDetailViewControllerC"
-- !private "Sl"
 - !private "SL"
 - "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
@@ -1172,13 +1129,9 @@ depends-nominal:
 - !private "s26DefaultStringInterpolationV"
 - !private "SE"
 - "SQ"
-- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s25ExpressibleByFloatLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
-- !private "s32ExpressibleByStringInterpolationP"
-- !private "s26ExpressibleByStringLiteralP"
-- !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "s17FixedWidthIntegerP"
 - !private "SF"
 - "SH"
@@ -1189,27 +1142,17 @@ depends-nominal:
 - "So8NSCodingP"
 - !private "So9NSCopyingP"
 - "So26NSExtensionRequestHandlingP"
-- !private "So21NSItemProviderReadingP"
-- !private "So21NSItemProviderWritingP"
 - !private "So15NSKeyedArchiverC"
-- !private "So16NSMutableCopyingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
-- !private "So14NSSecureCodingP"
-- !private "So8NSStringC"
 - !private "Sj"
 - !private "Sq"
-- !private "Sm"
 - !private "s10SIMDScalarP"
-- !private "ST"
 - !private "SZ"
 - !private "s13SignedNumericP"
 - !private "Sx"
-- !private "SS"
 - !private "s27StringInterpolationProtocolP"
-- !private "Sy"
 - !private "s16TextOutputStreamP"
-- !private "s20TextOutputStreamableP"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
@@ -1251,11 +1194,7 @@ depends-nominal:
 - !private "s15_CVarArgAlignedP"
 - !private "s22_CVarArgPassedAsDoubleP"
 - !private "s30_CustomPlaygroundQuickLookableP"
-- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
-- !private "s34_ExpressibleByBuiltinStringLiteralP"
-- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
-- !private "s19_HasContiguousBytesP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "10Foundation37_KeyValueCodingAndObservingPublishingP"
