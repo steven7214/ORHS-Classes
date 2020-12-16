@@ -23,14 +23,13 @@ class SubjectTableViewController: UITableViewController {
     }
     //MARK: Properties
     struct subjectList {
-    static  let subjects = ["English", "Math", "Science", "Economics", "World Languages", "Fine Arts", "Wellness", "Career Academies", "Other", "Personal Finance", "U.S. Government", "U.S. History", "World History:Geography"]
+        static  let subjects = ["Career Academies", "Economics", "English", "Fine Arts", "Math", "Other", "Personal Finance", "Science", "U.S. Government", "U.S. History", "Wellness", "World History:Geography", "World Languages"]
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.tableFooterView = UIView(frame: .zero)
-
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

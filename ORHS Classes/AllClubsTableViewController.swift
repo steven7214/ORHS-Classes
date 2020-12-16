@@ -28,7 +28,6 @@ class AllClubsTableViewController: UITableViewController {
     func getClubs() {
         //add club data
         let clubArray = Bundle.main.urls(forResourcesWithExtension: "txt", subdirectory: "Clubs")! as [URL]
-        print(clubArray)
         
         for files: URL in clubArray {
             let data = reader.findData(fileURL: files)

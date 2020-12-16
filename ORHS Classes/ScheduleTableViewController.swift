@@ -13,6 +13,7 @@ class ScheduleTableViewController: UITableViewController {
     //MARK: Properties
     var classes = [Class]()
     var yearIndex: Int?
+    let years = ["Freshman", "Sophomore", "Junior", "Senior"]
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -25,7 +26,8 @@ class ScheduleTableViewController: UITableViewController {
         super.viewDidLoad()
         tableView.tableFooterView = UIView(frame: .zero)
         navigationItem.rightBarButtonItem = editButtonItem
-
+        self.title = years[yearIndex!]
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -58,9 +60,6 @@ class ScheduleTableViewController: UITableViewController {
         cell.textLabel?.textAlignment = .center
         cell.textLabel?.font = UIFont(name:"HelveticaNeue-Bold", size: 28.0)
         var index = indexPath.row
-        if index > 5 {
-            index -= 1
-        }
         cell.textLabel?.text = classes[index].name
         return cell
     }
@@ -71,6 +70,18 @@ class ScheduleTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true
+    }
+    
+    override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        let movedObject = self.classes[sourceIndexPath.row]
+        classes.remove(at: sourceIndexPath.row)
+        classes.insert(movedObject, at: destinationIndexPath.row)
+        YearTableViewController.schedules[yearIndex!] = classes
+        //YearTableViewController.schedules = [classes]
+        let encodedData = NSKeyedArchiver.archivedData(withRootObject: YearTableViewController.schedules)
+        UserDefaults.standard.set(encodedData, forKey: "savedSchedules")
+        debugPrint("\(sourceIndexPath.row) => \(destinationIndexPath.row)")
+        // To check for correctness enable: self.tableView.reloadData()
     }
     
 
@@ -93,20 +104,17 @@ class ScheduleTableViewController: UITableViewController {
     }
     
 
-    /*
+    
     // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
+    
 
-    }
-    */
-
-    /*
+    
     // Override to support conditional rearranging of the table view.
     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the item to be re-orderable.
         return true
     }
-    */
+    
 
     
     // MARK: - Navigation

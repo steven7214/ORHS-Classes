@@ -320,6 +320,7 @@ SWIFT_CLASS("_TtC12ORHS_Classes22ChecklistTableViewCell")
 
 SWIFT_CLASS("_TtC12ORHS_Classes28ChecklistTableViewController")
 @interface ChecklistTableViewController : UITableViewController
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified GPALabel;
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified Home;
 - (IBAction)Home:(UIBarButtonItem * _Nonnull)sender;
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified ResetButton;
@@ -351,10 +352,10 @@ SWIFT_CLASS("_TtC12ORHS_Classes25ClassDetailViewController")
 @interface ClassDetailViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified GPALabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified creditLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified hourLabel;
+@property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified hourLabel;
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified descriptionTextBox;
-@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified AddButton;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified categoryLabel;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified AddButton;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
@@ -407,6 +408,7 @@ SWIFT_CLASS("_TtC12ORHS_Classes25ClubDetailsViewController")
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified desciption;
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified addClub;
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified Flexibility;
+- (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (IBAction)favoriteClub:(UIBarButtonItem * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -433,6 +435,8 @@ SWIFT_CLASS("_TtC12ORHS_Classes31CurrentClubsTableViewController")
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)tableView:(UITableView * _Nonnull)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)tableView:(UITableView * _Nonnull)tableView moveRowAtIndexPath:(NSIndexPath * _Nonnull)sourceIndexPath toIndexPath:(NSIndexPath * _Nonnull)destinationIndexPath;
+- (BOOL)tableView:(UITableView * _Nonnull)tableView canMoveRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -459,6 +463,8 @@ SWIFT_CLASS("_TtC12ORHS_Classes32CurrentSportsTableViewController")
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)tableView:(UITableView * _Nonnull)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)tableView:(UITableView * _Nonnull)tableView moveRowAtIndexPath:(NSIndexPath * _Nonnull)sourceIndexPath toIndexPath:(NSIndexPath * _Nonnull)destinationIndexPath;
+- (BOOL)tableView:(UITableView * _Nonnull)tableView canMoveRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -494,7 +500,9 @@ SWIFT_CLASS("_TtC12ORHS_Classes27ScheduleTableViewController")
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)tableView:(UITableView * _Nonnull)tableView canEditRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)tableView:(UITableView * _Nonnull)tableView moveRowAtIndexPath:(NSIndexPath * _Nonnull)sourceIndexPath toIndexPath:(NSIndexPath * _Nonnull)destinationIndexPath;
 - (void)tableView:(UITableView * _Nonnull)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (BOOL)tableView:(UITableView * _Nonnull)tableView canMoveRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -517,6 +525,7 @@ SWIFT_CLASS("_TtC12ORHS_Classes26SportsDetailViewController")
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified email;
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified addButton;
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified Link;
+- (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (IBAction)addButton:(UIBarButtonItem * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

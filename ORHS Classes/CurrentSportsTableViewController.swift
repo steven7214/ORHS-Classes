@@ -100,14 +100,24 @@ class CurrentSportsTableViewController: UITableViewController {
 
     }
     */
-
-    /*
+    
+    override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        let movedObject = CurrentSportsTableViewController.self.currentSports[sourceIndexPath.row]
+        CurrentSportsTableViewController.currentSports.remove(at: sourceIndexPath.row)
+        CurrentSportsTableViewController.currentSports.insert(movedObject, at: destinationIndexPath.row)
+        let encodedData = NSKeyedArchiver.archivedData(withRootObject: CurrentSportsTableViewController.currentSports)
+        UserDefaults.standard.set(encodedData, forKey: "savedSports")
+        debugPrint("\(sourceIndexPath.row) => \(destinationIndexPath.row)")
+        // To check for correctness enable: self.tableView.reloadData()
+    }
+    
+    
     // Override to support conditional rearranging of the table view.
     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the item to be re-orderable.
         return true
     }
-    */
+    
 
     
     // MARK: - Navigation

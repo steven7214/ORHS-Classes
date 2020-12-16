@@ -17,6 +17,17 @@ class ClubDetailsViewController: UIViewController {
     @IBOutlet weak var addClub: UIBarButtonItem!
     @IBOutlet weak var Flexibility: UITextView!
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        for clubs in CurrentClubsTableViewController.currentClubs {
+            if clubs.name == club!.name {
+                addClub.isEnabled = false
+                return
+            }
+        }
+        addClub.isEnabled = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("loading club data")

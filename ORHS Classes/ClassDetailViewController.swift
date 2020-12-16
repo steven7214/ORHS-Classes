@@ -15,10 +15,10 @@ class ClassDetailViewController: UIViewController {
     var subject: String? //passed from classTableView
     @IBOutlet weak var GPALabel: UILabel!
     @IBOutlet weak var creditLabel: UILabel!
-    @IBOutlet weak var hourLabel: UILabel!
+    @IBOutlet weak var hourLabel: UITextView!
     @IBOutlet weak var descriptionTextBox: UITextView!
-    @IBOutlet weak var AddButton: UIBarButtonItem!
     @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var AddButton: UIBarButtonItem!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -43,12 +43,93 @@ class ClassDetailViewController: UIViewController {
         self.title = course?.name
         GPALabel.text = "GPA: \(course!.GPA)"
         creditLabel.text = "Credits: \(course!.credits)"
-        hourLabel.text = "Homework: \(course!.hours) hrs/day"
+        hourLabel.text = "Prerequisites: \(course!.hours)"
         descriptionTextBox.text = course!.summary
         categoryLabel.text = "Subject: \(course!.subject)"
+        hourLabel.sizeToFit()
+        categoryLabel.sizeToFit()
         if course!.added {
             // AddButton.isEnabled = false
         }
+        categoryLabel.frame.origin = CGPoint(x: 250, y: 95)
+        categoryLabel.numberOfLines = 0
+        print(course?.subject.count)
+        print(course?.hours.count)
+        print(hourLabel.font!.lineHeight)
+//        if course?.name == "AGATE 2 Geometry and Algebra 2 Trigonometry Advanced" {
+//            print("asdkjfl Joooo")
+//            creditLabel.frame.origin = CGPoint(x: 250, y: 185)
+//            GPALabel.frame.origin = CGPoint(x: 250, y: 125)
+//            descriptionTextBox.frame.origin = CGPoint(x: 0, y: 250)
+//            return
+//        }
+        let numLines = (Int(hourLabel.contentSize.height) / Int(hourLabel.font!.lineHeight)) - 1
+        print(numLines)
+//        if numLines > 8 {
+//            creditLabel.frame.origin = CGPoint(x: 250, y: 262)
+//            GPALabel.frame.origin = CGPoint(x: 250, y: 150.6666666666666666666667)
+//            descriptionTextBox.frame.origin = CGPoint(x: 0, y: 356)
+//
+//        }
+//        if numLines >= 15 {
+//            creditLabel.frame.origin = CGPoint(x: 250, y: 262)
+//            GPALabel.frame.origin = CGPoint(x: 250, y: 150.6666666666666666666667)
+//            descriptionTextBox.frame.origin = CGPoint(x: 0, y: 390)
+//
+//        }
+        if numLines <= 3 {
+            hourLabel.frame.origin = CGPoint(x: 0, y: 88)
+            GPALabel.frame.origin = CGPoint(x: 250, y: 120)
+            creditLabel.frame.origin = CGPoint(x: 5, y: 120)
+            descriptionTextBox.frame.origin = CGPoint(x: 0, y: 194)
+        }
+        if numLines > 3 {
+            if (course?.subject) == "Personal Finance" || (course?.subject) == "U.S. Government" || (course?.subject) == "World Languages" || (course?.subject) == "Career Academies" || (course?.subject) == "World History/Geography" {
+                hourLabel.frame.origin = CGPoint(x: 0, y: 88)
+                creditLabel.frame.origin = CGPoint(x: 250, y: ((hourLabel.font!.lineHeight * CGFloat(numLines-3) + 88) + 88)/2)
+                GPALabel.frame.origin = CGPoint(x: 250, y: hourLabel.font!.lineHeight * CGFloat(numLines-3) + 98)
+                descriptionTextBox.frame.origin = CGPoint(x: 0, y: hourLabel.font!.lineHeight * CGFloat(numLines-2)+150)
+            }
+            else {
+                hourLabel.frame.origin = CGPoint(x: 0, y: 88)
+                creditLabel.frame.origin = CGPoint(x: 250, y: ((hourLabel.font!.lineHeight * CGFloat(numLines-4) + 88) + 88)/2)
+                GPALabel.frame.origin = CGPoint(x: 250, y: hourLabel.font!.lineHeight * CGFloat(numLines-3) + 98)
+                descriptionTextBox.frame.origin = CGPoint(x: 0, y: hourLabel.font!.lineHeight * CGFloat(numLines-2)+150)
+            }
+        }
+//        if numLines <= 8 {
+//            if numLines > 3 {
+//                creditLabel.frame.origin = CGPoint(x: 250, y: 185)
+//                GPALabel.frame.origin = CGPoint(x: 250, y: 125)
+//                descriptionTextBox.frame.origin = CGPoint(x: 0, y: 250)
+//            }
+//        }
+        if (course?.subject) == "Personal Finance" {
+            
+            categoryLabel.text = "Subject: Personal \n" + "Finance"
+            categoryLabel.sizeToFit()
+        }
+        if (course?.subject) == "U.S. Government" {
+            
+            categoryLabel.text = "Subject: U.S. \n" + "Government"
+            categoryLabel.sizeToFit()
+        }
+        if (course?.subject) == "World Languages" {
+            
+            categoryLabel.text = "Subject: World \n" + "Languages"
+            categoryLabel.sizeToFit()
+        }
+        if (course?.subject) == "Career Academies" {
+            
+            categoryLabel.text = "Subject: Career \n" + "Academies"
+            categoryLabel.sizeToFit()
+        }
+        if (course?.subject) == "World History/Geography" {
+            
+            categoryLabel.text = "Subject: World History/ \n" + "Geography"
+            categoryLabel.sizeToFit()
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {

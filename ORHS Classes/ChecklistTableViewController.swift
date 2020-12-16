@@ -9,6 +9,7 @@
 import UIKit
 
 class ChecklistTableViewController: UITableViewController {
+    @IBOutlet weak var GPALabel: UILabel!
     @IBOutlet weak var Home: UIBarButtonItem!
     @IBAction func Home(_ sender: UIBarButtonItem) {
         let isPresentingInAddMealMode = presentingViewController is UINavigationController
@@ -24,9 +25,10 @@ class ChecklistTableViewController: UITableViewController {
     
     
     //MARK: properties
-    static let requirements = [("English", 4.0), ("Math", 4.0), ("Science", 3.0), ("World Languages", 2.0), ("Fine Arts", 1.0), ("U.S. History", 1.0), ("History/Geography", 1.0), ("Economics", 0.5), ("Government", 0.5), ("Personal Finance", 0.5), ("Lifetime Wellness", 1.5)]
+    var GPA = 0.0
+    static let requirements = [("English", 4.0), ("Math", 4.0), ("Science", 3.0), ("World Languages", 2.0), ("Fine Arts", 1.0), ("U.S. History", 1.0), ("World History/Geography", 1.0), ("Economics", 0.5), ("U.S. Government", 0.5), ("Personal Finance", 0.5), ("Wellness", 1.5)]
     static var current = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-    
+
     @IBOutlet weak var ResetButton: UIBarButtonItem!
     
     @IBAction func ResetButton(_ sender: UIBarButtonItem) {
@@ -62,13 +64,24 @@ class ChecklistTableViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-
+//        var count = 0.0
+//        var temp = 0.0
+//        for Classes in YearTableViewController.schedules {
+//            for Class in Classes {
+//                count += Double(Class.credits)!
+//                temp += Double(Class.credits)! * Double(Class.GPA)!
+//            }
+//        }
+//        GPA = temp/count
+//        print(GPA)
+//        GPALabel.text = String(GPA)
         tableView.reloadData()
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.tableFooterView = UIView(frame: .zero)
+       
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -101,6 +114,20 @@ class ChecklistTableViewController: UITableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "requirementCell", for: indexPath) as? ChecklistTableViewCell else {
             fatalError("The dequeued cell is not an instance of requirementCell")
         }
+        //This makes a GPA label. If you are going to use this again, make sure to change let num = indexPath.row to num = indexPath.row - 1 (the code below). Also, make return ChecklistTableViewController.requirements.count into return ChecklistTableViewController.requirements.count + 1(in tableView func above). Finally, uncomment the stuff below, the code in viewWillAppear, and the part that makes the variable "GPA".
+//        if indexPath.row == 0 {
+//            cell.textLabel?.text = "GPA"
+//            if GPA.isNaN {
+//                cell.completionLabel.text = String(0.0)
+//                cell.textLabel?.font = UIFont(name:"HelveticaNeue-Bold", size: 17.0)
+//                cell.completionLabel?.font = UIFont(name:"HelveticaNeue-Bold", size: 17.0)
+//                return cell
+//            }
+//            cell.completionLabel.text = String(GPA)
+//            cell.textLabel?.font = UIFont(name:"HelveticaNeue-Bold", size: 17.0)
+//            cell.completionLabel?.font = UIFont(name:"HelveticaNeue-Bold", size: 17.0)
+//            return cell
+//        }
         let num = indexPath.row
         cell.textLabel?.text = ChecklistTableViewController.requirements[num].0 //puts name of requirement
         if(ChecklistTableViewController.current[num] >= ChecklistTableViewController.requirements[num].1) {
@@ -116,11 +143,7 @@ class ChecklistTableViewController: UITableViewController {
         
         
         cell.completionLabel.textAlignment = .center
-        var temp = ChecklistTableViewController.current[num]
-        if (temp > ChecklistTableViewController.requirements[num].1) {
-            temp = ChecklistTableViewController.requirements[num].1 //makes sure checklist doesn't go above 100% done
-                //Take off later
-        }
+        let temp = ChecklistTableViewController.current[num]
         cell.completionLabel.text = "(\(temp)/\(ChecklistTableViewController.requirements[num].1))" //keeps track of how many completed in a box
 
         return cell
@@ -130,27 +153,30 @@ class ChecklistTableViewController: UITableViewController {
     static func edit(_ course:Class, _ add:Bool) {
         //this is wrong we need the real graduation credit subject fix later
         let index = convert(course.subject)
-        print(course.subject)
-        if (add == false){
-            if course.subject == "Other" {
-                let encodedData = NSKeyedArchiver.archivedData(withRootObject: YearTableViewController.schedules)
-                UserDefaults.standard.set(encodedData, forKey: "savedSchedules")
-                return
-            }
-            if course.subject == "Career Academies" {
-                let encodedData = NSKeyedArchiver.archivedData(withRootObject: YearTableViewController.schedules)
-                UserDefaults.standard.set(encodedData, forKey: "savedSchedules")
-                return
-            }
+        if course.subject == "Other" {
+            let encodedData = NSKeyedArchiver.archivedData(withRootObject: YearTableViewController.schedules)
+            UserDefaults.standard.set(encodedData, forKey: "savedSchedules")
+            return
+        }
+        if course.subject == "Career Academies" {
+            let encodedData = NSKeyedArchiver.archivedData(withRootObject: YearTableViewController.schedules)
+            UserDefaults.standard.set(encodedData, forKey: "savedSchedules")
+            return
+        }
+        if add == false {
             ChecklistTableViewController.current[index] -= Double(course.credits)!
-            if (ChecklistTableViewController.current[index] < 0.0) {
-                ChecklistTableViewController.current[index] = 0.0
-            }
+            return
+        }
+        if (ChecklistTableViewController.current[index] < 0.0) {
+            ChecklistTableViewController.current[index] = 0.0
         }
         else {
             print(index)
             print(ChecklistTableViewController.current.count)
             ChecklistTableViewController.current[index] += Double(course.credits)!
+            if course.name == "AP United States Government & Politics" {
+                ChecklistTableViewController.current[9] += Double(course.credits)!
+            }
         }
         UserDefaults.standard.set(ChecklistTableViewController.current, forKey: "savedList")
         let encodedData = NSKeyedArchiver.archivedData(withRootObject: YearTableViewController.schedules)

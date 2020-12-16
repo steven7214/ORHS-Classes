@@ -143,7 +143,8 @@ class ClassTableViewController: UITableViewController {
     
     //MARK: functions
     func makeClasses() {
-        let classesArray = Bundle.main.urls(forResourcesWithExtension: "txt", subdirectory: "Subjects/\(subject!)")! as [URL]
+        let classesArray = Bundle.main.urls(forResourcesWithExtension: "txt", subdirectory: "Classes/\(subject!)")! as [URL]
+        print("JOoooo")
         print(classesArray)
         for files: URL in classesArray {
             let data = reader.findData(fileURL: files)

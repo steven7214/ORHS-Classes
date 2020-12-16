@@ -19,7 +19,6 @@
 		8F4AE7AE20BF8461001CFD6F /* ClassDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4AE7AD20BF8461001CFD6F /* ClassDetailViewController.swift */; };
 		8F4AE7B020BF8550001CFD6F /* Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4AE7AF20BF8550001CFD6F /* Reader.swift */; };
 		8F4AE7B720C56BC0001CFD6F /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4AE7B620C56BC0001CFD6F /* Class.swift */; };
-		8F97228A20E422230006999F /* Subjects in Resources */ = {isa = PBXBuildFile; fileRef = 8F97228920E422230006999F /* Subjects */; };
 		8FE9970220D0B90A005EF1ED /* YearTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE9970120D0B90A005EF1ED /* YearTableViewController.swift */; };
 		8FE9970420D16144005EF1ED /* YearTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE9970320D16144005EF1ED /* YearTableViewCell.swift */; };
 		8FF61DEC20DC84C4004DA261 /* AddYearTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF61DEB20DC84C4004DA261 /* AddYearTableViewController.swift */; };
@@ -28,15 +27,16 @@
 		8FF61DF220DCAEC3004DA261 /* ScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF61DF120DCAEC3004DA261 /* ScheduleTableViewController.swift */; };
 		F668A59F2491826C00844652 /* Sports in Resources */ = {isa = PBXBuildFile; fileRef = F668A59E2491826C00844652 /* Sports */; };
 		F668A5A12492745800844652 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F668A5A02492745800844652 /* HomeViewController.swift */; };
+		F668A5A52492C14000844652 /* Clubs in Resources */ = {isa = PBXBuildFile; fileRef = F668A5A42492C14000844652 /* Clubs */; };
 		F674154F2486888400DC1E2C /* CurrentClubsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F674154E2486888400DC1E2C /* CurrentClubsTableViewController.swift */; };
 		F67415512486890E00DC1E2C /* AllClubsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67415502486890E00DC1E2C /* AllClubsTableViewController.swift */; };
 		F67415532486894800DC1E2C /* CurrentClubsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67415522486894800DC1E2C /* CurrentClubsTableViewCell.swift */; };
 		F67415552486896400DC1E2C /* AllClubsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67415542486896400DC1E2C /* AllClubsTableViewCell.swift */; };
-		F6945D762485339B0076EFC8 /* Clubs in Resources */ = {isa = PBXBuildFile; fileRef = F6945D752485339B0076EFC8 /* Clubs */; };
 		F6945D8E2485734B0076EFC8 /* ChecklistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6945D8D2485734B0076EFC8 /* ChecklistTableViewCell.swift */; };
 		F6BB99602487F42800EE18CB /* ClubDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BB995F2487F42800EE18CB /* ClubDetailsViewController.swift */; };
 		F6BB99622487F4F800EE18CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6BB99612487F4F800EE18CB /* Main.storyboard */; };
 		F6BB99642487FEAA00EE18CB /* Club.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BB99632487FEAA00EE18CB /* Club.swift */; };
+		F6CB7332249CEF6300694118 /* Classes in Resources */ = {isa = PBXBuildFile; fileRef = F6CB7331249CEF6300694118 /* Classes */; };
 		F6E8CFF324913E7F00110783 /* CurrentSportsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E8CFF224913E7F00110783 /* CurrentSportsTableViewController.swift */; };
 		F6E8CFF524913E9D00110783 /* CurrentSportsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E8CFF424913E9D00110783 /* CurrentSportsTableViewCell.swift */; };
 		F6E8CFF724913EAD00110783 /* AllSportsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E8CFF624913EAD00110783 /* AllSportsTableViewCell.swift */; };
@@ -72,7 +72,6 @@
 		8F4AE7AD20BF8461001CFD6F /* ClassDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetailViewController.swift; sourceTree = "<group>"; };
 		8F4AE7AF20BF8550001CFD6F /* Reader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reader.swift; sourceTree = "<group>"; tabWidth = 3; };
 		8F4AE7B620C56BC0001CFD6F /* Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
-		8F97228920E422230006999F /* Subjects */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Subjects; path = "ORHS Classes/Subjects"; sourceTree = SOURCE_ROOT; };
 		8FE9970120D0B90A005EF1ED /* YearTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearTableViewController.swift; sourceTree = "<group>"; };
 		8FE9970320D16144005EF1ED /* YearTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearTableViewCell.swift; sourceTree = "<group>"; };
 		8FF61DEB20DC84C4004DA261 /* AddYearTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddYearTableViewController.swift; sourceTree = "<group>"; };
@@ -81,15 +80,16 @@
 		8FF61DF120DCAEC3004DA261 /* ScheduleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewController.swift; sourceTree = "<group>"; };
 		F668A59E2491826C00844652 /* Sports */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sports; sourceTree = "<group>"; };
 		F668A5A02492745800844652 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F668A5A42492C14000844652 /* Clubs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Clubs; sourceTree = "<group>"; };
 		F674154E2486888400DC1E2C /* CurrentClubsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentClubsTableViewController.swift; sourceTree = "<group>"; };
 		F67415502486890E00DC1E2C /* AllClubsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllClubsTableViewController.swift; sourceTree = "<group>"; };
 		F67415522486894800DC1E2C /* CurrentClubsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentClubsTableViewCell.swift; sourceTree = "<group>"; };
 		F67415542486896400DC1E2C /* AllClubsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllClubsTableViewCell.swift; sourceTree = "<group>"; };
-		F6945D752485339B0076EFC8 /* Clubs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Clubs; path = ../Clubs; sourceTree = "<group>"; };
 		F6945D8D2485734B0076EFC8 /* ChecklistTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistTableViewCell.swift; sourceTree = "<group>"; };
 		F6BB995F2487F42800EE18CB /* ClubDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubDetailsViewController.swift; sourceTree = "<group>"; };
 		F6BB99612487F4F800EE18CB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F6BB99632487FEAA00EE18CB /* Club.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Club.swift; sourceTree = "<group>"; };
+		F6CB7331249CEF6300694118 /* Classes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Classes; sourceTree = SOURCE_ROOT; };
 		F6E8CFF224913E7F00110783 /* CurrentSportsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentSportsTableViewController.swift; sourceTree = "<group>"; };
 		F6E8CFF424913E9D00110783 /* CurrentSportsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentSportsTableViewCell.swift; sourceTree = "<group>"; };
 		F6E8CFF624913EAD00110783 /* AllSportsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSportsTableViewCell.swift; sourceTree = "<group>"; };
@@ -137,10 +137,10 @@
 		8F3D7DC820BE12FF00715952 /* ORHS Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F668A5A42492C14000844652 /* Clubs */,
 				F668A59E2491826C00844652 /* Sports */,
-				8F97228920E422230006999F /* Subjects */,
-				F6945D752485339B0076EFC8 /* Clubs */,
 				8F3D7DC920BE12FF00715952 /* AppDelegate.swift */,
+				F6CB7331249CEF6300694118 /* Classes */,
 				8FE9970320D16144005EF1ED /* YearTableViewCell.swift */,
 				8FE9970120D0B90A005EF1ED /* YearTableViewController.swift */,
 				8FF61DEF20DCAEAE004DA261 /* ScheduleTableViewCell.swift */,
@@ -267,11 +267,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6945D762485339B0076EFC8 /* Clubs in Resources */,
+				F668A5A52492C14000844652 /* Clubs in Resources */,
 				F6BB99622487F4F800EE18CB /* Main.storyboard in Resources */,
 				8F3D7DD620BE130100715952 /* LaunchScreen.storyboard in Resources */,
+				F6CB7332249CEF6300694118 /* Classes in Resources */,
 				8F3D7DD320BE130100715952 /* Assets.xcassets in Resources */,
-				8F97228A20E422230006999F /* Subjects in Resources */,
 				F668A59F2491826C00844652 /* Sports in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
