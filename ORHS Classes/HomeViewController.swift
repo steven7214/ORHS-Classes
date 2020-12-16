@@ -28,10 +28,13 @@ class HomeViewController: UIViewController {
         ORHSFacebook.sizeToFit()
         }
 
-    func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
-        UIApplication.shared.open(URL)
-        return false
-    }
+//    func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
+//        UIApplication.shared.openconvertToUIApplicationOpenExternalURLOptionsKeyDictionary(()URL)
+//         if UIApplication.shared.canOpenURL(url) {
+//            UIApplication.shared.open(url, options: [:])
+//         }
+//        return false
+//    }
         // Do any additional setup after loading the view.
     
 
@@ -45,4 +48,9 @@ class HomeViewController: UIViewController {
     }
     */
 
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToUIApplicationOpenExternalURLOptionsKeyDictionary(_ input: [String: Any]) -> [UIApplication.OpenExternalURLOptionsKey: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (UIApplication.OpenExternalURLOptionsKey(rawValue: key), value)})
 }

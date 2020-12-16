@@ -20,14 +20,12 @@ depends-top-level:
 - "NSCoder"
 - "UIApplication"
 - "UIApplicationDelegate"
-- "UIApplicationLaunchOptionsKey"
 - "UIResponder"
 - "UIWindow"
 depends-member:
 - ["12ORHS_Classes11AppDelegateC", "Bool"]
 - ["12ORHS_Classes11AppDelegateC", "NSCoder"]
 - ["12ORHS_Classes11AppDelegateC", "UIApplication"]
-- ["12ORHS_Classes11AppDelegateC", "UIApplicationLaunchOptionsKey"]
 - ["12ORHS_Classes11AppDelegateC", "UIWindow"]
 - ["12ORHS_Classes11AppDelegateC", "application"]
 - ["12ORHS_Classes11AppDelegateC", "applicationDidBecomeActive"]
@@ -44,6 +42,7 @@ depends-member:
 - ["12ORHS_Classes11AppDelegateC", "deinit"]
 - ["12ORHS_Classes11AppDelegateC", "init"]
 - ["12ORHS_Classes11AppDelegateC", "window"]
+- ["s7CVarArgP", "LaunchOptionsKey"]
 - ["s7CVarArgP", ""]
 - ["s7CVarArgP", "application"]
 - ["s7CVarArgP", "applicationDidBecomeActive"]
@@ -58,6 +57,7 @@ depends-member:
 - ["s7CVarArgP", "applicationWillResignActive"]
 - ["s7CVarArgP", "applicationWillTerminate"]
 - ["s7CVarArgP", "window"]
+- ["s28CustomDebugStringConvertibleP", "LaunchOptionsKey"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - ["s28CustomDebugStringConvertibleP", "application"]
 - ["s28CustomDebugStringConvertibleP", "applicationDidBecomeActive"]
@@ -72,6 +72,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "applicationWillResignActive"]
 - ["s28CustomDebugStringConvertibleP", "applicationWillTerminate"]
 - ["s28CustomDebugStringConvertibleP", "window"]
+- ["s23CustomStringConvertibleP", "LaunchOptionsKey"]
 - ["s23CustomStringConvertibleP", ""]
 - ["s23CustomStringConvertibleP", "application"]
 - ["s23CustomStringConvertibleP", "applicationDidBecomeActive"]
@@ -86,6 +87,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "applicationWillResignActive"]
 - ["s23CustomStringConvertibleP", "applicationWillTerminate"]
 - ["s23CustomStringConvertibleP", "window"]
+- ["SQ", "LaunchOptionsKey"]
 - ["SQ", ""]
 - ["SQ", "application"]
 - ["SQ", "applicationDidBecomeActive"]
@@ -100,6 +102,7 @@ depends-member:
 - ["SQ", "applicationWillResignActive"]
 - ["SQ", "applicationWillTerminate"]
 - ["SQ", "window"]
+- ["SH", "LaunchOptionsKey"]
 - ["SH", ""]
 - ["SH", "application"]
 - ["SH", "applicationDidBecomeActive"]
@@ -115,9 +118,9 @@ depends-member:
 - ["SH", "applicationWillTerminate"]
 - ["SH", "window"]
 - ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "LaunchOptionsKey"]
 - ["So8NSObjectC", "NSCoder"]
 - ["So8NSObjectC", "UIApplication"]
-- ["So8NSObjectC", "UIApplicationLaunchOptionsKey"]
 - ["So8NSObjectC", "UIWindow"]
 - ["So8NSObjectC", "application"]
 - ["So8NSObjectC", "applicationDidBecomeActive"]
@@ -133,6 +136,7 @@ depends-member:
 - ["So8NSObjectC", "applicationWillTerminate"]
 - ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "window"]
+- ["So8NSObjectP", "LaunchOptionsKey"]
 - ["So8NSObjectP", ""]
 - ["So8NSObjectP", "application"]
 - ["So8NSObjectP", "applicationDidBecomeActive"]
@@ -147,6 +151,7 @@ depends-member:
 - ["So8NSObjectP", "applicationWillResignActive"]
 - ["So8NSObjectP", "applicationWillTerminate"]
 - ["So8NSObjectP", "window"]
+- ["So13UIApplicationC", "LaunchOptionsKey"]
 - ["So21UIApplicationDelegateP", ""]
 - ["So21UIApplicationDelegateP", "application"]
 - ["So21UIApplicationDelegateP", "applicationDidBecomeActive"]
@@ -161,6 +166,7 @@ depends-member:
 - ["So21UIApplicationDelegateP", "applicationWillResignActive"]
 - ["So21UIApplicationDelegateP", "applicationWillTerminate"]
 - ["So21UIApplicationDelegateP", "window"]
+- ["So30UIPasteConfigurationSupportingP", "LaunchOptionsKey"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - ["So30UIPasteConfigurationSupportingP", "application"]
 - ["So30UIPasteConfigurationSupportingP", "applicationDidBecomeActive"]
@@ -176,9 +182,9 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "applicationWillTerminate"]
 - ["So30UIPasteConfigurationSupportingP", "window"]
 - ["So11UIResponderC", "Bool"]
+- ["So11UIResponderC", "LaunchOptionsKey"]
 - ["So11UIResponderC", "NSCoder"]
 - ["So11UIResponderC", "UIApplication"]
-- ["So11UIResponderC", "UIApplicationLaunchOptionsKey"]
 - ["So11UIResponderC", "UIWindow"]
 - ["So11UIResponderC", ""]
 - ["So11UIResponderC", "application"]
@@ -195,6 +201,7 @@ depends-member:
 - ["So11UIResponderC", "applicationWillTerminate"]
 - ["So11UIResponderC", "init"]
 - ["So11UIResponderC", "window"]
+- ["So30UIResponderStandardEditActionsP", "LaunchOptionsKey"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - ["So30UIResponderStandardEditActionsP", "application"]
 - ["So30UIResponderStandardEditActionsP", "applicationDidBecomeActive"]
@@ -209,6 +216,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "applicationWillResignActive"]
 - ["So30UIResponderStandardEditActionsP", "applicationWillTerminate"]
 - ["So30UIResponderStandardEditActionsP", "window"]
+- ["So23UIUserActivityRestoringP", "LaunchOptionsKey"]
 - ["So23UIUserActivityRestoringP", ""]
 - ["So23UIUserActivityRestoringP", "application"]
 - ["So23UIUserActivityRestoringP", "applicationDidBecomeActive"]
@@ -223,6 +231,7 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "applicationWillResignActive"]
 - ["So23UIUserActivityRestoringP", "applicationWillTerminate"]
 - ["So23UIUserActivityRestoringP", "window"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "LaunchOptionsKey"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - ["10Foundation27_KeyValueCodingAndObservingP", "application"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "applicationDidBecomeActive"]
@@ -237,6 +246,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillResignActive"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillTerminate"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "window"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "LaunchOptionsKey"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "application"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "applicationDidBecomeActive"]
@@ -260,6 +270,7 @@ depends-nominal:
 - "SH"
 - "So8NSObjectC"
 - "So8NSObjectP"
+- "So13UIApplicationC"
 - "So21UIApplicationDelegateP"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
@@ -297,4 +308,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "f5b829c2eaf9bc3a3e1804a4b5047eee"
+interface-hash: "5a86d1376a94eb9c601afb4df072e935"

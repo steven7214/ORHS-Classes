@@ -15,14 +15,11 @@ provides-dynamic-lookup:
 - "tableView"
 - "viewDidLoad"
 depends-top-level:
-- !private "<"
 - !private "??"
 - "AssignmentPrecedence"
-- !private "Bool"
 - !private "BooleanLiteralType"
 - "CGFloat"
 - "CastingPrecedence"
-- !private "Class"
 - !private "ClassTableViewController"
 - !private "FloatLiteralType"
 - "IndexPath"
@@ -39,7 +36,6 @@ depends-top-level:
 - "UITableViewCell"
 - "UITableViewController"
 - !private "UIView"
-- !private "classes"
 - !private "fatalError"
 - !private "print"
 - !private "~="
@@ -61,7 +57,6 @@ depends-member:
 - !private ["s7CVarArgP", "UIFont"]
 - !private ["s7CVarArgP", "UIView"]
 - ["s7CVarArgP", ""]
-- !private ["s7CVarArgP", "classes"]
 - !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "dequeueReusableCell"]
 - !private ["s7CVarArgP", "destination"]
@@ -72,7 +67,6 @@ depends-member:
 - !private ["s7CVarArgP", "identifier"]
 - !private ["s7CVarArgP", "indexPath"]
 - !private ["s7CVarArgP", "init"]
-- !private ["s7CVarArgP", "name"]
 - !private ["s7CVarArgP", "navigationController"]
 - !private ["s7CVarArgP", "popViewController"]
 - !private ["s7CVarArgP", "prepare"]
@@ -87,7 +81,6 @@ depends-member:
 - !private ["s7CVarArgP", "text"]
 - !private ["s7CVarArgP", "textAlignment"]
 - !private ["s7CVarArgP", "viewDidLoad"]
-- !private ["12ORHS_Classes5ClassC", "name"]
 - !private ["12ORHS_Classes24ClassTableViewControllerC", "subject"]
 - !private ["Sl", "count"]
 - !private ["Sl", "row"]
@@ -98,7 +91,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "UIFont"]
 - !private ["s28CustomDebugStringConvertibleP", "UIView"]
 - ["s28CustomDebugStringConvertibleP", ""]
-- !private ["s28CustomDebugStringConvertibleP", "classes"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
 - !private ["s28CustomDebugStringConvertibleP", "dequeueReusableCell"]
 - !private ["s28CustomDebugStringConvertibleP", "destination"]
@@ -109,7 +101,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "identifier"]
 - !private ["s28CustomDebugStringConvertibleP", "indexPath"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
-- !private ["s28CustomDebugStringConvertibleP", "name"]
 - !private ["s28CustomDebugStringConvertibleP", "navigationController"]
 - !private ["s28CustomDebugStringConvertibleP", "popViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "prepare"]
@@ -138,7 +129,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "UIFont"]
 - !private ["s23CustomStringConvertibleP", "UIView"]
 - ["s23CustomStringConvertibleP", ""]
-- !private ["s23CustomStringConvertibleP", "classes"]
 - !private ["s23CustomStringConvertibleP", "count"]
 - !private ["s23CustomStringConvertibleP", "dequeueReusableCell"]
 - !private ["s23CustomStringConvertibleP", "destination"]
@@ -149,7 +139,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "identifier"]
 - !private ["s23CustomStringConvertibleP", "indexPath"]
 - !private ["s23CustomStringConvertibleP", "init"]
-- !private ["s23CustomStringConvertibleP", "name"]
 - !private ["s23CustomStringConvertibleP", "navigationController"]
 - !private ["s23CustomStringConvertibleP", "popViewController"]
 - !private ["s23CustomStringConvertibleP", "prepare"]
@@ -189,7 +178,6 @@ depends-member:
 - !private ["SQ", "UIView"]
 - ["SQ", ""]
 - !private ["SQ", "center"]
-- !private ["SQ", "classes"]
 - !private ["SQ", "count"]
 - !private ["SQ", "dequeueReusableCell"]
 - !private ["SQ", "destination"]
@@ -200,7 +188,6 @@ depends-member:
 - !private ["SQ", "identifier"]
 - !private ["SQ", "indexPath"]
 - !private ["SQ", "init"]
-- !private ["SQ", "name"]
 - !private ["SQ", "navigationController"]
 - !private ["SQ", "popViewController"]
 - !private ["SQ", "prepare"]
@@ -229,7 +216,6 @@ depends-member:
 - !private ["SH", "UIView"]
 - ["SH", ""]
 - !private ["SH", "center"]
-- !private ["SH", "classes"]
 - !private ["SH", "count"]
 - !private ["SH", "dequeueReusableCell"]
 - !private ["SH", "destination"]
@@ -240,7 +226,6 @@ depends-member:
 - !private ["SH", "identifier"]
 - !private ["SH", "indexPath"]
 - !private ["SH", "init"]
-- !private ["SH", "name"]
 - !private ["SH", "navigationController"]
 - !private ["SH", "popViewController"]
 - !private ["SH", "prepare"]
@@ -265,7 +250,6 @@ depends-member:
 - !private ["So8NSCodingP", "UIFont"]
 - !private ["So8NSCodingP", "UIView"]
 - ["So8NSCodingP", ""]
-- !private ["So8NSCodingP", "classes"]
 - !private ["So8NSCodingP", "dequeueReusableCell"]
 - !private ["So8NSCodingP", "didReceiveMemoryWarning"]
 - !private ["So8NSCodingP", "dismiss"]
@@ -273,7 +257,6 @@ depends-member:
 - !private ["So8NSCodingP", "font"]
 - !private ["So8NSCodingP", "indexPath"]
 - !private ["So8NSCodingP", "init"]
-- !private ["So8NSCodingP", "name"]
 - !private ["So8NSCodingP", "navigationController"]
 - !private ["So8NSCodingP", "popViewController"]
 - !private ["So8NSCodingP", "prepare"]
@@ -291,7 +274,6 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "UIFont"]
 - !private ["So26NSExtensionRequestHandlingP", "UIView"]
 - ["So26NSExtensionRequestHandlingP", ""]
-- !private ["So26NSExtensionRequestHandlingP", "classes"]
 - !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
 - !private ["So26NSExtensionRequestHandlingP", "dismiss"]
 - !private ["So26NSExtensionRequestHandlingP", "fatalError"]
@@ -304,9 +286,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "subjectList"]
 - !private ["So26NSExtensionRequestHandlingP", "tableView"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
-- !private ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "CGFloat"]
-- !private ["So8NSObjectC", "Class"]
 - !private ["So8NSObjectC", "ClassTableViewController"]
 - ["So8NSObjectC", "Home"]
 - ["So8NSObjectC", "IndexPath"]
@@ -319,7 +299,6 @@ depends-member:
 - ["So8NSObjectC", "UITableView"]
 - ["So8NSObjectC", "UITableViewCell"]
 - !private ["So8NSObjectC", "UIView"]
-- !private ["So8NSObjectC", "classes"]
 - !private ["So8NSObjectC", "dequeueReusableCell"]
 - !private ["So8NSObjectC", "destination"]
 - ["So8NSObjectC", "didReceiveMemoryWarning"]
@@ -329,7 +308,6 @@ depends-member:
 - !private ["So8NSObjectC", "identifier"]
 - !private ["So8NSObjectC", "indexPath"]
 - ["So8NSObjectC", "init"]
-- !private ["So8NSObjectC", "name"]
 - !private ["So8NSObjectC", "navigationController"]
 - ["So8NSObjectC", "numberOfSections"]
 - !private ["So8NSObjectC", "popViewController"]
@@ -347,7 +325,6 @@ depends-member:
 - !private ["So8NSObjectP", "UIFont"]
 - !private ["So8NSObjectP", "UIView"]
 - ["So8NSObjectP", ""]
-- !private ["So8NSObjectP", "classes"]
 - !private ["So8NSObjectP", "dequeueReusableCell"]
 - !private ["So8NSObjectP", "destination"]
 - !private ["So8NSObjectP", "didReceiveMemoryWarning"]
@@ -357,7 +334,6 @@ depends-member:
 - !private ["So8NSObjectP", "identifier"]
 - !private ["So8NSObjectP", "indexPath"]
 - !private ["So8NSObjectP", "init"]
-- !private ["So8NSObjectP", "name"]
 - !private ["So8NSObjectP", "navigationController"]
 - !private ["So8NSObjectP", "popViewController"]
 - !private ["So8NSObjectP", "prepare"]
@@ -388,9 +364,7 @@ depends-member:
 - !private ["ST", "row"]
 - !private ["ST", "subscript"]
 - !private ["12ORHS_Classes20SubjectTableViewCellC", "subjectLabel"]
-- !private ["12ORHS_Classes26SubjectTableViewControllerC", "Bool"]
 - ["12ORHS_Classes26SubjectTableViewControllerC", "CGFloat"]
-- !private ["12ORHS_Classes26SubjectTableViewControllerC", "Class"]
 - !private ["12ORHS_Classes26SubjectTableViewControllerC", "ClassTableViewController"]
 - ["12ORHS_Classes26SubjectTableViewControllerC", "Home"]
 - ["12ORHS_Classes26SubjectTableViewControllerC", "IndexPath"]
@@ -403,7 +377,6 @@ depends-member:
 - ["12ORHS_Classes26SubjectTableViewControllerC", "UITableView"]
 - ["12ORHS_Classes26SubjectTableViewControllerC", "UITableViewCell"]
 - !private ["12ORHS_Classes26SubjectTableViewControllerC", "UIView"]
-- !private ["12ORHS_Classes26SubjectTableViewControllerC", "classes"]
 - ["12ORHS_Classes26SubjectTableViewControllerC", "deinit"]
 - ["12ORHS_Classes26SubjectTableViewControllerC", "didReceiveMemoryWarning"]
 - !private ["12ORHS_Classes26SubjectTableViewControllerC", "dismiss"]
@@ -436,7 +409,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "UIFont"]
 - !private ["So21UIAppearanceContainerP", "UIView"]
 - ["So21UIAppearanceContainerP", ""]
-- !private ["So21UIAppearanceContainerP", "classes"]
 - !private ["So21UIAppearanceContainerP", "dequeueReusableCell"]
 - !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
 - !private ["So21UIAppearanceContainerP", "dismiss"]
@@ -460,7 +432,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "UIFont"]
 - !private ["So18UIContentContainerP", "UIView"]
 - ["So18UIContentContainerP", ""]
-- !private ["So18UIContentContainerP", "classes"]
 - !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
 - !private ["So18UIContentContainerP", "dismiss"]
 - !private ["So18UIContentContainerP", "fatalError"]
@@ -498,7 +469,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "UIFont"]
 - !private ["So18UIFocusEnvironmentP", "UIView"]
 - ["So18UIFocusEnvironmentP", ""]
-- !private ["So18UIFocusEnvironmentP", "classes"]
 - !private ["So18UIFocusEnvironmentP", "dequeueReusableCell"]
 - !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
 - !private ["So18UIFocusEnvironmentP", "dismiss"]
@@ -555,7 +525,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "UIFont"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIView"]
 - ["So30UIPasteConfigurationSupportingP", ""]
-- !private ["So30UIPasteConfigurationSupportingP", "classes"]
 - !private ["So30UIPasteConfigurationSupportingP", "dequeueReusableCell"]
 - !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
 - !private ["So30UIPasteConfigurationSupportingP", "dismiss"]
@@ -576,9 +545,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "textAlignment"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
-- !private ["So11UIResponderC", "Bool"]
 - ["So11UIResponderC", "CGFloat"]
-- !private ["So11UIResponderC", "Class"]
 - !private ["So11UIResponderC", "ClassTableViewController"]
 - ["So11UIResponderC", "Home"]
 - ["So11UIResponderC", "IndexPath"]
@@ -591,7 +558,6 @@ depends-member:
 - ["So11UIResponderC", "UITableView"]
 - ["So11UIResponderC", "UITableViewCell"]
 - !private ["So11UIResponderC", "UIView"]
-- !private ["So11UIResponderC", "classes"]
 - !private ["So11UIResponderC", "dequeueReusableCell"]
 - ["So11UIResponderC", "didReceiveMemoryWarning"]
 - !private ["So11UIResponderC", "dismiss"]
@@ -616,7 +582,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "UIFont"]
 - !private ["So30UIResponderStandardEditActionsP", "UIView"]
 - ["So30UIResponderStandardEditActionsP", ""]
-- !private ["So30UIResponderStandardEditActionsP", "classes"]
 - !private ["So30UIResponderStandardEditActionsP", "dequeueReusableCell"]
 - !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
 - !private ["So30UIResponderStandardEditActionsP", "dismiss"]
@@ -643,7 +608,6 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "UIFont"]
 - !private ["So20UIScrollViewDelegateP", "UIView"]
 - ["So20UIScrollViewDelegateP", ""]
-- !private ["So20UIScrollViewDelegateP", "classes"]
 - !private ["So20UIScrollViewDelegateP", "didReceiveMemoryWarning"]
 - !private ["So20UIScrollViewDelegateP", "dismiss"]
 - !private ["So20UIScrollViewDelegateP", "fatalError"]
@@ -661,7 +625,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "UIFont"]
 - !private ["So16UIStateRestoringP", "UIView"]
 - ["So16UIStateRestoringP", ""]
-- !private ["So16UIStateRestoringP", "classes"]
 - !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
 - !private ["So16UIStateRestoringP", "dismiss"]
 - !private ["So16UIStateRestoringP", "fatalError"]
@@ -680,9 +643,7 @@ depends-member:
 - !private ["So11UITableViewC", "indexPath"]
 - !private ["So11UITableViewC", "tableFooterView"]
 - !private ["So15UITableViewCellC", "subjectLabel"]
-- !private ["So21UITableViewControllerC", "Bool"]
 - ["So21UITableViewControllerC", "CGFloat"]
-- !private ["So21UITableViewControllerC", "Class"]
 - !private ["So21UITableViewControllerC", "ClassTableViewController"]
 - ["So21UITableViewControllerC", "Home"]
 - ["So21UITableViewControllerC", "IndexPath"]
@@ -696,7 +657,6 @@ depends-member:
 - ["So21UITableViewControllerC", "UITableViewCell"]
 - !private ["So21UITableViewControllerC", "UIView"]
 - ["So21UITableViewControllerC", ""]
-- !private ["So21UITableViewControllerC", "classes"]
 - ["So21UITableViewControllerC", "didReceiveMemoryWarning"]
 - !private ["So21UITableViewControllerC", "dismiss"]
 - !private ["So21UITableViewControllerC", "fatalError"]
@@ -713,7 +673,6 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "UIFont"]
 - !private ["So21UITableViewDataSourceP", "UIView"]
 - ["So21UITableViewDataSourceP", ""]
-- !private ["So21UITableViewDataSourceP", "classes"]
 - !private ["So21UITableViewDataSourceP", "didReceiveMemoryWarning"]
 - !private ["So21UITableViewDataSourceP", "dismiss"]
 - !private ["So21UITableViewDataSourceP", "fatalError"]
@@ -728,7 +687,6 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "UIFont"]
 - !private ["So19UITableViewDelegateP", "UIView"]
 - ["So19UITableViewDelegateP", ""]
-- !private ["So19UITableViewDelegateP", "classes"]
 - !private ["So19UITableViewDelegateP", "didReceiveMemoryWarning"]
 - !private ["So19UITableViewDelegateP", "dismiss"]
 - !private ["So19UITableViewDelegateP", "fatalError"]
@@ -743,7 +701,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "UIFont"]
 - !private ["So18UITraitEnvironmentP", "UIView"]
 - ["So18UITraitEnvironmentP", ""]
-- !private ["So18UITraitEnvironmentP", "classes"]
 - !private ["So18UITraitEnvironmentP", "dequeueReusableCell"]
 - !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
 - !private ["So18UITraitEnvironmentP", "dismiss"]
@@ -767,7 +724,6 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "UIFont"]
 - !private ["So23UIUserActivityRestoringP", "UIView"]
 - ["So23UIUserActivityRestoringP", ""]
-- !private ["So23UIUserActivityRestoringP", "classes"]
 - !private ["So23UIUserActivityRestoringP", "dequeueReusableCell"]
 - !private ["So23UIUserActivityRestoringP", "didReceiveMemoryWarning"]
 - !private ["So23UIUserActivityRestoringP", "dismiss"]
@@ -796,9 +752,7 @@ depends-member:
 - !private ["So6UIViewC", "tableFooterView"]
 - !private ["So6UIViewC", "text"]
 - !private ["So6UIViewC", "textAlignment"]
-- !private ["So16UIViewControllerC", "Bool"]
 - ["So16UIViewControllerC", "CGFloat"]
-- !private ["So16UIViewControllerC", "Class"]
 - !private ["So16UIViewControllerC", "ClassTableViewController"]
 - ["So16UIViewControllerC", "Home"]
 - ["So16UIViewControllerC", "IndexPath"]
@@ -811,7 +765,6 @@ depends-member:
 - ["So16UIViewControllerC", "UITableView"]
 - ["So16UIViewControllerC", "UITableViewCell"]
 - !private ["So16UIViewControllerC", "UIView"]
-- !private ["So16UIViewControllerC", "classes"]
 - ["So16UIViewControllerC", "didReceiveMemoryWarning"]
 - !private ["So16UIViewControllerC", "dismiss"]
 - !private ["So16UIViewControllerC", "fatalError"]
@@ -838,7 +791,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIFont"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "classes"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dequeueReusableCell"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "destination"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "didReceiveMemoryWarning"]
@@ -848,7 +800,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "identifier"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "indexPath"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "name"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "popViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "prepare"]
@@ -865,7 +816,6 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIFont"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIView"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "classes"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dequeueReusableCell"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "destination"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "didReceiveMemoryWarning"]
@@ -875,7 +825,6 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "identifier"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "indexPath"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "name"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "navigationController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "popViewController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "prepare"]
@@ -914,7 +863,6 @@ depends-nominal:
 - !private "So15CALayerDelegateP"
 - !private "So6CGRectV"
 - "s7CVarArgP"
-- !private "12ORHS_Classes5ClassC"
 - !private "12ORHS_Classes24ClassTableViewControllerC"
 - !private "Sl"
 - !private "SL"
@@ -1020,4 +968,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "aa7c2d1c63b1fb84080a8865ad0409a4"
+interface-hash: "fdf258c3be6184723a63e73593725376"

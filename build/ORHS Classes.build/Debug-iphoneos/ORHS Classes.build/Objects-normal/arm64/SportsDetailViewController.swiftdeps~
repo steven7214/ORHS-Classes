@@ -20,6 +20,7 @@ depends-top-level:
 - "Bool"
 - !private "BooleanLiteralType"
 - !private "CurrentSportsTableViewController"
+- !private "Dictionary"
 - !private "FloatLiteralType"
 - !private "IntegerLiteralType"
 - !private "NSKeyedArchiver"
@@ -27,10 +28,11 @@ depends-top-level:
 - "NSRange"
 - "Sports"
 - "SportsDetailViewController"
+- "String"
 - !private "StringLiteralType"
 - !private "UIAlertAction"
 - !private "UIAlertController"
-- !private "UIApplication"
+- "UIApplication"
 - "UIBarButtonItem"
 - !private "UIFont"
 - "UITextItemInteraction"
@@ -39,6 +41,7 @@ depends-top-level:
 - "URL"
 - !private "UserDefaults"
 - !private "Void"
+- !private "convertToUIApplicationOpenExternalURLOptionsKeyDictionary"
 - !private "print"
 depends-member:
 - !private ["Sa", "append"]
@@ -52,6 +55,7 @@ depends-member:
 - !private ["s7CVarArgP", "NSKeyedArchiver"]
 - !private ["s7CVarArgP", "NSMutableAttributedString"]
 - !private ["s7CVarArgP", "NSRange"]
+- ["s7CVarArgP", "OpenExternalURLOptionsKey"]
 - !private ["s7CVarArgP", "UIAlertAction"]
 - !private ["s7CVarArgP", "UIAlertController"]
 - !private ["s7CVarArgP", "UIApplication"]
@@ -73,8 +77,9 @@ depends-member:
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "isEnabled"]
 - !private ["s7CVarArgP", "link"]
+- !private ["s7CVarArgP", "map"]
 - !private ["s7CVarArgP", "name"]
-- !private ["s7CVarArgP", "open"]
+- !private ["s7CVarArgP", "openconvertToUIApplicationOpenExternalURLOptionsKeyDictionary"]
 - !private ["s7CVarArgP", "present"]
 - !private ["s7CVarArgP", "print"]
 - !private ["s7CVarArgP", "set"]
@@ -87,6 +92,8 @@ depends-member:
 - !private ["s7CVarArgP", "viewDidLoad"]
 - !private ["s7CVarArgP", "viewWillAppear"]
 - !private ["Sl", "append"]
+- !private ["Sl", "init"]
+- !private ["Sl", "map"]
 - !private ["10Foundation15ContiguousBytesP", "append"]
 - !private ["12ORHS_Classes32CurrentSportsTableViewControllerC", "currentSports"]
 - !private ["s28CustomDebugStringConvertibleP", "CurrentSportsTableViewController"]
@@ -94,6 +101,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "NSKeyedArchiver"]
 - !private ["s28CustomDebugStringConvertibleP", "NSMutableAttributedString"]
 - !private ["s28CustomDebugStringConvertibleP", "NSRange"]
+- ["s28CustomDebugStringConvertibleP", "OpenExternalURLOptionsKey"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertAction"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertController"]
 - !private ["s28CustomDebugStringConvertibleP", "UIApplication"]
@@ -115,8 +123,9 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "isEnabled"]
 - !private ["s28CustomDebugStringConvertibleP", "link"]
+- !private ["s28CustomDebugStringConvertibleP", "map"]
 - !private ["s28CustomDebugStringConvertibleP", "name"]
-- !private ["s28CustomDebugStringConvertibleP", "open"]
+- !private ["s28CustomDebugStringConvertibleP", "openconvertToUIApplicationOpenExternalURLOptionsKeyDictionary"]
 - !private ["s28CustomDebugStringConvertibleP", "present"]
 - !private ["s28CustomDebugStringConvertibleP", "print"]
 - !private ["s28CustomDebugStringConvertibleP", "set"]
@@ -133,6 +142,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "font"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "isEnabled"]
+- !private ["s17CustomReflectableP", "map"]
 - !private ["s17CustomReflectableP", "sizeToFit"]
 - !private ["s17CustomReflectableP", "text"]
 - !private ["s23CustomStringConvertibleP", "CurrentSportsTableViewController"]
@@ -140,6 +150,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "NSKeyedArchiver"]
 - !private ["s23CustomStringConvertibleP", "NSMutableAttributedString"]
 - !private ["s23CustomStringConvertibleP", "NSRange"]
+- ["s23CustomStringConvertibleP", "OpenExternalURLOptionsKey"]
 - !private ["s23CustomStringConvertibleP", "UIAlertAction"]
 - !private ["s23CustomStringConvertibleP", "UIAlertController"]
 - !private ["s23CustomStringConvertibleP", "UIApplication"]
@@ -163,8 +174,9 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "isEnabled"]
 - !private ["s23CustomStringConvertibleP", "link"]
+- !private ["s23CustomStringConvertibleP", "map"]
 - !private ["s23CustomStringConvertibleP", "name"]
-- !private ["s23CustomStringConvertibleP", "open"]
+- !private ["s23CustomStringConvertibleP", "openconvertToUIApplicationOpenExternalURLOptionsKeyDictionary"]
 - !private ["s23CustomStringConvertibleP", "present"]
 - !private ["s23CustomStringConvertibleP", "print"]
 - !private ["s23CustomStringConvertibleP", "set"]
@@ -182,15 +194,19 @@ depends-member:
 - !private ["Se", "font"]
 - !private ["Se", "init"]
 - !private ["Se", "isEnabled"]
+- !private ["Se", "map"]
 - !private ["Se", "sizeToFit"]
 - !private ["Se", "text"]
 - !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
 - !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SD", "init"]
+- !private ["SD", "map"]
 - !private ["SE", "append"]
 - !private ["SE", "attributedText"]
 - !private ["SE", "font"]
 - !private ["SE", "init"]
 - !private ["SE", "isEnabled"]
+- !private ["SE", "map"]
 - !private ["SE", "sizeToFit"]
 - !private ["SE", "text"]
 - !private ["SQ", "CurrentSportsTableViewController"]
@@ -198,6 +214,7 @@ depends-member:
 - !private ["SQ", "NSKeyedArchiver"]
 - !private ["SQ", "NSMutableAttributedString"]
 - !private ["SQ", "NSRange"]
+- ["SQ", "OpenExternalURLOptionsKey"]
 - !private ["SQ", "UIAlertAction"]
 - !private ["SQ", "UIAlertController"]
 - !private ["SQ", "UIApplication"]
@@ -222,8 +239,9 @@ depends-member:
 - !private ["SQ", "init"]
 - !private ["SQ", "isEnabled"]
 - !private ["SQ", "link"]
+- !private ["SQ", "map"]
 - !private ["SQ", "name"]
-- !private ["SQ", "open"]
+- !private ["SQ", "openconvertToUIApplicationOpenExternalURLOptionsKeyDictionary"]
 - !private ["SQ", "present"]
 - !private ["SQ", "print"]
 - !private ["SQ", "set"]
@@ -236,6 +254,8 @@ depends-member:
 - !private ["SQ", "viewDidLoad"]
 - !private ["SQ", "viewWillAppear"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "init"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "map"]
 - !private ["s23ExpressibleByNilLiteralP", "attributedText"]
 - !private ["s23ExpressibleByNilLiteralP", "font"]
 - !private ["s23ExpressibleByNilLiteralP", "isEnabled"]
@@ -246,6 +266,7 @@ depends-member:
 - !private ["SH", "NSKeyedArchiver"]
 - !private ["SH", "NSMutableAttributedString"]
 - !private ["SH", "NSRange"]
+- ["SH", "OpenExternalURLOptionsKey"]
 - !private ["SH", "UIAlertAction"]
 - !private ["SH", "UIAlertController"]
 - !private ["SH", "UIApplication"]
@@ -270,8 +291,9 @@ depends-member:
 - !private ["SH", "init"]
 - !private ["SH", "isEnabled"]
 - !private ["SH", "link"]
+- !private ["SH", "map"]
 - !private ["SH", "name"]
-- !private ["SH", "open"]
+- !private ["SH", "openconvertToUIApplicationOpenExternalURLOptionsKeyDictionary"]
 - !private ["SH", "present"]
 - !private ["SH", "print"]
 - !private ["SH", "set"]
@@ -362,6 +384,7 @@ depends-member:
 - !private ["So8NSObjectC", "NSKeyedArchiver"]
 - !private ["So8NSObjectC", "NSMutableAttributedString"]
 - ["So8NSObjectC", "NSRange"]
+- ["So8NSObjectC", "OpenExternalURLOptionsKey"]
 - ["So8NSObjectC", "Sports"]
 - !private ["So8NSObjectC", "UIAlertAction"]
 - !private ["So8NSObjectC", "UIAlertController"]
@@ -388,7 +411,7 @@ depends-member:
 - !private ["So8NSObjectC", "isEnabled"]
 - !private ["So8NSObjectC", "link"]
 - !private ["So8NSObjectC", "name"]
-- !private ["So8NSObjectC", "open"]
+- !private ["So8NSObjectC", "openconvertToUIApplicationOpenExternalURLOptionsKeyDictionary"]
 - !private ["So8NSObjectC", "present"]
 - !private ["So8NSObjectC", "print"]
 - !private ["So8NSObjectC", "set"]
@@ -406,6 +429,7 @@ depends-member:
 - !private ["So8NSObjectP", "NSKeyedArchiver"]
 - !private ["So8NSObjectP", "NSMutableAttributedString"]
 - !private ["So8NSObjectP", "NSRange"]
+- ["So8NSObjectP", "OpenExternalURLOptionsKey"]
 - !private ["So8NSObjectP", "UIAlertAction"]
 - !private ["So8NSObjectP", "UIAlertController"]
 - !private ["So8NSObjectP", "UIApplication"]
@@ -427,7 +451,7 @@ depends-member:
 - !private ["So8NSObjectP", "isEnabled"]
 - !private ["So8NSObjectP", "link"]
 - !private ["So8NSObjectP", "name"]
-- !private ["So8NSObjectP", "open"]
+- !private ["So8NSObjectP", "openconvertToUIApplicationOpenExternalURLOptionsKeyDictionary"]
 - !private ["So8NSObjectP", "present"]
 - !private ["So8NSObjectP", "print"]
 - !private ["So8NSObjectP", "set"]
@@ -441,6 +465,7 @@ depends-member:
 - !private ["So8NSObjectP", "viewWillAppear"]
 - !private ["So14NSSecureCodingP", "addAttribute"]
 - !private ["So14NSSecureCodingP", "init"]
+- !private ["So38UIApplicationOpenExternalURLOptionsKeya", "init"]
 - !private ["Sq", "attributedText"]
 - !private ["Sq", "font"]
 - !private ["Sq", "isEnabled"]
@@ -451,8 +476,11 @@ depends-member:
 - !private ["SY", "alert"]
 - !private ["SY", "cancel"]
 - !private ["SY", "default"]
+- !private ["SY", "init"]
 - !private ["SY", "link"]
 - !private ["ST", "append"]
+- !private ["ST", "init"]
+- !private ["ST", "map"]
 - !private ["12ORHS_Classes6SportsC", "adds"]
 - !private ["12ORHS_Classes6SportsC", "coach"]
 - !private ["12ORHS_Classes6SportsC", "email"]
@@ -534,7 +562,8 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "title"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - !private ["So21UIAppearanceContainerP", "viewWillAppear"]
-- !private ["So13UIApplicationC", "open"]
+- ["So13UIApplicationC", "OpenExternalURLOptionsKey"]
+- !private ["So13UIApplicationC", "openconvertToUIApplicationOpenExternalURLOptionsKeyDictionary"]
 - !private ["So13UIApplicationC", "shared"]
 - !private ["So15UIBarButtonItemC", "isEnabled"]
 - !private ["So9UIBarItemC", "isEnabled"]
@@ -627,6 +656,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "NSKeyedArchiver"]
 - !private ["So30UIPasteConfigurationSupportingP", "NSMutableAttributedString"]
 - !private ["So30UIPasteConfigurationSupportingP", "NSRange"]
+- ["So30UIPasteConfigurationSupportingP", "OpenExternalURLOptionsKey"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertAction"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertController"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIApplication"]
@@ -641,7 +671,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "email"]
 - !private ["So30UIPasteConfigurationSupportingP", "font"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
-- !private ["So30UIPasteConfigurationSupportingP", "open"]
+- !private ["So30UIPasteConfigurationSupportingP", "openconvertToUIApplicationOpenExternalURLOptionsKeyDictionary"]
 - !private ["So30UIPasteConfigurationSupportingP", "present"]
 - !private ["So30UIPasteConfigurationSupportingP", "print"]
 - !private ["So30UIPasteConfigurationSupportingP", "shared"]
@@ -657,6 +687,7 @@ depends-member:
 - !private ["So11UIResponderC", "NSKeyedArchiver"]
 - !private ["So11UIResponderC", "NSMutableAttributedString"]
 - ["So11UIResponderC", "NSRange"]
+- ["So11UIResponderC", "OpenExternalURLOptionsKey"]
 - ["So11UIResponderC", "Sports"]
 - !private ["So11UIResponderC", "UIAlertAction"]
 - !private ["So11UIResponderC", "UIAlertController"]
@@ -676,7 +707,7 @@ depends-member:
 - ["So11UIResponderC", "email"]
 - !private ["So11UIResponderC", "font"]
 - ["So11UIResponderC", "init"]
-- !private ["So11UIResponderC", "open"]
+- !private ["So11UIResponderC", "openconvertToUIApplicationOpenExternalURLOptionsKeyDictionary"]
 - !private ["So11UIResponderC", "present"]
 - !private ["So11UIResponderC", "print"]
 - !private ["So11UIResponderC", "shared"]
@@ -692,6 +723,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "NSKeyedArchiver"]
 - !private ["So30UIResponderStandardEditActionsP", "NSMutableAttributedString"]
 - !private ["So30UIResponderStandardEditActionsP", "NSRange"]
+- ["So30UIResponderStandardEditActionsP", "OpenExternalURLOptionsKey"]
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertAction"]
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertController"]
 - !private ["So30UIResponderStandardEditActionsP", "UIApplication"]
@@ -706,7 +738,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "email"]
 - !private ["So30UIResponderStandardEditActionsP", "font"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
-- !private ["So30UIResponderStandardEditActionsP", "open"]
+- !private ["So30UIResponderStandardEditActionsP", "openconvertToUIApplicationOpenExternalURLOptionsKeyDictionary"]
 - !private ["So30UIResponderStandardEditActionsP", "present"]
 - !private ["So30UIResponderStandardEditActionsP", "print"]
 - !private ["So30UIResponderStandardEditActionsP", "shared"]
@@ -806,6 +838,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "NSKeyedArchiver"]
 - !private ["So23UIUserActivityRestoringP", "NSMutableAttributedString"]
 - !private ["So23UIUserActivityRestoringP", "NSRange"]
+- ["So23UIUserActivityRestoringP", "OpenExternalURLOptionsKey"]
 - !private ["So23UIUserActivityRestoringP", "UIAlertAction"]
 - !private ["So23UIUserActivityRestoringP", "UIAlertController"]
 - !private ["So23UIUserActivityRestoringP", "UIApplication"]
@@ -820,7 +853,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "email"]
 - !private ["So23UIUserActivityRestoringP", "font"]
 - !private ["So23UIUserActivityRestoringP", "init"]
-- !private ["So23UIUserActivityRestoringP", "open"]
+- !private ["So23UIUserActivityRestoringP", "openconvertToUIApplicationOpenExternalURLOptionsKeyDictionary"]
 - !private ["So23UIUserActivityRestoringP", "present"]
 - !private ["So23UIUserActivityRestoringP", "print"]
 - !private ["So23UIUserActivityRestoringP", "shared"]
@@ -872,12 +905,15 @@ depends-member:
 - !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s19_HasContiguousBytesP", "append"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "link"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "map"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CurrentSportsTableViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Link"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSKeyedArchiver"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSMutableAttributedString"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSRange"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "OpenExternalURLOptionsKey"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertAction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIApplication"]
@@ -899,7 +935,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isEnabled"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "link"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "name"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "open"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "openconvertToUIApplicationOpenExternalURLOptionsKeyDictionary"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "present"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "set"]
@@ -916,6 +952,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "NSKeyedArchiver"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "NSMutableAttributedString"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "NSRange"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "OpenExternalURLOptionsKey"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIAlertAction"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIAlertController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIApplication"]
@@ -937,7 +974,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "isEnabled"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "link"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "name"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "open"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "openconvertToUIApplicationOpenExternalURLOptionsKeyDictionary"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "present"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "print"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "set"]
@@ -956,8 +993,10 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "isEnabled"]
 - !private ["s21_ObjectiveCBridgeableP", "link"]
+- !private ["s21_ObjectiveCBridgeableP", "map"]
 - !private ["s21_ObjectiveCBridgeableP", "sizeToFit"]
 - !private ["s21_ObjectiveCBridgeableP", "text"]
+- !private ["s20_SwiftNewtypeWrapperP", "init"]
 - !private ["s20_SwiftNewtypeWrapperP", "link"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "attributedText"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "font"]
@@ -977,9 +1016,11 @@ depends-nominal:
 - !private "10Foundation12DataProtocolP"
 - !private "Se"
 - !private "s26DefaultStringInterpolationV"
+- !private "SD"
 - !private "SE"
 - "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
 - "SH"
 - !private "So21NSAttributedStringKeya"
@@ -998,6 +1039,7 @@ depends-nominal:
 - "So8NSObjectC"
 - "So8NSObjectP"
 - !private "So14NSSecureCodingP"
+- !private "So38UIApplicationOpenExternalURLOptionsKeya"
 - !private "Sq"
 - !private "Sk"
 - !private "Sm"
@@ -1014,7 +1056,7 @@ depends-nominal:
 - !private "So17UIAlertControllerC"
 - !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
-- !private "So13UIApplicationC"
+- "So13UIApplicationC"
 - !private "So15UIBarButtonItemC"
 - !private "So9UIBarItemC"
 - "So18UIContentContainerP"
@@ -1090,4 +1132,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "152df7384f129085ab9a20d27b8d37b7"
+interface-hash: "3371de030a7b0fcc6437b65ce949c5b7"

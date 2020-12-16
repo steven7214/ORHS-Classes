@@ -9,7 +9,7 @@
 import UIKit
 
 class ChecklistTableViewController: UITableViewController {
-    @IBOutlet weak var GPALabel: UILabel!
+
     @IBOutlet weak var Home: UIBarButtonItem!
     @IBAction func Home(_ sender: UIBarButtonItem) {
         let isPresentingInAddMealMode = presentingViewController is UINavigationController
@@ -103,32 +103,58 @@ class ChecklistTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return ChecklistTableViewController.requirements.count
+        return ChecklistTableViewController.requirements.count+1
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Configure the cell...
         tableView.estimatedRowHeight = 100.0
-        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.rowHeight = UITableView.automaticDimension
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "requirementCell", for: indexPath) as? ChecklistTableViewCell else {
             fatalError("The dequeued cell is not an instance of requirementCell")
         }
         //This makes a GPA label. If you are going to use this again, make sure to change let num = indexPath.row to num = indexPath.row - 1 (the code below). Also, make return ChecklistTableViewController.requirements.count into return ChecklistTableViewController.requirements.count + 1(in tableView func above). Finally, uncomment the stuff below, the code in viewWillAppear, and the part that makes the variable "GPA".
-//        if indexPath.row == 0 {
-//            cell.textLabel?.text = "GPA"
-//            if GPA.isNaN {
-//                cell.completionLabel.text = String(0.0)
-//                cell.textLabel?.font = UIFont(name:"HelveticaNeue-Bold", size: 17.0)
-//                cell.completionLabel?.font = UIFont(name:"HelveticaNeue-Bold", size: 17.0)
-//                return cell
-//            }
-//            cell.completionLabel.text = String(GPA)
-//            cell.textLabel?.font = UIFont(name:"HelveticaNeue-Bold", size: 17.0)
-//            cell.completionLabel?.font = UIFont(name:"HelveticaNeue-Bold", size: 17.0)
-//            return cell
-//        }
-        let num = indexPath.row
+        if indexPath.row == 0 {
+            var gpa = 0.0
+            let gradesCP = [4.0, 3.0, 2.0, 1.0, 0.0]
+            let gradesHonors = [4.5,3.5,2.5,1.5,0.0]
+            let gradesAP = [5.0, 4.0, 3.0, 2.0, 0.0]
+            let gradesAdvanced = [4.25,3.25,2.25,1.25,0.0]
+            var count = 0.0
+            for year in YearTableViewController.schedules {
+                for classes in year {
+                    let defaults = UserDefaults.standard
+                    let grade = defaults.integer(forKey: classes.name)
+                    count += Double(classes.credits)!
+                    if Double(classes.GPA) == 5.0 {
+                        gpa += gradesAP[grade]*Double(classes.credits)!
+                    }
+                    else if Double(classes.GPA) == 4.5 {
+                        gpa += gradesHonors[grade]*Double(classes.credits)!
+                    }
+                    else if Double(classes.GPA) == 4.25 {
+                        gpa += gradesAdvanced[grade]*Double(classes.credits)!
+                    }
+                    else if Double(classes.GPA) == 4.0 {
+                        gpa += gradesCP[grade]*Double(classes.credits)!
+                    }
+                }
+            }
+            var realGPA = gpa/count
+            cell.textLabel?.text = "GPA"
+            if realGPA.isNaN {
+                cell.completionLabel.text = String(0.0)
+                cell.textLabel?.font = UIFont(name:"HelveticaNeue-Bold", size: 17.0)
+                cell.completionLabel?.font = UIFont(name:"HelveticaNeue-Bold", size: 17.0)
+                return cell
+            }
+            cell.completionLabel.text = String(realGPA)
+            cell.textLabel?.font = UIFont(name:"HelveticaNeue-Bold", size: 17.0)
+            cell.completionLabel?.font = UIFont(name:"HelveticaNeue-Bold", size: 17.0)
+            return cell
+        }
+        let num = indexPath.row-1
         cell.textLabel?.text = ChecklistTableViewController.requirements[num].0 //puts name of requirement
         if(ChecklistTableViewController.current[num] >= ChecklistTableViewController.requirements[num].1) {
 //            cell.accessoryType = UITableViewCellAccessoryType.checkmark

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61DA008F2549041A00F67793 /* ScheduleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DA008E2549041A00F67793 /* ScheduleDetailViewController.swift */; };
 		8F130DE622A60C4500742D21 /* ChecklistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F130DE522A60C4500742D21 /* ChecklistTableViewController.swift */; };
 		8F33528620BF6AAB00B0AC8D /* ClassTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33528520BF6AAB00B0AC8D /* ClassTableViewController.swift */; };
 		8F3D7DCA20BE12FF00715952 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3D7DC920BE12FF00715952 /* AppDelegate.swift */; };
@@ -56,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		61DA008E2549041A00F67793 /* ScheduleDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleDetailViewController.swift; sourceTree = "<group>"; };
 		8F130DE522A60C4500742D21 /* ChecklistTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistTableViewController.swift; sourceTree = "<group>"; };
 		8F33528520BF6AAB00B0AC8D /* ClassTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ClassTableViewController.swift; path = "ORHS Classes/ClassTableViewController.swift"; sourceTree = SOURCE_ROOT; };
 		8F3D7DC620BE12FF00715952 /* ORHS Classes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ORHS Classes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,6 +152,7 @@
 				8FF61DEB20DC84C4004DA261 /* AddYearTableViewController.swift */,
 				8FF61DED20DC84E3004DA261 /* AddYearTableViewCell.swift */,
 				8F4AE7AD20BF8461001CFD6F /* ClassDetailViewController.swift */,
+				61DA008E2549041A00F67793 /* ScheduleDetailViewController.swift */,
 				8F33528520BF6AAB00B0AC8D /* ClassTableViewController.swift */,
 				8F4AE7AB20BF83FB001CFD6F /* ClassTableViewCell.swift */,
 				8F4AE7B620C56BC0001CFD6F /* Class.swift */,
@@ -231,14 +234,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Steven QU";
 				TargetAttributes = {
 					8F3D7DC520BE12FF00715952 = {
 						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 1150;
 					};
 					8F3D7DDB20BE130100715952 = {
 						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 1150;
 						TestTargetID = 8F3D7DC520BE12FF00715952;
 					};
 				};
@@ -314,6 +319,7 @@
 				8FF61DF020DCAEAE004DA261 /* ScheduleTableViewCell.swift in Sources */,
 				8F4AE7AC20BF83FB001CFD6F /* ClassTableViewCell.swift in Sources */,
 				F6E8CFF724913EAD00110783 /* AllSportsTableViewCell.swift in Sources */,
+				61DA008F2549041A00F67793 /* ScheduleDetailViewController.swift in Sources */,
 				F6BB99602487F42800EE18CB /* ClubDetailsViewController.swift in Sources */,
 				8FF61DEC20DC84C4004DA261 /* AddYearTableViewController.swift in Sources */,
 				8F4AE7B720C56BC0001CFD6F /* Class.swift in Sources */,
@@ -479,7 +485,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.ORHS-Classes1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -497,7 +503,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.ORHS-Classes1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -517,7 +523,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.ORHS-ClassesTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ORHS Classes.app/ORHS Classes";
 			};
@@ -538,7 +544,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.ORHS-ClassesTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ORHS Classes.app/ORHS Classes";
 			};

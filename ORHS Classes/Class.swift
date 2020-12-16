@@ -20,9 +20,10 @@ class Class: NSObject, NSCoding {
     var hours: String
     var summary: String
     var added: Bool
-    
+    var grade: Int
+    var percent: String
     //MARK: Initilizer
-    init?(data: [String], added: Bool) {
+    init?(data: [String], added: Bool, grade:Int) {
         
         if data.isEmpty {
             print("missing class data")
@@ -36,6 +37,8 @@ class Class: NSObject, NSCoding {
         self.hours = data[4]
         self.summary = data[5]
         self.added = added
+        self.grade = grade
+        self.percent = data[6]
     }
     
     //MARK: Types
@@ -47,6 +50,8 @@ class Class: NSObject, NSCoding {
         static let hours = "hours"
         static let summary = "summary"
         static let added = "added"
+        static let grade = "grade"
+        static let percent = "percent"
     }
     
     func encode(with aCoder: NSCoder) {
@@ -57,6 +62,8 @@ class Class: NSObject, NSCoding {
         aCoder.encode(hours, forKey: PropertyKey.hours)
         aCoder.encode(summary, forKey: PropertyKey.summary)
         aCoder.encode(added, forKey: PropertyKey.added)
+        aCoder.encode(grade, forKey: PropertyKey.grade)
+        aCoder.encode(percent, forKey: PropertyKey.percent)
     }
     
     required convenience init?(coder aDecoder: NSCoder) {
@@ -71,7 +78,9 @@ class Class: NSObject, NSCoding {
         let hours = aDecoder.decodeObject(forKey: PropertyKey.hours) as! String
         let summary = aDecoder.decodeObject(forKey: PropertyKey.summary) as! String
         let added = aDecoder.decodeBool(forKey: PropertyKey.added)
-        self.init(data: [name, subject, credits, GPA, hours, summary], added: added)
+        let grade = aDecoder.decodeInteger(forKey: PropertyKey.grade)
+        let percent = aDecoder.decodeObject(forKey: PropertyKey.percent) as! String
+        self.init(data: [name, subject, credits, GPA, hours, summary, percent], added: added, grade: grade)
     }
     
 }

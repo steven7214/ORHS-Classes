@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 class ClassDetailViewController: UIViewController {
     //static var dialog = false
     //MARK: Properties
@@ -35,12 +34,15 @@ class ClassDetailViewController: UIViewController {
         course?.added = false
     }
     
-
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = course?.name
+        let screenRect = UIScreen.main.bounds
+        let screenHeight = screenRect.size.height
+        print(screenHeight)
+        var ratio = screenHeight/896
         GPALabel.text = "GPA: \(course!.GPA)"
         creditLabel.text = "Credits: \(course!.credits)"
         hourLabel.text = "Prerequisites: \(course!.hours)"
@@ -48,62 +50,42 @@ class ClassDetailViewController: UIViewController {
         categoryLabel.text = "Subject: \(course!.subject)"
         hourLabel.sizeToFit()
         categoryLabel.sizeToFit()
-        if course!.added {
-            // AddButton.isEnabled = false
-        }
-        categoryLabel.frame.origin = CGPoint(x: 250, y: 95)
+        categoryLabel.frame.origin = CGPoint(x: 250, y: 95*ratio)
         categoryLabel.numberOfLines = 0
-        print(course?.subject.count)
-        print(course?.hours.count)
-        print(hourLabel.font!.lineHeight)
-//        if course?.name == "AGATE 2 Geometry and Algebra 2 Trigonometry Advanced" {
-//            print("asdkjfl Joooo")
-//            creditLabel.frame.origin = CGPoint(x: 250, y: 185)
-//            GPALabel.frame.origin = CGPoint(x: 250, y: 125)
-//            descriptionTextBox.frame.origin = CGPoint(x: 0, y: 250)
-//            return
-//        }
+//        UIFont(name: GPALabel.font.fontName, size: 15*ratio)
+//        UIFont(name: creditLabel.font.fontName, size: 15*ratio)
+//        UIFont(name: categoryLabel.font.fontName, size: 15*ratio)
+        creditLabel.font = creditLabel.font.withSize(15*ratio)
+        GPALabel.font = GPALabel.font.withSize(15*ratio)
+        categoryLabel.font = categoryLabel.font.withSize(15*ratio)
+        descriptionTextBox.font = UIFont.systemFont(ofSize: 15*ratio)
+        hourLabel.font = UIFont.systemFont(ofSize: 15*ratio)
+        print(hourLabel.font)
+        hourLabel.sizeToFit()
+        categoryLabel.sizeToFit()
+        categoryLabel.frame.origin = CGPoint(x: 250, y: 95*ratio)
+        categoryLabel.numberOfLines = 0
         let numLines = (Int(hourLabel.contentSize.height) / Int(hourLabel.font!.lineHeight)) - 1
-        print(numLines)
-//        if numLines > 8 {
-//            creditLabel.frame.origin = CGPoint(x: 250, y: 262)
-//            GPALabel.frame.origin = CGPoint(x: 250, y: 150.6666666666666666666667)
-//            descriptionTextBox.frame.origin = CGPoint(x: 0, y: 356)
-//
-//        }
-//        if numLines >= 15 {
-//            creditLabel.frame.origin = CGPoint(x: 250, y: 262)
-//            GPALabel.frame.origin = CGPoint(x: 250, y: 150.6666666666666666666667)
-//            descriptionTextBox.frame.origin = CGPoint(x: 0, y: 390)
-//
-//        }
         if numLines <= 3 {
-            hourLabel.frame.origin = CGPoint(x: 0, y: 88)
-            GPALabel.frame.origin = CGPoint(x: 250, y: 120)
-            creditLabel.frame.origin = CGPoint(x: 5, y: 120)
-            descriptionTextBox.frame.origin = CGPoint(x: 0, y: 194)
+            hourLabel.frame.origin = CGPoint(x: 0, y: 88*ratio)
+            GPALabel.frame.origin = CGPoint(x: 250, y: 120*ratio)
+            creditLabel.frame.origin = CGPoint(x: 5, y: 120*ratio)
+            descriptionTextBox.frame.origin = CGPoint(x: 0, y: 194*ratio)
         }
         if numLines > 3 {
             if (course?.subject) == "Personal Finance" || (course?.subject) == "U.S. Government" || (course?.subject) == "World Languages" || (course?.subject) == "Career Academies" || (course?.subject) == "World History/Geography" {
-                hourLabel.frame.origin = CGPoint(x: 0, y: 88)
-                creditLabel.frame.origin = CGPoint(x: 250, y: ((hourLabel.font!.lineHeight * CGFloat(numLines-3) + 88) + 88)/2)
-                GPALabel.frame.origin = CGPoint(x: 250, y: hourLabel.font!.lineHeight * CGFloat(numLines-3) + 98)
-                descriptionTextBox.frame.origin = CGPoint(x: 0, y: hourLabel.font!.lineHeight * CGFloat(numLines-2)+150)
+                hourLabel.frame.origin = CGPoint(x: 0, y: 88*ratio)
+                creditLabel.frame.origin = CGPoint(x: 250, y: ratio*((hourLabel.font!.lineHeight * CGFloat(numLines-3) + 88) + 88)/2)
+                GPALabel.frame.origin = CGPoint(x: 250, y: ratio*hourLabel.font!.lineHeight * CGFloat(numLines-3) + 98)
+                descriptionTextBox.frame.origin = CGPoint(x: 0, y: ratio*hourLabel.font!.lineHeight * CGFloat(numLines-2)+150)
             }
             else {
-                hourLabel.frame.origin = CGPoint(x: 0, y: 88)
-                creditLabel.frame.origin = CGPoint(x: 250, y: ((hourLabel.font!.lineHeight * CGFloat(numLines-4) + 88) + 88)/2)
-                GPALabel.frame.origin = CGPoint(x: 250, y: hourLabel.font!.lineHeight * CGFloat(numLines-3) + 98)
-                descriptionTextBox.frame.origin = CGPoint(x: 0, y: hourLabel.font!.lineHeight * CGFloat(numLines-2)+150)
+                hourLabel.frame.origin = CGPoint(x: 0, y: ratio*88)
+                creditLabel.frame.origin = CGPoint(x: 250, y: ratio*((hourLabel.font!.lineHeight * CGFloat(numLines-4) + 88) + 88)/2)
+                GPALabel.frame.origin = CGPoint(x: 250, y: ratio*hourLabel.font!.lineHeight * CGFloat(numLines-3) + 98)
+                descriptionTextBox.frame.origin = CGPoint(x: 0, y: ratio*hourLabel.font!.lineHeight * CGFloat(numLines-2)+150)
             }
         }
-//        if numLines <= 8 {
-//            if numLines > 3 {
-//                creditLabel.frame.origin = CGPoint(x: 250, y: 185)
-//                GPALabel.frame.origin = CGPoint(x: 250, y: 125)
-//                descriptionTextBox.frame.origin = CGPoint(x: 0, y: 250)
-//            }
-//        }
         if (course?.subject) == "Personal Finance" {
             
             categoryLabel.text = "Subject: Personal \n" + "Finance"
@@ -129,7 +111,7 @@ class ClassDetailViewController: UIViewController {
             categoryLabel.text = "Subject: World History/ \n" + "Geography"
             categoryLabel.sizeToFit()
         }
-        
+
     }
 
     override func didReceiveMemoryWarning() {
